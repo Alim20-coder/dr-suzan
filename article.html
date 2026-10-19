@@ -5,17 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>المقالات الطبية والتوعوية | دكتورة سوزان محمد عيسى - مجمع مورال الطبي</title>
   
-  <meta name="description" content="المكتبة الطبية لعيادة دكتورة سوزان محمد عيسى - أخصائية النساء والتوليد والتجميل النسائي بحفر الباطن. مقالات طبية متخصصة حول الولادة بدون ألم، التجميل النسائي بالليزر، والسونار رباعي الأبعاد.">
+  <meta name="description" content="المكتبة الطبية لعيادة دكتورة سوزان محمد عيسى - خبرة 17 عاماً في أمراض النساء، متابعة الحمل، وسائل منع الحمل، والتجميل النسائي بالليزر بمجمع مورال الطبي بحفر الباطن.">
   <meta name="author" content="Devora Web">
   <meta name="theme-color" content="#E87A90">
 
   <!-- Google Fonts & Bootstrap 5 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" id="bootstrap-css">
   <script>
-    /* Apply saved language before first paint (no flash when moving between pages) */
     (function () {
       var l = 'ar';
       try {
@@ -38,38 +37,71 @@
     :root {
       --primary-pink: #E87A90;
       --primary-pink-dark: #C9546B;
-      --primary-pink-light: #FCE8ED;
+      --primary-pink-light: #FDF0F3;
+      --gold-accent: #C5A059;
+      --gold-dark: #A68037;
       --medical-blue: #4EA8DE;
-      --dark-slate: #1E293B;
+      --medical-blue-dark: #2080BA;
+      --medical-blue-deep: #1B6B9E;
+      --light-blue-bg: #EAF4FB;
+      --dark-slate: #1C2833;
       --text-muted: #64748B;
-      --pearl-bg: #FAFBFD;
-      --card-shadow: 0 12px 35px rgba(232, 122, 144, 0.08);
+      --body-bg: #FAF7F2;
+      --card-shadow: 0 12px 35px rgba(28, 40, 51, 0.05);
       --transition: all 0.3s ease;
     }
 
     body {
       font-family: 'Cairo', 'Tajawal', sans-serif;
-      background-color: var(--pearl-bg);
+      background-color: var(--body-bg);
       color: var(--dark-slate);
       line-height: 1.8;
-      overflow-x: hidden;
+      overflow-x: clip;
+      position: relative;
+    }
+
+    body.en-mode {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      direction: ltr;
+      text-align: left;
+    }
+    section { overflow-x: clip; }
+    /* Numbers identical in AR and EN */
+    .stat-num {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+      font-variant-numeric: tabular-nums lining-nums !important;
+      direction: ltr !important;
+      unicode-bidi: isolate;
+      display: inline-block;
+    }
+
+    a {
+      text-decoration: none;
+      transition: var(--transition);
     }
 
     .article-header-nav {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      background: rgba(250, 247, 242, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
       padding: 14px 0;
+      position: -webkit-sticky;
       position: sticky;
       top: 0;
-      z-index: 99;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1050;
+      border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+      transition: all 0.3s ease;
     }
 
     .brand-icon-emblem {
       width: 44px;
       height: 44px;
       border-radius: 12px;
-      background: linear-gradient(135deg, var(--primary-pink) 0%, var(--medical-blue) 100%);
+      background: linear-gradient(135deg, var(--primary-pink) 0%, var(--gold-accent) 100%);
       color: #fff;
       display: flex;
       align-items: center;
@@ -77,26 +109,44 @@
       font-size: 22px;
     }
 
+    /* Section 1: BLUE hero */
     .article-hero {
-      background: linear-gradient(135deg, #FFF0F4 0%, #EEF7FC 100%);
-      padding: 70px 0 50px 0;
+      background:
+        radial-gradient(circle at 90% 0%, rgba(78, 168, 222, 0.45) 0%, rgba(78, 168, 222, 0) 55%),
+        linear-gradient(135deg, #1B6B9E 0%, #2080BA 100%);
+      padding: 65px 0 45px 0;
       text-align: center;
-      border-bottom: 1px solid rgba(232, 122, 144, 0.15);
     }
+    .article-hero h1,
+    .article-hero h1 span { color: #FFFFFF !important; }
+    .article-hero .lead,
+    .article-hero .lead span { color: rgba(255, 255, 255, 0.94) !important; }
+    .article-hero .badge {
+      background: #FFFFFF !important;
+      color: var(--medical-blue-deep) !important;
+    }
+
+    /* Section 2: LIGHT BLUE articles area */
+    .article-content-section {
+      background: linear-gradient(180deg, #EAF4FB 0%, #DCEEFA 100%);
+    }
+    .article-content-section .article-card-main { border-color: rgba(32, 128, 186, 0.18); }
+    .article-content-section .article-card-main:hover { border-color: var(--medical-blue); box-shadow: 0 20px 45px rgba(32, 128, 186, 0.16); }
 
     .article-card-main {
       background: #fff;
       border-radius: 24px;
       box-shadow: var(--card-shadow);
-      border: 1px solid #EDF2F7;
+      border: 1px solid rgba(0, 0, 0, 0.06);
       padding: 40px;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
       scroll-margin-top: 100px;
       transition: var(--transition);
     }
 
     .article-card-main:hover {
-      box-shadow: 0 20px 45px rgba(232, 122, 144, 0.12);
+      box-shadow: 0 20px 45px rgba(201, 84, 107, 0.12);
+      border-color: rgba(232, 122, 144, 0.25);
     }
 
     .article-cover-img {
@@ -104,7 +154,7 @@
       max-height: 420px;
       object-fit: cover;
       border-radius: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     .article-tag-badge {
@@ -126,233 +176,142 @@
       margin: 30px 0;
     }
 
+    .en-mode .doctor-callout-box {
+      border-right: none;
+      border-left: 5px solid var(--primary-pink);
+    }
+
     .btn-luxury-pink {
-      background: linear-gradient(135deg, var(--primary-pink) 0%, var(--primary-pink-dark) 100%);
+      background: linear-gradient(135deg, var(--gold-accent) 0%, #B88E4F 100%);
       color: #fff !important;
       font-weight: 700;
       padding: 12px 28px;
       border-radius: 50px;
       border: none;
-      box-shadow: 0 8px 25px rgba(232, 122, 144, 0.35);
+      box-shadow: 0 8px 25px rgba(197, 160, 89, 0.35);
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      text-decoration: none;
       transition: var(--transition);
     }
 
     .btn-luxury-pink:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(232, 122, 144, 0.5);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(197, 160, 89, 0.5);
     }
 
     .btn-back-home {
       background: #fff;
-      color: var(--primary-pink-dark);
-      border: 1.5px solid var(--primary-pink);
-      padding: 5px 14px;
-      border-radius: 50px;
+      color: var(--dark-slate);
+      border: 1px solid rgba(0, 0, 0, 0.12);
       font-weight: 700;
-      font-size: 0.82rem;
-      line-height: 1.5;
-      white-space: nowrap;      /* keep icon + text on ONE line */
-      flex-shrink: 0;           /* never squeezed by the brand block */
-      text-decoration: none;
+      padding: 8px 20px;
+      border-radius: 50px;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      transition: var(--transition);
+      gap: 8px;
+      font-size: 0.9rem;
     }
 
     .btn-back-home:hover {
-      background: var(--primary-pink);
+      background: var(--dark-slate);
       color: #fff;
     }
 
     .toc-sticky-card {
-      position: sticky;
-      top: 110px;
       background: #fff;
       border-radius: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
       padding: 28px;
       box-shadow: var(--card-shadow);
-      border: 1px solid #EEF2F6;
+      position: sticky;
+      top: 100px;
     }
 
     .toc-item-link {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 14px;
+      padding: 12px 14px;
       border-radius: 12px;
       color: var(--dark-slate);
       font-weight: 600;
-      font-size: 0.95rem;
-      text-decoration: none;
+      font-size: 0.94rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
       transition: var(--transition);
-      margin-bottom: 8px;
     }
 
     .toc-item-link:hover {
       background: var(--primary-pink-light);
       color: var(--primary-pink-dark);
+      transform: translateX(-4px);
     }
 
-    .toc-item-link i {
-      color: var(--primary-pink);
+    .en-mode .toc-item-link:hover {
+      transform: translateX(4px);
+    }
+
+    .floating-lang-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 1040;
+      background: #FFFFFF;
+      border: 1px solid rgba(197, 160, 89, 0.35);
+      border-radius: 50px;
+      padding: 9px 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      color: var(--dark-slate);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
     }
 
     footer {
       background: #111827;
-      color: #CBD5E1;
-      padding: 50px 0 25px 0;
-    }
-
-    .designer-credit-link {
-      color: var(--primary-pink) !important;
-      font-weight: 700;
-      text-decoration: underline;
-    }
-  
-    /* GRAND FOOTER WHITE TEXT ENFORCEMENT */
-    footer {
-      background: #0F172A !important;
       color: #FFFFFF !important;
-      padding: 55px 0 30px 0;
-    }
-    footer h5, footer h6, footer p, footer span, footer div, footer li, footer small, footer .text-muted {
-      color: #FFFFFF !important;
-    }
-    .designer-credit-link {
-      color: #FF758F !important;
-      font-weight: 800;
-      text-decoration: underline !important;
-    }
-    .designer-credit-link:hover {
-      color: #38BDF8 !important;
+      padding: 60px 0 30px 0;
     }
 
-    /* FLOATING DISTINCTIVE LANGUAGE SWITCHER BUTTON */
-    .floating-lang-btn {
-      position: fixed;
-      bottom: 30px;
-      right: 25px;
-      z-index: 1040;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: rgba(15, 23, 42, 0.92);
-      backdrop-filter: blur(12px);
-      color: #FFFFFF !important;
-      padding: 10px 18px;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 0.92rem;
-      border: 1.5px solid rgba(78, 168, 222, 0.4);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25), 0 0 15px rgba(78, 168, 222, 0.2);
-      cursor: pointer;
-      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-      text-decoration: none;
-    }
-    .floating-lang-btn:hover {
-      transform: translateY(-4px) scale(1.05);
-      background: #1E293B;
-      border-color: #38BDF8;
-      box-shadow: 0 16px 35px rgba(56, 189, 248, 0.35);
-      color: #FFFFFF !important;
-    }
-    .floating-lang-btn .lang-icon-wrap {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #E87A90, #38BDF8);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 15px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    }
-    .floating-lang-btn .lang-badge-pill {
-      background: #38BDF8;
-      color: #0F172A;
-      font-size: 0.72rem;
-      font-weight: 900;
-      padding: 2px 7px;
-      border-radius: 12px;
-      letter-spacing: 0.5px;
-    }
-    @media (max-width: 576px) {
-      .floating-lang-btn {
-        bottom: 25px;
-        right: 20px;
-        padding: 8px 14px;
-        font-size: 0.85rem;
-      }
+    footer a {
+      color: #94A3B8;
     }
 
-  
-    /* ========================================================
-       EXPANDED FULL-WIDTH NAVBAR FOR ARTICLE
-       ======================================================== */
-    .article-header-nav .container {
-      max-width: 100% !important;
-      width: 100% !important;
-      padding-left: clamp(18px, 4vw, 50px) !important;
-      padding-right: clamp(18px, 4vw, 50px) !important;
+    footer a:hover {
+      color: var(--primary-pink);
     }
 
-    .en-mode .article-header-nav .container {
-      max-width: 100% !important;
-      width: 100% !important;
-      padding-left: clamp(18px, 4vw, 50px) !important;
-      padding-right: clamp(18px, 4vw, 50px) !important;
-    }
-
-  
-    /* Mirror directional arrows when the page is in LTR (English) */
-    .en-mode .bi-arrow-right, .en-mode .bi-arrow-left { display: inline-block; transform: scaleX(-1); }
-  
-    /* ========================================================
-       RESPONSIVE FIXES (no sideways scrolling on phones)
-       ======================================================== */
-    /* Bootstrap .g-5 uses a 3rem gutter => the row sticks out 12px past the container padding on phones. */
-    @media (max-width: 991.98px) {
-      .row.g-5 { --bs-gutter-x: 1.5rem; }
-    }
-    .art-brand-link { min-width: 0; }
-    .art-brand-title, .art-brand-sub { overflow-wrap: anywhere; }
-    @media (max-width: 767.98px) {
-      .article-card-main { padding: 24px 18px; border-radius: 20px; margin-bottom: 30px; }
-      .article-hero h1 { font-size: 1.7rem; }
-      .toc-sticky-card { position: static; padding: 22px 18px; }
-    }
-    @media (max-width: 575.98px) {
-      .article-header-nav { padding: 10px 0; }
-      .article-header-nav .container { gap: 8px; }
-      .article-header-nav .brand-icon-emblem { width: 36px; height: 36px; font-size: 18px; border-radius: 10px; flex-shrink: 0; }
-      .art-brand-title { font-size: 0.92rem !important; line-height: 1.25; }
-      .art-brand-sub { font-size: 0.66rem; line-height: 1.2; display: block; }
-      .btn-back-home { padding: 4px 11px; font-size: 0.76rem; gap: 5px; }
+    .en-mode .bi-arrow-right, .en-mode .bi-arrow-left {
+      display: inline-block;
+      transform: scaleX(-1);
     }
   </style>
 </head>
 <body>
 
+  <!-- Floating Language Switcher -->
+  <button class="floating-lang-btn" id="floatingLangBtn" title="Switch Language" aria-label="Language Switcher">
+    <i class="bi bi-translate text-warning"></i>
+    <span id="langBtnText">English</span>
+    <span class="badge bg-warning text-dark" id="langBadgePill">EN</span>
+  </button>
+
   <!-- Header Navigation -->
   <header class="article-header-nav">
     <div class="container d-flex justify-content-between align-items-center">
-      <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none art-brand-link">
+      <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
         <div class="brand-icon-emblem"><i class="bi bi-heart-pulse-fill"></i></div>
         <div>
-          <div class="fw-bold text-dark fs-5 art-brand-title" data-i18n="art-brand-name">دكتورة سوزان محمد عيسى</div>
-          <small class="text-danger fw-bold art-brand-sub" data-i18n="art-brand-spec">أخصائية نساء وتوليد وتجميل نسائي</small>
+          <div class="fw-bold text-dark fs-5" data-i18n="art-brand-name">دكتورة سوزان محمد عيسى</div>
+          <small class="text-danger fw-bold" data-i18n="art-brand-spec">أخصائية نساء وتوليد وتجميل نسائي</small>
         </div>
       </a>
       <div class="d-flex align-items-center gap-2">
         <a href="index.html" class="btn-back-home"><i class="bi bi-arrow-right"></i> <span data-i18n="art-back-home">العودة للرئيسية</span></a>
-        <a href="https://wa.me/966569049926" target="_blank" class="btn-luxury-pink d-none d-md-inline-flex">
-          <i class="fab fa-whatsapp"></i> <span data-i18n="art-book-btn">حجز استشارة</span>
+        <a href="https://wa.me/966569049926?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B3%D9%88%D8%B2%D8%A7%D9%86" target="_blank" class="btn-luxury-pink d-none d-md-inline-flex">
+          <i class="fab fa-whatsapp"></i> <span data-i18n="art-book-btn">حجز عبر واتساب</span>
         </a>
       </div>
     </div>
@@ -364,13 +323,13 @@
       <span class="badge bg-danger text-white px-3 py-2 rounded-pill mb-2 fw-bold"><span data-i18n="art-hero-badge">المكتبة الطبية والتوعوية</span></span>
       <h1 class="display-5 fw-bold text-dark mb-3"><span data-i18n="art-hero-title">مقالات ونصائح طبية موثوقة لصحتكِ وأمومتكِ</span></h1>
       <p class="lead text-muted mx-auto" style="max-width: 680px;">
-        <span data-i18n="art-hero-desc">إرشادات طبية دقيقة بقلم دكتورة سوزان محمد عيسى - أخصائية النساء والتوليد والتجميل النسائي بمجمع مورال الطبي بحفر الباطن.</span>
+        <span data-i18n="art-hero-desc">إرشادات طبية دقيقة بقلم دكتورة سوزان محمد عيسى - خبرة 17 عاماً في طب النساء، متابعة الحمل، والتجميل النسائي بمجمع مورال الطبي بحفر الباطن.</span>
       </p>
     </div>
   </section>
 
   <!-- Articles Content Area -->
-  <section class="py-5">
+  <section class="py-5 article-content-section">
     <div class="container">
       <div class="row g-5">
         
@@ -381,28 +340,25 @@
             <div class="d-flex flex-column">
               <a href="#article-1" class="toc-item-link">
                 <i class="bi bi-file-earmark-medical"></i>
-                <span><span data-i18n="toc-1">1. الولادة بدون ألم وإبرة الظهر</span></span>
+                <span data-i18n="toc-1">1. تنظيم الأسرة ووسائل منع الحمل</span>
               </a>
               <a href="#article-2" class="toc-item-link">
                 <i class="bi bi-file-earmark-medical"></i>
-                <span><span data-i18n="toc-2">2. الليزر الوردي والتجميل النسائي</span></span>
+                <span data-i18n="toc-2">2. الليزر الوردي والتجميل النسائي</span>
               </a>
               <a href="#article-3" class="toc-item-link">
                 <i class="bi bi-file-earmark-medical"></i>
-                <span><span data-i18n="toc-3">3. التوقيت الذهبي للسونار 4D</span></span>
+                <span data-i18n="toc-3">3. السونار البطني والداخلي</span>
               </a>
             </div>
 
             <hr class="my-4">
 
             <div class="p-3 bg-light rounded-3 text-center">
-              <h6 class="fw-bold text-dark mb-2"><span data-i18n="toc-help-title">هل لديكِ استفسار طبي خاص؟</span></h6>
-              <p class="small text-muted mb-3"><span data-i18n="toc-help-desc">دكتورة سوزان تسعد بالإجابة على استفساراتكِ ومساعدتكِ في مجمع مورال الطبي.</span></p>
-              <a href="tel:0569049926" class="btn btn-outline-danger btn-sm w-100 rounded-pill mb-2">
-                <i class="bi bi-telephone-fill"></i> <span data-i18n="toc-call-btn">اتصال مباشر: 0569049926</span>
-              </a>
-              <a href="https://wa.me/966569049926" target="_blank" class="btn btn-success btn-sm w-100 rounded-pill">
-                <i class="fab fa-whatsapp"></i> <span data-i18n="toc-wa-btn">تواصل عبر واتساب</span>
+              <h6 class="fw-bold text-dark mb-2" data-i18n="toc-help-title">هل لديكِ استفسار طبي خاص؟</h6>
+              <p class="small text-muted mb-3" data-i18n="toc-help-desc">التواصل وحجز المواعيد متاح حصرياً عبر تطبيق واتساب لضمان ترتيب أوقات الزيارة بدقة.</p>
+              <a href="https://wa.me/966569049926" target="_blank" class="btn btn-success btn-sm w-100 rounded-pill py-2">
+                <i class="fab fa-whatsapp fs-6 me-1"></i> <span data-i18n="toc-wa-btn">محادثة وحجز عبر واتساب: 0569049926</span>
               </a>
             </div>
           </div>
@@ -411,10 +367,10 @@
         <!-- Main Articles -->
         <div class="col-lg-8 order-lg-1">
           
-          <!-- Article 1 -->
+          <!-- Article 1: Contraception -->
           <article id="article-1" class="article-card-main">
-            <span class="article-tag-badge"><i class="bi bi-balloon-heart"></i> <span data-i18n="a1-tag">رعاية الولادة والأمومة</span></span>
-            <h2 class="fw-bold text-dark mb-3"><span data-i18n="a1-title">كل ما ترغبين بمعرفته عن الولادة بدون ألم وإبرة الظهر (Epidural)</span></h2>
+            <span class="article-tag-badge"><i class="bi bi-shield-check"></i> <span data-i18n="a1-tag">تنظيم الأسرة وصحة المرأة</span></span>
+            <h2 class="fw-bold text-dark mb-3"><span data-i18n="a1-title">دليلكِ الشامل لاختيار وسيلة منع الحمل الأنسب لجسمكِ</span></h2>
             <div class="d-flex align-items-center gap-3 text-muted small mb-4">
               <span><i class="bi bi-person-fill text-danger"></i> <span data-i18n="author-name">د. سوزان محمد عيسى</span></span>
               <span>•</span>
@@ -423,43 +379,41 @@
               <span><i class="bi bi-clock"></i> <span data-i18n="a1-read">قراءة 4 دقائق</span></span>
             </div>
 
-            <img src="css/img-8.jpg" alt="الولادة بدون ألم" class="article-cover-img">
+            <img src="css/contraception-consult.jpg" alt="تنظيم الأسرة ووسائل منع الحمل" class="article-cover-img">
 
             <div class="article-body-text">
               <p class="lead">
-                <span data-i18n="a1-lead">تعد مرحلة الولادة من أسمى وأهم اللحظات في حياة كل امرأة، إلا أن الخوف من ألم المخاض قد يسبب توتراً وقلقاً شديدين للأم طوال أشهر الحمل. بفضل التقدم الطبي المعاصر، أصبحت "الولادة بدون ألم" واقعاً مريحاً ومتاحاً بأعلى معايير السلامة.</span>
+                <span data-i18n="a1-lead">يعد تنظيم الأسرة واختيار وسيلة منع الحمل المناسبة خطوة أساسية للحفاظ على صحة المرأة الجسدية والنفسية، وتجنب الحمل غير المخطط له، خاصة في فترات الرضاعة أو بعد التعافي من حمل سابق.</span>
               </p>
 
-              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a1-h1">ما هي تقنية التخدير فوق الجافية (Epidural)؟</span></h4>
+              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a1-h1">أبرز وسائل منع الحمل الحديثة المتوفرة:</span></h4>
               <p>
-                <span data-i18n="a1-p1">هي إجراء طبي آمن يتم فيه حقن دواء مسكن ومخدر موضعي في الفراغ فوق الجافية المحيط بالحبل الشوكي في أسفل الظهر. يؤدي ذلك إلى حجب إشارات الألم القادمة من الرحم والمهبل، دون أن يفقد المريضة وعيها أو قدرتها على الحركة والدفع الطبيعي أثناء الولادة.</span>
+                <span data-i18n="a1-p1">تتنوع الخيارات الطبية المتاحة لتناسب مختلف الحالات والاحتياجات الفردية لكل سيدة:</span>
               </p>
 
-              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a1-h2">مميزات الولادة بدون ألم:</span></h4>
               <ul>
-                <li><strong><span data-i18n="a1-b1-title">السيطرة التامة على الألم:</span></strong> <span data-i18n="a1-b1-desc">تخفيف انقباضات الرحم المؤلمة لتتمكن الأم من الاسترخاء والتنفس بهدوء.</span></li>
-                <li><strong><span data-i18n="a1-b2-title">تقليل التوتر والإجهاد الجسدي:</span></strong> <span data-i18n="a1-b2-desc">تجنب الإنهاك العضلي وضيق التنفس الناتج عن البكاء أو الصراخ من الألم.</span></li>
-                <li><strong><span data-i18n="a1-b3-title">استقبال المولود بكامل الطاقة والابتسامة:</span></strong> <span data-i18n="a1-b3-desc">تكون الأم واعية تماماً للحظة خروج طفلها لتضمه إلى صدرها فوراً.</span></li>
-                <li><strong><span data-i18n="a1-b4-title">مرونة في حال الحاجة لجراحة:</span></strong> <span data-i18n="a1-b4-desc">إذا استدعت الحالة تحويل الولادة إلى قيصرية طارئة، يمكن تمديد جرعة المخدر دون الحاجة لتخدير كلي.</span></li>
+                <li><strong data-i18n="a1-b1-title">اللولب الهرموني (Mirena):</strong> <span data-i18n="a1-b1-desc">يتميز بفاعلية تتجاوز 99%، ويسهم في تقليل غزارة وآلام الدورة الشهرية، مع استمرار مفعوله لعدة سنوات وإمكانية الحمل فور إزالته.</span></li>
+                <li><strong data-i18n="a1-b2-title">اللولب النحاسي:</strong> <span data-i18n="a1-b2-desc">خيار غير هرموني آمن تماماً، يناسب السيدات اللاتي لا يرغبن في تأثيرات هرمونية، ويوفر حماية طويلة ومستقرة.</span></li>
+                <li><strong data-i18n="a1-b3-title">كبسولات منع الحمل تحت الجلد (Nexplanon):</strong> <span data-i18n="a1-b3-desc">كبسولة صغيرة توضع تحت جلد الذراع بإجراء بسيط وسريع، وتمنحكِ حماية ممتدة لـ 3 سنوات دون القلق بشأن تذكر الحبوب اليومية.</span></li>
               </ul>
 
               <div class="doctor-callout-box">
-                <h5 class="fw-bold text-danger mb-2"><i class="bi bi-quote"></i> <span data-i18n="a1-quote-title">كلمة ورأي دكتورة سوزان محمد عيسى:</span></h5>
+                <h5 class="fw-bold text-danger mb-2"><i class="bi bi-quote"></i> <span data-i18n="a1-quote-title">نصيحة دكتورة سوزان محمد عيسى:</span></h5>
                 <p class="mb-0 text-dark">
-                  <span data-i18n="a1-quote">"إبرة الظهر خيار طبي راقٍ ومدروس بعناية، ولا يتم اتخاذ قرارها إلا بعد فحص طبي شامل للمريضة وتقييم تخثر الدم واستقرار مؤشراتها الحيوية. سلامتكِ وراحتكِ هما أولويتنا المطلقة في مجمع مورال الطبي."</span>
+                  <span data-i18n="a1-quote">"لا توجد وسيلة واحدة تناسب الجميع. استشارة الطبيبة المتخصصة والفحص بالسونار قبل التركيب هما الضمان الأساسي لاختيار الوسيلة الأكثر أماناً وملاءمة لجسمكِ."</span>
                 </p>
               </div>
             </div>
 
             <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center flex-wrap gap-2">
-              <a href="index.html#sec-booking-form" class="btn-luxury-pink"><span data-i18n="a1-cta">احجزي استشارة ولادة آمنة</span></a>
-              <a href="https://wa.me/966569049926?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D9%88%D9%84%D8%A7%D8%AF%D8%A9%20%D8%A8%D8%AF%D9%88%D9%86%20%D8%A3%D9%84%D9%85" target="_blank" class="btn btn-outline-success rounded-pill px-4">
-                <i class="fab fa-whatsapp"></i> <span data-i18n="wa-inquiry">استفسار واتساب</span>
+              <a href="https://wa.me/966569049926?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AD%D9%88%D9%84%20%D9%88%D8%B3%D8%A7%D8%A6%D9%84%20%D9%85%D9%86%D8%B9%20%D8%A7%D9%84%D8%AD%D9%85%D9%84" target="_blank" class="btn-luxury-pink"><span data-i18n="a1-cta">احجزي استشارة وسائل منع الحمل</span></a>
+              <a href="https://wa.me/966569049926" target="_blank" class="btn btn-outline-success rounded-pill px-4">
+                <i class="fab fa-whatsapp"></i> <span data-i18n="wa-inquiry">واتساب فقط</span>
               </a>
             </div>
           </article>
 
-          <!-- Article 2 -->
+          <!-- Article 2: Cosmetic Gynecology -->
           <article id="article-2" class="article-card-main">
             <span class="article-tag-badge"><i class="bi bi-flower1"></i> <span data-i18n="a2-tag">التجميل والتجديد النسائي</span></span>
             <h2 class="fw-bold text-dark mb-3"><span data-i18n="a2-title">حقائق عن الليزر الوردي وتجديد الأنسجة النسائية غير الجراحي</span></h2>
@@ -471,95 +425,64 @@
               <span><i class="bi bi-clock"></i> <span data-i18n="a2-read">قراءة 5 دقائق</span></span>
             </div>
 
-            <img src="css/img-9.jpg" alt="الليزر الوردي والتجميل النسائي" class="article-cover-img">
+            <img src="css/cosmetic-laser.jpg" alt="الليزر الوردي والتجميل النسائي" class="article-cover-img">
 
             <div class="article-body-text">
               <p class="lead">
-                <span data-i18n="a2-lead">يواجه جسم المرأة بعد الولادات الطبيعية المتكررة ومع التقدم في العمر تغيرات فسيولوجية تؤدي إلى ارتخاء الأنسجة، جفاف المهبل، أو تسرب البول الخفيف. اليوم، يوفر التجميل النسائي غير الجراحي حلولاً فعالة بدون مشرط جراحي أو فترة نقاهة طويلة.</span>
+                <span data-i18n="a2-lead">يوفر التجميل والتجديد النسائي غير الجراحي حلولاً متطورة لتحسين راحة المرأة، واستعادة مرونة الأنسجة، وعلاج مشاكل الجفاف المزمن وتسرب البول الإجهادي الخفيف بدون جراحة.</span>
               </p>
 
-              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a2-h1">كيف يعمل الليزر المهبلي لتجديد الأنسجة؟</span></h4>
+              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a2-h1">كيف يعمل الليزر النسائي الحديث؟</span></h4>
               <p>
-                <span data-i18n="a2-p1">يقوم جهاز الليزر المتخصص بإرسال ومضات حرارية خفيفة ومدروسة للغاية إلى طبقات الغشاء المخاطي الداخلي. هذا التحفيز الحراري ينشط الخلايا الليفية لإفراز ألياف الكولاجين والإيلاستين الجديدة، مما يؤدي إلى:</span>
-              </p>
-              <ul>
-                <li><span data-i18n="a2-l1">تضييق القناة المهبلية واستعادة المرونة والتماسك الطبيعي.</span></li>
-                <li><span data-i18n="a2-l2">تجديد بطانة المهبل وعلاج الجفاف المزمن والحكة والانزعاج.</span></li>
-                <li><span data-i18n="a2-l3">تحسين السلس البولي الإجهادي الناتج عن السعال أو الرياضة أو الضحك.</span></li>
-              </ul>
-
-              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a2-h2">حقن البلازما الغنية بالصفائح (PRP / O-Shot)</span></h4>
-              <p>
-                <span data-i18n="a2-p2">يتم سحب كمية بسيطة من دم المراجعة وفصل الصفائح الدموية المركزة المحملة بعوامل النمو الطبيعية، ثم إعادة حقنها بأمان تام. تعمل البلازما على تجديد الأوعية الدموية الدقيقة ورفع كفاءة النهايات العصبية وترطيب الأنسجة بشكل حيوي مذهل.</span>
+                <span data-i18n="a2-p1">تعتمد التقنية على تحفيز الأنسجة العميقة لإنتاج ألياف الكولاجين والإيلاستين الطبيعية، مما يعيد للأنسجة حيويتها ويزيد من التروية الدموية والترطيب الطبيعي دون الحاجة لأي شق جراحي أو تخدير عام.</span>
               </p>
 
               <div class="doctor-callout-box">
-                <h5 class="fw-bold text-danger mb-2"><i class="bi bi-shield-check"></i> <span data-i18n="a2-quote-title">خصوصية ورعاية نسائية متكاملة:</span></h5>
+                <h5 class="fw-bold text-danger mb-2"><i class="bi bi-quote"></i> <span data-i18n="a2-quote-title">رأي دكتورة سوزان محمد عيسى:</span></h5>
                 <p class="mb-0 text-dark">
-                  <span data-i18n="a2-quote">"جميع الجلسات تجرى في عيادتنا بمجمع مورال الطبي في جو من السرية والخصوصية التامة، وتحت إشراف كادر نسائي متكامل لا يسبب أي إحراج، مع عودة فورية للحياة اليومية."</span>
+                  <span data-i18n="a2-quote">"جلسات الليزر النسائي تجرى داخل بيئة نسائية آمنة وخصوصية مطلقة، وتستغرق الجلسة 15-20 دقيقة مع إمكانية ممارسة حياتكِ اليومية فوراً."</span>
                 </p>
               </div>
             </div>
 
             <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center flex-wrap gap-2">
-              <a href="index.html#sec-booking-form" class="btn-luxury-pink"><span data-i18n="a2-cta">احجزي جلسة استشارة تجميل</span></a>
-              <a href="https://wa.me/966569049926?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AA%D8%AC%D9%85%D9%8A%D9%84%20%D9%86%D8%B3%D8%A7%D8%A6%D9%8A" target="_blank" class="btn btn-outline-success rounded-pill px-4">
-                <i class="fab fa-whatsapp"></i> <span data-i18n="wa-inquiry">استفسار واتساب</span>
+              <a href="https://wa.me/966569049926?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D8%AA%D8%AC%D9%85%D9%8A%D9%84%20%D9%86%D8%B3%D8%A7%D8%A6%D9%8A" target="_blank" class="btn-luxury-pink"><span data-i18n="a2-cta">احجزي جلسة تجميل نسائي</span></a>
+              <a href="https://wa.me/966569049926" target="_blank" class="btn btn-outline-success rounded-pill px-4">
+                <i class="fab fa-whatsapp"></i> <span data-i18n="wa-inquiry">واتساب فقط</span>
               </a>
             </div>
           </article>
 
-          <!-- Article 3 -->
+          <!-- Article 3: Ultrasound -->
           <article id="article-3" class="article-card-main">
-            <span class="article-tag-badge"><i class="bi bi-display"></i> <span data-i18n="a3-tag">تشخيص وصحة الجنين</span></span>
-            <h2 class="fw-bold text-dark mb-3"><span data-i18n="a3-title">التوقيت الذهبي للسونار رباعي الأبعاد 4D للاطمئنان على طفلكِ</span></h2>
+            <span class="article-tag-badge"><i class="bi bi-display"></i> <span data-i18n="a3-tag">التشخيص وصحة الجنين</span></span>
+            <h2 class="fw-bold text-dark mb-3"><span data-i18n="a3-title">أهمية الفحص بالسونار البطني والداخلي لمتابعة سلامة الحمل</span></h2>
             <div class="d-flex align-items-center gap-3 text-muted small mb-4">
               <span><i class="bi bi-person-fill text-danger"></i> <span data-i18n="author-name">د. سوزان محمد عيسى</span></span>
               <span>•</span>
               <span><i class="bi bi-building"></i> <span data-i18n="author-place">مجمع مورال الطبي</span></span>
               <span>•</span>
-              <span><i class="bi bi-clock"></i> <span data-i18n="a3-read">قراءة 3 دقائق</span></span>
+              <span><i class="bi bi-clock"></i> <span data-i18n="a3-read">قراءة 4 دقائق</span></span>
             </div>
 
-            <img src="css/img-23.jpg" alt="السونار رباعي الأبعاد للجنين" class="article-cover-img">
+            <img src="css/pregnancy-ultrasound.jpg" alt="السونار البطني والداخلي" class="article-cover-img">
 
             <div class="article-body-text">
               <p class="lead">
-                <span data-i18n="a3-lead">يعد السونار رباعي الأبعاد (4D Ultrasound) من أروع اللحظات التي تجمع الوالدين بجنينهم، حيث يمنحكِ صوراً حية ومتحركة بملامح واضحة ومجسمة بدقة فائقة تفوق السونار التقليدي ثنائي الأبعاد.</span>
+                <span data-i18n="a3-lead">يعد السونار البطني والداخلي الركيزة التشخيصية الأكثر أهمية للاطمئنان على مراحل نمو الجنين، وموقع المشيمة، والتأكد من صحة وسلامة الرحم والمبايض.</span>
               </p>
 
-              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a3-h1">ما هو التوقيت الأفضل لإجراء السونار 4D؟</span></h4>
-              <p>
-                <span data-i18n="a3-p1">الفترة الذهبية والمثالية لإجراء الفحص هي</span> <strong><span data-i18n="a3-p1-strong">بين الأسبوع 26 والأسبوع 32 من الحمل</span></strong>:
-              </p>
+              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a3-h1">الفروق والفوائد الطبية:</span></h4>
               <ul>
-                <li><strong><span data-i18n="a3-t1-title">قبل الأسبوع 24:</span></strong> <span data-i18n="a3-t1-desc">تكون طبقة الدهون تحت جلد الجنين رقيقة جداً، وتظهر ملامح الوجه عظمية قليلاً.</span></li>
-                <li><strong><span data-i18n="a3-t2-title">بين الأسبوع 26 و 32:</span></strong> <span data-i18n="a3-t2-desc">تكون ملامح الوجه مكتملة وممتلئة بشكل طبيعي كأنه مولود حقيقي، وتكون حركة يديه ورجليه وابتسامته واضحة ومؤثرة جداً.</span></li>
-                <li><strong><span data-i18n="a3-t3-title">بعد الأسبوع 34:</span></strong> <span data-i18n="a3-t3-desc">قد ينزل رأس الجنين إلى الحوض أو تقل كمية السائل الأمنيوسي حول الوجه مما يصعّب التقاط صور واضحة.</span></li>
+                <li><strong data-i18n="a3-b1-title">السونار الداخلي (المهبلي):</strong> <span data-i18n="a3-b1-desc">يوفر دقة فائقة في الأسابيع الأولى، ويكشف عن كيس الحمل ونبض الجنين مبكراً، كما يحدد سلامة المبيضين بدقة متناهية.</span></li>
+                <li><strong data-i18n="a3-b2-title">السونار البطني:</strong> <span data-i18n="a3-b2-desc">الفحص الأساسي خلال الثلثين الثاني والثالث لمراقبة نمو الجنين، وقياس محيط الرأس، وفحص كمية السائل المحيط به.</span></li>
               </ul>
-
-              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a3-h2">الأهمية الطبية التشخيصية:</span></h4>
-              <p>
-                <span data-i18n="a3-p2">لا يقتصر السونار 4D على الجانب العاطفي الجميل، بل يشكل ركيزة إكلينيكية أساسية لفحص:</span>
-              </p>
-              <ul>
-                <li><span data-i18n="a3-d1">سلامة العمود الفقري والجمجمة والقفص الصدري.</span></li>
-                <li><span data-i18n="a3-d2">استبعاد الشفة الأرنبية وتشوهات الوجه والأطراف بدقة متناهية.</span></li>
-                <li><span data-i18n="a3-d3">تقييم نمو الأعضاء الداخلية وتدفق الدم عبر الحبل السري والمشيمة.</span></li>
-              </ul>
-
-              <div class="doctor-callout-box">
-                <h5 class="fw-bold text-danger mb-2"><i class="bi bi-heart-pulse"></i> <span data-i18n="a3-quote-title">نصيحة قبل زيارة جلسة السونار 4D:</span></h5>
-                <p class="mb-0 text-dark">
-                  <span data-i18n="a3-quote">"ننصح الأم بشرب كمية وافرة من الماء في الأيام التي تسبق الفحص لزيادة نقاء السائل الأمنيوسي، وتناول وجبة خفيفة أو عصير طبيعي قبل الفحص بنصف ساعة لتحفيز حركة الجنين والتقاط أجمل اللقطات التذكارية."</span>
-                </p>
-              </div>
             </div>
 
             <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center flex-wrap gap-2">
-              <a href="index.html#sec-booking-form" class="btn-luxury-pink"><span data-i18n="a3-cta">احجزي جلسة سونار 4D</span></a>
-              <a href="https://wa.me/966569049926?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%B3%D9%88%D9%86%D8%A7%D8%B1%20%D8%B1%D8%A8%D8%A7%D8%B9%D9%8A%20%D8%A7%D9%84%D8%A3%D8%A8%D8%B9%D8%A7%D8%AF" target="_blank" class="btn btn-outline-success rounded-pill px-4">
-                <i class="fab fa-whatsapp"></i> <span data-i18n="wa-inquiry">استفسار واتساب</span>
+              <a href="https://wa.me/966569049926?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D9%81%D8%AD%D8%B5%20%D8%B3%D9%88%D9%86%D8%A7%D8%B1" target="_blank" class="btn-luxury-pink"><span data-i18n="a3-cta">احجزي فحص السونار</span></a>
+              <a href="https://wa.me/966569049926" target="_blank" class="btn btn-outline-success rounded-pill px-4">
+                <i class="fab fa-whatsapp"></i> <span data-i18n="wa-inquiry">واتساب فقط</span>
               </a>
             </div>
           </article>
@@ -572,226 +495,133 @@
   <!-- Footer -->
   <footer>
     <div class="container text-center">
-      <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-        <div class="brand-icon-emblem"><i class="bi bi-heart-pulse-fill"></i></div>
-        <span class="fs-5 fw-bold text-white"><span data-i18n="art-footer-brand">دكتورة سوزان محمد عيسى</span></span>
-      </div>
-      <p class="small mb-3" style="color: #FFFFFF !important; font-size: 0.95rem; line-height: 1.7;">
-        <span data-i18n="art-footer-info">أخصائية نساء وتوليد وتجميل نسائي • مجمع مورال الطبي • شارع الأمير مقرن بن عبدالعزيز، حي الربوة، حفر الباطن • هاتف: 0569049926</span>
-      </p>
-      <div class="border-top pt-3 mt-3 d-flex justify-content-between align-items-center flex-wrap gap-2 small" style="border-color: rgba(255,255,255,0.2) !important; color: #FFFFFF !important;">
-        <div><span data-i18n="art-footer-copy">&copy; 2026 عيادة دكتورة سوزان محمد عيسى. جميع الحقوق محفوظة.</span></div>
-        <div>
-          <span data-i18n="art-footer-credit">تم التصميم بواسطة</span> <a href="https://www.facebook.com/profile.php?id=61594550781374&locale=ar_AR" target="_blank" class="designer-credit-link">Devora Web</a>
-        </div>
-      </div>
+      <p class="mb-2">&copy; 2026 <span data-i18n="foot-copy">عيادة دكتورة سوزان محمد عيسى - مجمع مورال الطبي بحفر الباطن. جميع الحقوق محفوظة.</span></p>
+      <small class="text-secondary"><span data-i18n="foot-wa">التواصل وتأكيد المواعيد متاح حصرياً عبر تطبيق واتساب:</span> <span class="stat-num">0569049926</span></small>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Floating Distinct Language Switcher -->
-  <button class="floating-lang-btn" id="floatingLangBtn" title="تغيير لغة الموقع | Switch Language" aria-label="Language Switcher">
-    <div class="lang-icon-wrap">
-      <i class="bi bi-translate"></i>
-    </div>
-    <span class="lang-btn-text" id="langBtnText">English</span>
-    <span class="lang-badge-pill" id="langBadgePill">EN</span>
-  </button>
-
   <script>
-    // ======================================================== 
-    // WORDS: ar = Arabic, en = English (same keys as data-i18n in the page)
-    // ======================================================== 
     const translations = {
       ar: {
-        "art-hero-badge": "المكتبة الطبية والتوعوية",
-        "art-hero-title": "مقالات ونصائح طبية موثوقة لصحتكِ وأمومتكِ",
-        "art-hero-desc": "إرشادات طبية دقيقة بقلم دكتورة سوزان محمد عيسى - أخصائية النساء والتوليد والتجميل النسائي بمجمع مورال الطبي بحفر الباطن.",
-        "toc-title": "فهرس المقالات",
-        "toc-1": "1. الولادة بدون ألم وإبرة الظهر",
-        "toc-2": "2. الليزر الوردي والتجميل النسائي",
-        "toc-3": "3. التوقيت الذهبي للسونار 4D",
-        "toc-help-title": "هل لديكِ استفسار طبي خاص؟",
-        "toc-help-desc": "دكتورة سوزان تسعد بالإجابة على استفساراتكِ ومساعدتكِ في مجمع مورال الطبي.",
-        "toc-call-btn": "اتصال مباشر: 0569049926",
-        "toc-wa-btn": "تواصل عبر واتساب",
-        "a1-tag": "رعاية الولادة والأمومة",
-        "a1-title": "كل ما ترغبين بمعرفته عن الولادة بدون ألم وإبرة الظهر (Epidural)",
-        "author-name": "د. سوزان محمد عيسى",
-        "author-place": "مجمع مورال الطبي",
-        "a1-read": "قراءة 4 دقائق",
-        "a1-lead": "تعد مرحلة الولادة من أسمى وأهم اللحظات في حياة كل امرأة، إلا أن الخوف من ألم المخاض قد يسبب توتراً وقلقاً شديدين للأم طوال أشهر الحمل. بفضل التقدم الطبي المعاصر، أصبحت \"الولادة بدون ألم\" واقعاً مريحاً ومتاحاً بأعلى معايير السلامة.",
-        "a1-h1": "ما هي تقنية التخدير فوق الجافية (Epidural)؟",
-        "a1-p1": "هي إجراء طبي آمن يتم فيه حقن دواء مسكن ومخدر موضعي في الفراغ فوق الجافية المحيط بالحبل الشوكي في أسفل الظهر. يؤدي ذلك إلى حجب إشارات الألم القادمة من الرحم والمهبل، دون أن يفقد المريضة وعيها أو قدرتها على الحركة والدفع الطبيعي أثناء الولادة.",
-        "a1-h2": "مميزات الولادة بدون ألم:",
-        "a1-b1-title": "السيطرة التامة على الألم:",
-        "a1-b1-desc": "تخفيف انقباضات الرحم المؤلمة لتتمكن الأم من الاسترخاء والتنفس بهدوء.",
-        "a1-b2-title": "تقليل التوتر والإجهاد الجسدي:",
-        "a1-b2-desc": "تجنب الإنهاك العضلي وضيق التنفس الناتج عن البكاء أو الصراخ من الألم.",
-        "a1-b3-title": "استقبال المولود بكامل الطاقة والابتسامة:",
-        "a1-b3-desc": "تكون الأم واعية تماماً للحظة خروج طفلها لتضمه إلى صدرها فوراً.",
-        "a1-b4-title": "مرونة في حال الحاجة لجراحة:",
-        "a1-b4-desc": "إذا استدعت الحالة تحويل الولادة إلى قيصرية طارئة، يمكن تمديد جرعة المخدر دون الحاجة لتخدير كلي.",
-        "a1-quote-title": "كلمة ورأي دكتورة سوزان محمد عيسى:",
-        "a1-quote": "\"إبرة الظهر خيار طبي راقٍ ومدروس بعناية، ولا يتم اتخاذ قرارها إلا بعد فحص طبي شامل للمريضة وتقييم تخثر الدم واستقرار مؤشراتها الحيوية. سلامتكِ وراحتكِ هما أولويتنا المطلقة في مجمع مورال الطبي.\"",
-        "a1-cta": "احجزي استشارة ولادة آمنة",
-        "wa-inquiry": "استفسار واتساب",
-        "a2-tag": "التجميل والتجديد النسائي",
-        "a2-title": "حقائق عن الليزر الوردي وتجديد الأنسجة النسائية غير الجراحي",
-        "a2-read": "قراءة 5 دقائق",
-        "a2-lead": "يواجه جسم المرأة بعد الولادات الطبيعية المتكررة ومع التقدم في العمر تغيرات فسيولوجية تؤدي إلى ارتخاء الأنسجة، جفاف المهبل، أو تسرب البول الخفيف. اليوم، يوفر التجميل النسائي غير الجراحي حلولاً فعالة بدون مشرط جراحي أو فترة نقاهة طويلة.",
-        "a2-h1": "كيف يعمل الليزر المهبلي لتجديد الأنسجة؟",
-        "a2-p1": "يقوم جهاز الليزر المتخصص بإرسال ومضات حرارية خفيفة ومدروسة للغاية إلى طبقات الغشاء المخاطي الداخلي. هذا التحفيز الحراري ينشط الخلايا الليفية لإفراز ألياف الكولاجين والإيلاستين الجديدة، مما يؤدي إلى:",
-        "a2-l1": "تضييق القناة المهبلية واستعادة المرونة والتماسك الطبيعي.",
-        "a2-l2": "تجديد بطانة المهبل وعلاج الجفاف المزمن والحكة والانزعاج.",
-        "a2-l3": "تحسين السلس البولي الإجهادي الناتج عن السعال أو الرياضة أو الضحك.",
-        "a2-h2": "حقن البلازما الغنية بالصفائح (PRP / O-Shot)",
-        "a2-p2": "يتم سحب كمية بسيطة من دم المراجعة وفصل الصفائح الدموية المركزة المحملة بعوامل النمو الطبيعية، ثم إعادة حقنها بأمان تام. تعمل البلازما على تجديد الأوعية الدموية الدقيقة ورفع كفاءة النهايات العصبية وترطيب الأنسجة بشكل حيوي مذهل.",
-        "a2-quote-title": "خصوصية ورعاية نسائية متكاملة:",
-        "a2-quote": "\"جميع الجلسات تجرى في عيادتنا بمجمع مورال الطبي في جو من السرية والخصوصية التامة، وتحت إشراف كادر نسائي متكامل لا يسبب أي إحراج، مع عودة فورية للحياة اليومية.\"",
-        "a2-cta": "احجزي جلسة استشارة تجميل",
-        "a3-tag": "تشخيص وصحة الجنين",
-        "a3-title": "التوقيت الذهبي للسونار رباعي الأبعاد 4D للاطمئنان على طفلكِ",
-        "a3-read": "قراءة 3 دقائق",
-        "a3-lead": "يعد السونار رباعي الأبعاد (4D Ultrasound) من أروع اللحظات التي تجمع الوالدين بجنينهم، حيث يمنحكِ صوراً حية ومتحركة بملامح واضحة ومجسمة بدقة فائقة تفوق السونار التقليدي ثنائي الأبعاد.",
-        "a3-h1": "ما هو التوقيت الأفضل لإجراء السونار 4D؟",
-        "a3-p1": "الفترة الذهبية والمثالية لإجراء الفحص هي",
-        "a3-p1-strong": "بين الأسبوع 26 والأسبوع 32 من الحمل",
-        "a3-t1-title": "قبل الأسبوع 24:",
-        "a3-t1-desc": "تكون طبقة الدهون تحت جلد الجنين رقيقة جداً، وتظهر ملامح الوجه عظمية قليلاً.",
-        "a3-t2-title": "بين الأسبوع 26 و 32:",
-        "a3-t2-desc": "تكون ملامح الوجه مكتملة وممتلئة بشكل طبيعي كأنه مولود حقيقي، وتكون حركة يديه ورجليه وابتسامته واضحة ومؤثرة جداً.",
-        "a3-t3-title": "بعد الأسبوع 34:",
-        "a3-t3-desc": "قد ينزل رأس الجنين إلى الحوض أو تقل كمية السائل الأمنيوسي حول الوجه مما يصعّب التقاط صور واضحة.",
-        "a3-h2": "الأهمية الطبية التشخيصية:",
-        "a3-p2": "لا يقتصر السونار 4D على الجانب العاطفي الجميل، بل يشكل ركيزة إكلينيكية أساسية لفحص:",
-        "a3-d1": "سلامة العمود الفقري والجمجمة والقفص الصدري.",
-        "a3-d2": "استبعاد الشفة الأرنبية وتشوهات الوجه والأطراف بدقة متناهية.",
-        "a3-d3": "تقييم نمو الأعضاء الداخلية وتدفق الدم عبر الحبل السري والمشيمة.",
-        "a3-quote-title": "نصيحة قبل زيارة جلسة السونار 4D:",
-        "a3-quote": "\"ننصح الأم بشرب كمية وافرة من الماء في الأيام التي تسبق الفحص لزيادة نقاء السائل الأمنيوسي، وتناول وجبة خفيفة أو عصير طبيعي قبل الفحص بنصف ساعة لتحفيز حركة الجنين والتقاط أجمل اللقطات التذكارية.\"",
-        "a3-cta": "احجزي جلسة سونار 4D",
-        "art-footer-brand": "دكتورة سوزان محمد عيسى",
-        "art-footer-info": "أخصائية نساء وتوليد وتجميل نسائي • مجمع مورال الطبي • شارع الأمير مقرن بن عبدالعزيز، حي الربوة، حفر الباطن • هاتف: 0569049926",
-        "art-footer-copy": "© 2026 عيادة دكتورة سوزان محمد عيسى. جميع الحقوق محفوظة.",
-        "art-footer-credit": "تم التصميم بواسطة",
         "art-brand-name": "دكتورة سوزان محمد عيسى",
         "art-brand-spec": "أخصائية نساء وتوليد وتجميل نسائي",
         "art-back-home": "العودة للرئيسية",
-        "art-book-btn": "حجز استشارة",
-        "__title": "المقالات الطبية والتوعوية | دكتورة سوزان محمد عيسى - مجمع مورال الطبي"
-},
+        "art-book-btn": "حجز عبر واتساب",
+        "art-hero-badge": "المكتبة الطبية والتوعوية",
+        "art-hero-title": "مقالات ونصائح طبية موثوقة لصحتكِ وأمومتكِ",
+        "art-hero-desc": "إرشادات طبية دقيقة بقلم دكتورة سوزان محمد عيسى - خبرة 17 عاماً في طب النساء، متابعة الحمل، والتجميل النسائي بمجمع مورال الطبي بحفر الباطن.",
+        "toc-title": "فهرس المقالات",
+        "toc-1": "1. تنظيم الأسرة ووسائل منع الحمل",
+        "toc-2": "2. الليزر الوردي والتجميل النسائي",
+        "toc-3": "3. السونار البطني والداخلي",
+        "toc-help-title": "هل لديكِ استفسار طبي خاص؟",
+        "toc-help-desc": "التواصل وحجز المواعيد متاح حصرياً عبر تطبيق واتساب لضمان ترتيب أوقات الزيارة بدقة.",
+        "toc-wa-btn": "محادثة وحجز عبر واتساب: 0569049926",
+        "a1-tag": "تنظيم الأسرة وصحة المرأة",
+        "a1-title": "دليلكِ الشامل لاختيار وسيلة منع الحمل الأنسب لجسمكِ",
+        "author-name": "د. سوزان محمد عيسى",
+        "author-place": "مجمع مورال الطبي",
+        "a1-read": "قراءة 4 دقائق",
+        "a1-lead": "يعد تنظيم الأسرة واختيار وسيلة منع الحمل المناسبة خطوة أساسية للحفاظ على صحة المرأة الجسدية والنفسية، وتجنب الحمل غير المخطط له، خاصة في فترات الرضاعة أو بعد التعافي من حمل سابق.",
+        "a1-h1": "أبرز وسائل منع الحمل الحديثة المتوفرة:",
+        "a1-p1": "تتنوع الخيارات الطبية المتاحة لتناسب مختلف الحالات والاحتياجات الفردية لكل سيدة:",
+        "a1-b1-title": "اللولب الهرموني (Mirena):",
+        "a1-b1-desc": "يتميز بفاعلية تتجاوز 99%، ويسهم في تقليل غزارة وآلام الدورة الشهرية، مع استمرار مفعوله لعدة سنوات وإمكانية الحمل فور إزالته.",
+        "a1-b2-title": "اللولب النحاسي:",
+        "a1-b2-desc": "خيار غير هرموني آمن تماماً، يناسب السيدات اللاتي لا يرغبن في تأثيرات هرمونية، ويوفر حماية طويلة ومستقرة.",
+        "a1-b3-title": "كبسولات منع الحمل تحت الجلد (Nexplanon):",
+        "a1-b3-desc": "كبسولة صغيرة توضع تحت جلد الذراع بإجراء بسيط وسريع، وتمنحكِ حماية ممتدة لـ 3 سنوات دون القلق بشأن تذكر الحبوب اليومية.",
+        "a1-quote-title": "نصيحة دكتورة سوزان محمد عيسى:",
+        "a1-quote": "\"لا توجد وسيلة واحدة تناسب الجميع. استشارة الطبيبة المتخصصة والفحص بالسونار قبل التركيب هما الضمان الأساسي لاختيار الوسيلة الأكثر أماناً وملاءمة لجسمكِ.\"",
+        "a1-cta": "احجزي استشارة وسائل منع الحمل",
+        "wa-inquiry": "واتساب فقط",
+        "a2-tag": "التجميل والتجديد النسائي",
+        "a2-title": "حقائق عن الليزر الوردي وتجديد الأنسجة النسائية غير الجراحي",
+        "a2-read": "قراءة 5 دقائق",
+        "a2-lead": "يوفر التجميل والتجديد النسائي غير الجراحي حلولاً متطورة لتحسين راحة المرأة، واستعادة مرونة الأنسجة، وعلاج مشاكل الجفاف المزمن وتسرب البول الإجهادي الخفيف بدون جراحة.",
+        "a2-h1": "كيف يعمل الليزر النسائي الحديث؟",
+        "a2-p1": "تعتمد التقنية على تحفيز الأنسجة العميقة لإنتاج ألياف الكولاجين والإيلاستين الطبيعية، مما يعيد للأنسجة حيويتها ويزيد من التروية الدموية والترطيب الطبيعي دون الحاجة لأي شق جراحي أو تخدير عام.",
+        "a2-quote-title": "رأي دكتورة سوزان محمد عيسى:",
+        "a2-quote": "\"جلسات الليزر النسائي تجرى داخل بيئة نسائية آمنة وخصوصية مطلقة، وتستغرق الجلسة 15-20 دقيقة مع إمكانية ممارسة حياتكِ اليومية فوراً.\"",
+        "a2-cta": "احجزي جلسة تجميل نسائي",
+        "a3-tag": "التشخيص وصحة الجنين",
+        "a3-title": "أهمية الفحص بالسونار البطني والداخلي لمتابعة سلامة الحمل",
+        "a3-read": "قراءة 4 دقائق",
+        "a3-lead": "يعد السونار البطني والداخلي الركيزة التشخيصية الأكثر أهمية للاطمئنان على مراحل نمو الجنين، وموقع المشيمة، والتأكد من صحة وسلامة الرحم والمبايض.",
+        "a3-h1": "الفروق والفوائد الطبية:",
+        "a3-b1-title": "السونار الداخلي (المهبلي):",
+        "a3-b1-desc": "يوفر دقة فائقة في الأسابيع الأولى، ويكشف عن كيس الحمل ونبض الجنين مبكراً، كما يحدد سلامة المبيضين بدقة متناهية.",
+        "a3-b2-title": "السونار البطني:",
+        "a3-b2-desc": "الفحص الأساسي خلال الثلثين الثاني والثالث لمراقبة نمو الجنين، وقياس محيط الرأس، وفحص كمية السائل المحيط به.",
+        "a3-cta": "احجزي فحص السونار",
+        "foot-copy": "عيادة دكتورة سوزان محمد عيسى - مجمع مورال الطبي بحفر الباطن. جميع الحقوق محفوظة.",
+        "foot-wa": "التواصل وتأكيد المواعيد متاح حصرياً عبر تطبيق واتساب:"
+      },
       en: {
-        "art-hero-badge": "Medical Awareness Library",
-        "art-hero-title": "Reliable Medical Articles & Tips for Your Health and Motherhood",
-        "art-hero-desc": "Accurate medical guidance by Dr. Suzan Mohamed Issa, Specialist in Obstetrics, Gynecology & Aesthetic Gynecology at Moral Medical Complex in Hafar Al-Batin.",
-        "toc-title": "Articles Index",
-        "toc-1": "1. Painless Delivery & the Epidural",
-        "toc-2": "2. Pink Laser & Aesthetic Gynecology",
-        "toc-3": "3. The Golden Timing for 4D Ultrasound",
-        "toc-help-title": "Have a specific medical question?",
-        "toc-help-desc": "Dr. Suzan is happy to answer your questions and assist you at Moral Medical Complex.",
-        "toc-call-btn": "Call directly: 0569049926",
-        "toc-wa-btn": "Contact via WhatsApp",
-        "a1-tag": "Childbirth & Maternity Care",
-        "a1-title": "Everything You Want to Know About Painless Delivery and the Epidural",
+        "__title": "Medical Articles & Insights | Dr. Suzan Mohamed Issa Clinic",
+        "art-brand-name": "Dr. Suzan Mohamed Issa",
+        "art-brand-spec": "OB/GYN & Cosmetic Specialist",
+        "art-back-home": "Back to Home",
+        "art-book-btn": "Book via WhatsApp",
+        "art-hero-badge": "Medical & Health Library",
+        "art-hero-title": "Trusted Medical Articles for Women's Health & Wellness",
+        "art-hero-desc": "Accurate medical education by Dr. Suzan Mohamed Issa - 17 years of experience in gynecology, pregnancy care, and aesthetics at Moral Medical Complex.",
+        "toc-title": "Article Index",
+        "toc-1": "1. Family Planning & Contraception",
+        "toc-2": "2. Pink Laser & Cosmetic Gynecology",
+        "toc-3": "3. Abdominal & Pelvic Ultrasound",
+        "toc-help-title": "Have a Specific Medical Inquiry?",
+        "toc-help-desc": "Appointments and inquiries are handled exclusively via WhatsApp to arrange visit times smoothly.",
+        "toc-wa-btn": "WhatsApp Chat & Booking: 0569049926",
+        "a1-tag": "Family Planning & Women's Health",
+        "a1-title": "Comprehensive Guide to Choosing the Best Contraceptive for Your Body",
         "author-name": "Dr. Suzan Mohamed Issa",
         "author-place": "Moral Medical Complex",
         "a1-read": "4 min read",
-        "a1-lead": "Childbirth is one of the most meaningful moments in every woman’s life, yet the fear of labor pain can cause great stress and anxiety for the mother throughout pregnancy. Thanks to modern medical advances, “painless delivery” has become a comfortable reality, available with the highest safety standards.",
-        "a1-h1": "What is epidural anesthesia?",
-        "a1-p1": "It is a safe medical procedure in which a pain-relieving local anesthetic is injected into the epidural space surrounding the spinal cord in the lower back. It blocks pain signals coming from the uterus and vagina, without the patient losing consciousness or her ability to move and push naturally during delivery.",
-        "a1-h2": "Benefits of painless delivery:",
-        "a1-b1-title": "Full pain control:",
-        "a1-b1-desc": "Painful uterine contractions are eased so the mother can relax and breathe calmly.",
-        "a1-b2-title": "Less stress and physical exhaustion:",
-        "a1-b2-desc": "Avoids muscle fatigue and shortness of breath caused by crying or screaming in pain.",
-        "a1-b3-title": "Welcoming your baby with full energy and a smile:",
-        "a1-b3-desc": "The mother is fully aware at the moment her baby is born and can hold the baby to her chest right away.",
-        "a1-b4-title": "Flexibility if surgery is needed:",
-        "a1-b4-desc": "If the delivery must be converted to an emergency cesarean, the anesthetic dose can be extended without the need for general anesthesia.",
-        "a1-quote-title": "A word from Dr. Suzan Mohamed Issa:",
-        "a1-quote": "“The epidural is a refined and carefully considered medical option, and the decision is made only after a comprehensive medical examination, including an assessment of blood clotting and vital signs. Your safety and comfort are our absolute priority at Moral Medical Complex.”",
-        "a1-cta": "Book a Safe Delivery Consultation",
-        "wa-inquiry": "WhatsApp Inquiry",
-        "a2-tag": "Aesthetic & Regenerative Gynecology",
-        "a2-title": "Facts About Pink Laser and Non-Surgical Vaginal Rejuvenation",
+        "a1-lead": "Family planning and selecting the proper contraceptive method is an essential step to safeguard physical and emotional well-being and prevent unplanned pregnancies, especially during breastfeeding.",
+        "a1-h1": "Top Modern Contraceptive Options:",
+        "a1-p1": "Diverse medical solutions exist to suit every woman's individual health profile:",
+        "a1-b1-title": "Hormonal IUD (Mirena):",
+        "a1-b1-desc": "Over 99% efficacy, reduces heavy periods and menstrual cramps, lasts several years, and allows fertility restoration upon removal.",
+        "a1-b2-title": "Copper IUD:",
+        "a1-b2-desc": "A hormone-free, highly safe alternative providing reliable long-term protection without systemic hormonal effects.",
+        "a1-b3-title": "Subdermal Implants (Nexplanon):",
+        "a1-b3-desc": "A small flexible rod placed under the arm skin, delivering 3 years of worry-free contraception without daily pill tracking.",
+        "a1-quote-title": "Dr. Suzan's Advice:",
+        "a1-quote": "\"No single contraceptive fits everyone. A specialist consultation and ultrasound check before placement guarantee the safest option for your body.\"",
+        "a1-cta": "Book Contraception Consultation",
+        "wa-inquiry": "WhatsApp Only",
+        "a2-tag": "Cosmetic Gynecology",
+        "a2-title": "Facts About Pink Laser and Non-Surgical Intimate Rejuvenation",
         "a2-read": "5 min read",
-        "a2-lead": "After repeated natural births and with advancing age, a woman’s body undergoes physiological changes that lead to tissue laxity, vaginal dryness, or mild urinary leakage. Today, non-surgical aesthetic gynecology offers effective solutions with no scalpel and no long recovery period.",
-        "a2-h1": "How does vaginal laser rejuvenate tissue?",
-        "a2-p1": "The specialized laser device delivers very gentle, carefully controlled thermal pulses to the inner layers of the mucosa. This thermal stimulation activates fibroblast cells to produce new collagen and elastin fibers, which leads to:",
-        "a2-l1": "Tightening the vaginal canal and restoring natural elasticity and firmness.",
-        "a2-l2": "Renewing the vaginal lining and treating chronic dryness, itching, and discomfort.",
-        "a2-l3": "Improving stress urinary incontinence caused by coughing, exercise, or laughing.",
-        "a2-h2": "Platelet-Rich Plasma (PRP / O-Shot) Injections",
-        "a2-p2": "A small amount of the patient’s blood is drawn, and the concentrated platelets, rich in natural growth factors, are separated and safely re-injected. The plasma helps renew micro blood vessels, improve nerve-ending function, and naturally hydrate the tissue.",
-        "a2-quote-title": "Privacy & Comprehensive Female Care:",
-        "a2-quote": "“All sessions take place in our clinic at Moral Medical Complex in a setting of complete confidentiality and privacy, supervised by a fully female team so there is no embarrassment, with an immediate return to daily life.”",
-        "a2-cta": "Book an Aesthetic Consultation",
-        "a3-tag": "Diagnosis & Fetal Health",
-        "a3-title": "The Golden Timing for 4D Ultrasound to Check on Your Baby",
-        "a3-read": "3 min read",
-        "a3-lead": "The 4D ultrasound is one of the most wonderful moments parents share with their baby, giving you live, moving images with clear, three-dimensional features in far greater detail than traditional 2D ultrasound.",
-        "a3-h1": "What is the best time for a 4D ultrasound?",
-        "a3-p1": "The ideal golden window for the scan is",
-        "a3-p1-strong": "between weeks 26 and 32 of pregnancy",
-        "a3-t1-title": "Before week 24:",
-        "a3-t1-desc": "The layer of fat under the baby’s skin is still very thin, and facial features look somewhat bony.",
-        "a3-t2-title": "Between weeks 26 and 32:",
-        "a3-t2-desc": "Facial features are fully formed and naturally plump, like a real newborn, and the movement of the hands, feet, and smile is clear and touching.",
-        "a3-t3-title": "After week 34:",
-        "a3-t3-desc": "The baby’s head may descend into the pelvis or the amniotic fluid around the face may decrease, making it harder to capture clear images.",
-        "a3-h2": "Diagnostic medical importance:",
-        "a3-p2": "The 4D ultrasound is not only a lovely emotional experience; it is also an essential clinical tool for examining:",
-        "a3-d1": "The integrity of the spine, skull, and chest cage.",
-        "a3-d2": "Ruling out cleft lip and facial or limb abnormalities with great precision.",
-        "a3-d3": "Assessing internal organ growth and blood flow through the umbilical cord and placenta.",
-        "a3-quote-title": "Tip before your 4D ultrasound session:",
-        "a3-quote": "“We advise mothers to drink plenty of water in the days before the scan to improve the clarity of the amniotic fluid, and to have a light snack or natural juice half an hour before the scan to stimulate the baby’s movement and capture the best keepsake shots.”",
-        "a3-cta": "Book a 4D Ultrasound Session",
-        "art-footer-brand": "Dr. Suzan Mohamed Issa",
-        "art-footer-info": "Specialist in Obstetrics, Gynecology & Aesthetic Gynecology • Moral Medical Complex • Prince Muqrin bin Abdulaziz St, Ar Rabwah, Hafar Al-Batin • Phone: 0569049926",
-        "art-footer-copy": "© 2026 Dr. Suzan Mohamed Issa Clinic. All rights reserved.",
-        "art-footer-credit": "Designed by",
-        "art-brand-name": "Dr. Suzan Mohamed Issa",
-        "art-brand-spec": "Specialist in Obstetrics, Gynecology & Aesthetic Gynecology",
-        "art-back-home": "Back to Home",
-        "art-book-btn": "Book Consultation",
-        "__title": "Medical Awareness Articles | Dr. Suzan Mohamed Issa - Moral Medical Complex"
-}
+        "a2-lead": "Non-surgical aesthetic gynecology delivers advanced solutions to restore intimate tissue vitality, hydration, and relieve mild stress urinary incontinence without incisions.",
+        "a2-h1": "How Does Aesthetic Laser Work?",
+        "a2-p1": "Laser light pulses stimulate deep collagen and elastin synthesis, improving microcirculation and tissue resilience without surgery or general anesthesia.",
+        "a2-quote-title": "Dr. Suzan's Perspective:",
+        "a2-quote": "\"Sessions take 15-20 minutes in a safe, confidential environment, allowing you to return to your normal daily routine immediately.\"",
+        "a2-cta": "Book Rejuvenation Session",
+        "a3-tag": "Diagnostics & Fetal Health",
+        "a3-title": "The Value of Abdominal & Pelvic Ultrasound in Pregnancy Monitoring",
+        "a3-read": "4 min read",
+        "a3-lead": "Ultrasound scanning is the cornerstone diagnostic tool for confirming gestational progress, placental location, and overall uterine and ovarian health.",
+        "a3-h1": "Medical Differences & Benefits:",
+        "a3-b1-title": "Transvaginal (Pelvic) Ultrasound:",
+        "a3-b1-desc": "Offers supreme clarity in early pregnancy, confirming gestational sac and fetal cardiac activity while assessing ovaries with extreme precision.",
+        "a3-b2-title": "Abdominal Ultrasound:",
+        "a3-b2-desc": "The primary scan in the second and third trimesters to evaluate fetal growth parameters, head circumference, and amniotic fluid volume.",
+        "a3-cta": "Book Ultrasound Checkup",
+        "foot-copy": "Dr. Suzan Mohamed Issa Clinic - Moral Medical Complex, Hafar Al-Batin. All rights reserved.",
+        "foot-wa": "Communication and appointment confirmation are available exclusively via WhatsApp:"
+      }
     };
 
-    // ========================================================
-    // SHARED LANGUAGE ENGINE (identical on index.html & article.html)
-    // ========================================================
     var LANG_KEY = 'dr_suzan_lang';
-    var BS_CSS = { ar: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css', en: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' };
+    var BS_CSS = {
+      ar: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css',
+      en: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'
+    };
     var currentLang = 'ar';
-
-    function readLang(preferUrl) {
-      var l = null;
-      if (preferUrl) { try { l = new URLSearchParams(location.search).get('lang'); } catch (e) {} }
-      if (l !== 'en' && l !== 'ar') { l = null; try { l = localStorage.getItem(LANG_KEY); } catch (e) {} }
-      return l === 'en' ? 'en' : 'ar';
-    }
-
-    // Carry the language to the other page through the link itself (works even if localStorage is not shared)
-    function syncLinks(lang) {
-      document.querySelectorAll('a[href]').forEach(function (a) {
-        var href = a.getAttribute('href');
-        if (!/^(index|article)\.html/.test(href)) return;
-        var m = href.match(/^([^?#]*)(\?[^#]*)?(#.*)?$/);
-        a.setAttribute('href', m[1] + '?lang=' + lang + (m[3] || ''));
-      });
-    }
-
-    function firstTextNode(el) {
-      for (var n = el.firstChild; n; n = n.nextSibling) {
-        if (n.nodeType === 3 && n.nodeValue.trim()) return n;
-      }
-      return null;
-    }
 
     function applyLanguage(lang) {
       currentLang = lang;
@@ -802,71 +632,62 @@
       document.body.classList.toggle('en-mode', isEn);
 
       var bs = document.getElementById('bootstrap-css');
-      if (bs && bs.getAttribute('href') !== BS_CSS[lang]) bs.setAttribute('href', BS_CSS[lang]);
+      if (bs) bs.href = BS_CSS[lang];
 
-      // Translate every [data-i18n] element (only its text node, so icons are kept)
       document.querySelectorAll('[data-i18n]').forEach(function (el) {
-        var node = firstTextNode(el);
-        if (!node) return;
-        if (el._ar === undefined) el._ar = node.nodeValue;          // original Arabic text as written in the HTML
-        var val = (translations[lang] || {})[el.getAttribute('data-i18n')];
-        if (val === undefined) { if (isEn) return; val = el._ar.trim(); }
-        node.nodeValue = el._ar.match(/^\s*/)[0] + val + el._ar.match(/\s*$/)[0];
+        var key = el.getAttribute('data-i18n');
+        var val = (translations[lang] || {})[key];
+        if (val !== undefined) {
+          if (el.children.length === 0) {
+            el.textContent = val;
+          } else {
+            for (var n = el.firstChild; n; n = n.nextSibling) {
+              if (n.nodeType === 3 && n.nodeValue.trim()) {
+                n.nodeValue = n.nodeValue.match(/^\s*/)[0] + val + n.nodeValue.match(/\s*$/)[0];
+                break;
+              }
+            }
+          }
+        }
       });
 
-      document.querySelectorAll('[data-i18n-ph]').forEach(function (el) {
-        if (el._arPh === undefined) el._arPh = el.getAttribute('placeholder');
-        var v = (translations[lang] || {})[el.getAttribute('data-i18n-ph')];
-        el.setAttribute('placeholder', (isEn && v !== undefined) ? v : el._arPh);
-      });
-
-      if (document._arTitle === undefined) document._arTitle = document.title;
-      document.title = (translations[lang] || {}).__title || document._arTitle;
+      if ((translations[lang] || {}).__title) {
+        document.title = translations[lang].__title;
+      }
 
       var label = isEn ? 'العربية' : 'English';
-      ['langBtnText', 'langSwitchBtn'].forEach(function (id) {
-        var b = document.getElementById(id); if (b) b.textContent = label;
-      });
+      var b = document.getElementById('langBtnText');
+      if (b) b.textContent = label;
       var pill = document.getElementById('langBadgePill');
       if (pill) pill.textContent = isEn ? 'AR' : 'EN';
 
-      syncLinks(lang);
-      if (typeof refreshCalc === 'function') refreshCalc();
+      document.querySelectorAll('a[href]').forEach(function (a) {
+        var href = a.getAttribute('href');
+        if (!href || !/^(index|article)\.html/.test(href)) return;
+        var m = href.match(/^([^?#]*)(\?[^#]*)?(#.*)?$/);
+        a.setAttribute('href', m[1] + '?lang=' + lang + (m[3] || ''));
+      });
     }
 
     function toggleLanguage() {
       var next = (currentLang === 'ar') ? 'en' : 'ar';
       applyLanguage(next);
       try { localStorage.setItem(LANG_KEY, next); } catch (e) {}
-      try {
-        var u = new URL(location.href);
-        u.searchParams.set('lang', next);
-        history.replaceState(history.state, '', u.toString());
-      } catch (e) {}
     }
     window.toggleLanguage = toggleLanguage;
-    window.applyLanguage = applyLanguage;
 
-    // Bind ONCE with addEventListener (the inline onclick was removed: having both made every click toggle twice)
-    ['floatingLangBtn', 'langSwitchBtn'].forEach(function (id) {
-      var b = document.getElementById(id);
-      if (b) b.addEventListener('click', toggleLanguage);
-    });
+    var btn = document.getElementById('floatingLangBtn');
+    if (btn) btn.addEventListener('click', toggleLanguage);
 
     (function init() {
-      var l = readLang(true);
+      var l = 'ar';
+      try {
+        var q = new URLSearchParams(location.search).get('lang');
+        if (q === 'en' || q === 'ar') l = q;
+        else if (localStorage.getItem(LANG_KEY) === 'en') l = 'en';
+      } catch (e) {}
       applyLanguage(l);
-      try { localStorage.setItem(LANG_KEY, l); } catch (e) {}
     })();
-
-    // Language changed in another tab
-    window.addEventListener('storage', function (e) {
-      if (e.key === LANG_KEY && (e.newValue === 'en' || e.newValue === 'ar') && e.newValue !== currentLang) applyLanguage(e.newValue);
-    });
-    // Back/forward cache restore
-    window.addEventListener('pageshow', function (e) {
-      if (e.persisted) { var l = readLang(false); if (l !== currentLang) applyLanguage(l); }
-    });
   </script>
 </body>
 </html>
