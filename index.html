@@ -1003,6 +1003,22 @@
       margin-top: 30px;
       box-shadow: 0 10px 30px rgba(232, 122, 144, 0.12);
     }
+    .btn-calc-submit {
+      width: 100%;
+      max-width: 520px;
+      padding: 15px 28px;
+      font-size: 1.05rem;
+      white-space: normal !important;
+      text-align: center;
+      line-height: 1.45;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 50px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
 
     /* ========================================================
        ARTICLES / BLOG SECTION
@@ -1433,6 +1449,18 @@
 
       /* Topbar hide location on very small screens */
       #sec-topbar .topbar-notice { display: none; }
+
+      /* Calculator on mobile: prevent overflow and keep button clean */
+      .calc-card-wrap {
+        padding: 26px 18px !important;
+        border-radius: 22px !important;
+      }
+      .btn-calc-submit {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 12px 14px !important;
+        font-size: 0.92rem !important;
+      }
     }
 
     @media (max-width: 480px) {
@@ -1450,6 +1478,10 @@
         flex-direction: column;
         align-items: stretch;
         padding: 0 20px;
+      }
+      .btn-calc-submit {
+        padding: 11px 10px !important;
+        font-size: 0.86rem !important;
       }
     }
   </style>
@@ -2106,7 +2138,7 @@
             </select>
           </div>
           <div class="col-12 text-center mt-4">
-            <button class="btn-luxury-gold py-3 px-5 fs-6" id="btnCalculate" type="button">
+            <button class="btn-luxury-gold btn-calc-submit" id="btnCalculate" type="button">
               <i class="bi bi-magic me-1"></i> <span data-i18n="calc-btn">احسبي موعد الولادة المتوقع وأسبوع الحمل</span>
             </button>
           </div>
