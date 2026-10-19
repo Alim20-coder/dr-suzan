@@ -196,49 +196,107 @@
       padding: 10px 0;
       border-bottom-color: rgba(197, 160, 89, 0.28);
     }
+    #sec-navbar .container {
+      max-width: 1420px;
+      width: 100%;
+    }
     .brand-logo-wrap {
       display: flex;
       align-items: center;
       gap: 12px;
+      flex-shrink: 0;
+      white-space: nowrap;
     }
     .brand-icon-emblem {
-      width: 46px;
-      height: 46px;
+      width: 44px;
+      height: 44px;
       border-radius: 14px;
       background: linear-gradient(135deg, var(--primary-pink) 0%, var(--gold-accent) 100%);
       color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 22px;
+      font-size: 20px;
       box-shadow: 0 8px 20px rgba(232, 122, 144, 0.35);
+      flex-shrink: 0;
     }
     .brand-title {
       font-weight: 800;
-      font-size: 1.22rem;
+      font-size: 1.18rem;
       color: var(--dark-slate);
       line-height: 1.2;
+      white-space: nowrap !important;
     }
     .brand-subtitle {
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       color: var(--primary-pink-dark);
       font-weight: 600;
+      white-space: nowrap !important;
     }
     .nav-desktop-links {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: clamp(14px, 2vw, 30px);
+      gap: clamp(10px, 1.4vw, 24px);
       list-style: none;
       margin: 0;
       padding: 0;
+      flex-wrap: nowrap !important;
+    }
+    .nav-desktop-links li {
+      flex-shrink: 0;
+      white-space: nowrap;
     }
     .nav-desktop-links a {
       color: var(--dark-slate);
       font-weight: 600;
-      font-size: 0.94rem;
+      font-size: 0.92rem;
       position: relative;
-      padding: 6px 2px;
+      padding: 6px 3px;
+      white-space: nowrap !important;
+      display: inline-block;
+    }
+    body.en-mode #sec-navbar .brand-title {
+      font-size: 1.08rem;
+      letter-spacing: -0.2px;
+    }
+    body.en-mode #sec-navbar .brand-subtitle {
+      font-size: 0.72rem;
+    }
+    body.en-mode .nav-desktop-links {
+      gap: clamp(8px, 1.2vw, 20px);
+    }
+    body.en-mode .nav-desktop-links a {
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+    body.en-mode .nav-wa-link {
+      font-size: 0.86rem;
+      padding: 6px 12px;
+      white-space: nowrap;
+    }
+    body.en-mode .btn-luxury-gold {
+      padding: 9px 18px;
+      font-size: 0.88rem;
+      white-space: nowrap;
+    }
+    @media (min-width: 992px) and (max-width: 1240px) {
+      .nav-desktop-links {
+        gap: 8px !important;
+      }
+      .nav-desktop-links a {
+        font-size: 0.82rem !important;
+        padding: 4px 2px !important;
+      }
+      .brand-title {
+        font-size: 1.0rem !important;
+      }
+      .brand-subtitle {
+        font-size: 0.68rem !important;
+      }
+      .nav-wa-link span {
+        display: none;
+      }
     }
     .nav-desktop-links a::after {
       content: '';
