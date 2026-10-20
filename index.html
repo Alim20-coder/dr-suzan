@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>دكتورة سوزان محمد عيسى | أخصائية نساء وتوليد وتجميل نسائي - حفر الباطن</title>
+  <title>دكتورة سوزان محمد عيسى | أخصائية النساء والتوليد والعقم - حفر الباطن</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="عيادة دكتورة سوزان محمد عيسى - خبرة 17 عاماً في طب وجراحة أمراض النساء، متابعة الحمل، وسائل منع الحمل، التجميل النسائي بالليزر، والسونار البطني والداخلي بمجمع مورال الطبي بحفر الباطن.">
-  <meta name="keywords" content="دكتورة سوزان محمد عيسى, دكتورة نساء حفر الباطن, مجمع مورال الطبي, متابعة الحمل, تجميل نسائي بالليزر, وسائل منع الحمل, تنظيم الأسرة, سونار بطني وداخلي, علاج تأخر الإنجاب, حفر الباطن">
+  <meta name="description" content="عيادة دكتورة سوزان محمد عيسى - خبرة 17 عاماً في طب وجراحة أمراض النساء، متابعة الحمل، علاج تأخر الإنجاب، وسائل منع الحمل، والسونار البطني والداخلي في حفر الباطن. افحصي واطمئني مع دكتورة سوزان.">
+  <meta name="keywords" content="دكتورة سوزان محمد عيسى, دكتورة نساء حفر الباطن, متابعة الحمل, وسائل منع الحمل, تنظيم الأسرة, سونار بطني وداخلي, علاج تأخر الإنجاب, العقم, حفر الباطن">
   <meta name="author" content="Devora Web">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#E87A90">
 
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="دكتورة سوزان محمد عيسى | أخصائية نساء وتوليد وتجميل نسائي">
-  <meta property="og:description" content="عيادة متخصصة بمجمع مورال الطبي بحفر الباطن. خبرة 17 عاماً في رعاية المرأة، متابعة الحمل، التجميل النسائي، وتنظيم الأسرة. التواصل عبر واتساب.">
-  <meta property="og:image" content="css/dr-suzan-profile.jpg">
+  <meta property="og:title" content="دكتورة سوزان محمد عيسى | أخصائية النساء والتوليد والعقم">
+  <meta property="og:description" content="عيادة متخصصة في حفر الباطن. خبرة 17 عاماً في رعاية المرأة، متابعة الحمل، علاج العقم، وتنظيم الأسرة. التواصل عبر واتساب.">
+  <meta property="og:image" content="css/dr-suzan-profile.png">
   <meta property="og:locale" content="ar_SA">
 
   <!-- Schema.org Physician Structured Data -->
@@ -25,8 +25,8 @@
     "@context": "https://schema.org",
     "@type": "Physician",
     "name": "دكتورة سوزان محمد عيسى - Dr. Suzan Mohamed Issa",
-    "image": "css/dr-suzan-profile.jpg",
-    "medicalSpecialty": ["Gynecologic", "Obstetric", "CosmeticGynecology"],
+    "image": "css/dr-suzan-profile.png",
+    "medicalSpecialty": ["Gynecologic", "Obstetric"],
     "telephone": "+966569049926",
     "address": {
       "@type": "PostalAddress",
@@ -34,10 +34,6 @@
       "addressLocality": "حفر الباطن",
       "addressRegion": "المنطقة الشرقية",
       "addressCountry": "SA"
-    },
-    "containedInPlace": {
-      "@type": "MedicalOrganization",
-      "name": "مجمع مورال الطبي - Moral Medical Complex"
     },
     "geo": {
       "@type": "GeoCoordinates",
@@ -1542,6 +1538,28 @@
         font-size: 0.86rem !important;
       }
     }
+  
+    /* Hero: name + specialty */
+    #sec-hero .hero-h1 { margin-bottom: 16px; }
+    .hero-specialty {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 26px;
+      margin-bottom: 22px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 50px;
+      font-size: clamp(1.05rem, 2vw, 1.5rem);
+      font-weight: 800;
+      color: #F0D9A0;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+    @media (max-width: 480px) {
+      .hero-specialty { padding: 8px 18px; text-align: center; }
+    }
   </style>
 </head>
 <body>
@@ -1565,7 +1583,7 @@
     <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
       <div class="topbar-notice">
         <i class="bi bi-geo-alt-fill text-danger"></i>
-        <span data-i18n="topbar-location">مجمع مورال الطبي • حفر الباطن - حي الربوة</span>
+        <span data-i18n="topbar-location">حفر الباطن - حي الربوة</span>
       </div>
       <div class="d-flex align-items-center gap-3">
         <span class="wa-badge-pill">
@@ -1586,7 +1604,7 @@
         </div>
         <div>
           <div class="brand-title" data-i18n="brand-name">دكتورة سوزان محمد عيسى</div>
-          <div class="brand-subtitle" data-i18n="brand-spec">أخصائية نساء وتوليد وتجميل نسائي</div>
+          <div class="brand-subtitle" data-i18n="brand-spec">أخصائية النساء والتوليد والعقم</div>
         </div>
       </a>
 
@@ -1648,17 +1666,17 @@
     <div class="hero-organic-blob-2"></div>
 
     <div class="container hero-container">
-      <div class="hero-clinic-tag">
-        <i class="bi bi-shield-check text-warning"></i>
-        <span data-i18n="hero-badge">مجمع مورال الطبي • حفر الباطن • خصوصية نسائية تامة</span>
-      </div>
-
       <h1 class="hero-h1">
-        <span data-i18n="hero-h1-prefix">عيادة دكتورة سوزان</span> <span class="hero-gold-accent" data-i18n="hero-h1-highlight">وجهتكِ الأولى</span> <span data-i18n="hero-h1-suffix">للجمال والصحة</span>
+        <span data-i18n="hero-name">دكتورة سوزان محمد عيسى</span>
       </h1>
 
+      <div class="hero-specialty">
+        <i class="bi bi-heart-pulse-fill"></i>
+        <span data-i18n="hero-specialty">أخصائية النساء والتوليد والعقم</span>
+      </div>
+
       <p class="hero-lead-text" data-i18n="hero-lead">
-        عناية متكاملة بصحة المرأة، متابعة الحمل، وسائل تنظيم الأسرة، والتجميل النسائي في مكان واحد بأحدث المعايير الطبية.
+        عناية متكاملة بصحة المرأة وجمالها
       </p>
 
       <div class="hero-btn-group">
@@ -1722,10 +1740,10 @@
         <div class="col-lg-7">
           <span class="pill-badge pill-badge-gold" data-i18n="about-tag">من نحن</span>
           <p class="text-muted mb-2" data-i18n="about-intro-1">
-            عيادة دكتورة سوزان محمد عيسى بمجمع مورال الطبي بحفر الباطن، صرح طبي متخصص يقدم خدمات متكاملة رفيعة المستوى في طب وجراحة أمراض النساء، متابعة الحمل، والتجميل النسائي.
+            عيادة دكتورة سوزان محمد عيسى بحفر الباطن، صرح طبي متخصص يقدم خدمات متكاملة رفيعة المستوى في طب وجراحة أمراض النساء، متابعة الحمل، وعلاج تأخر الإنجاب.
           </p>
           <p class="text-muted mb-4" data-i18n="about-intro-2">
-            نجمع بين أحدث التقنيات الطبية المعتمدة عالمياً والخبرات السريرية الطويلة الممتدة لأكثر من 17 عاماً لمنحكِ تجربة علاجية وتجميلية قائمة على الأمان، الدقة، والاحترافية.
+            نجمع بين أحدث التقنيات الطبية المعتمدة عالمياً والخبرات السريرية الطويلة الممتدة لأكثر من 17 عاماً لمنحكِ تجربة علاجية قائمة على الأمان، الدقة، والاحترافية.
           </p>
 
           <h3 class="section-h2 mb-4" data-i18n="about-heading">
@@ -1737,19 +1755,19 @@
             <div class="about-check-item">
               <div class="about-check-icon"><i class="bi bi-check-lg"></i></div>
               <div class="about-check-text">
-                <strong data-i18n="about-f1-title">كادر طبي متخصص:</strong> <span data-i18n="about-f1-desc">خبرة طبية تفوق 17 عاماً في طب وجراحة النساء ورعاية الحمل والتجميل النسائي تحت إشراف د. سوزان.</span>
+                <strong data-i18n="about-f1-title">خبرة طويلة:</strong> <span data-i18n="about-f1-desc">خبرة طبية تفوق 17 عاماً في طب وجراحة النساء ورعاية الحمل وعلاج تأخر الإنجاب.</span>
               </div>
             </div>
             <div class="about-check-item">
               <div class="about-check-icon"><i class="bi bi-check-lg"></i></div>
               <div class="about-check-text">
-                <strong data-i18n="about-f2-title">أحدث التقنيات:</strong> <span data-i18n="about-f2-desc">استخدام أحدث أجهزة السونار البطني والداخلي والليزر النسائي وفق أعلى معايير الجودة والتعقيم.</span>
+                <strong data-i18n="about-f2-title">أحدث التقنيات:</strong> <span data-i18n="about-f2-desc">استخدام أحدث أجهزة السونار البطني والداخلي وفق أعلى معايير الجودة والتعقيم.</span>
               </div>
             </div>
             <div class="about-check-item">
               <div class="about-check-icon"><i class="bi bi-check-lg"></i></div>
               <div class="about-check-text">
-                <strong data-i18n="about-f3-title">رعاية مخصصة:</strong> <span data-i18n="about-f3-desc">خطط علاجية وتجميلية مصممة خصيصاً لتلبية تطلعات واحتياجات كل مراجعة وتحقيق نتائج طبيعية وآمنة.</span>
+                <strong data-i18n="about-f3-title">رعاية مخصصة:</strong> <span data-i18n="about-f3-desc">خطط علاجية مصممة خصيصاً لتلبية تطلعات واحتياجات كل مراجعة وتحقيق نتائج طبيعية وآمنة.</span>
               </div>
             </div>
             <div class="about-check-item">
@@ -1764,7 +1782,7 @@
           <div class="about-vision-card">
             <div>
               <div class="about-vision-title" data-i18n="vision-title">رؤيتنا</div>
-              <p class="about-vision-desc" data-i18n="vision-desc">أن نكون الخيار الأول والوجهة الموثوقة لكل من يبحث عن الرعاية الطبية والتجميلية المتقدمة وفق أعلى المعايير العالمية.</p>
+              <p class="about-vision-desc" data-i18n="vision-desc">أن نكون الخيار الأول والوجهة الموثوقة لكل من يبحث عن الرعاية الطبية المتقدمة وفق أعلى المعايير العالمية.</p>
             </div>
             <div class="about-vision-icon">
               <i class="bi bi-compass"></i>
@@ -1791,12 +1809,12 @@
         <!-- Left Column (Framed Doctor Photo & Floating Stat) -->
         <div class="col-lg-5">
           <div class="about-img-wrapper">
-            <img src="css/dr-suzan-profile.jpg" alt="دكتورة سوزان محمد عيسى - أخصائية نساء وتوليد وتجميل نسائي" class="about-framed-photo">
+            <img src="css/dr-suzan-profile.png" alt="دكتورة سوزان محمد عيسى - أخصائية النساء والتوليد والعقم" class="about-framed-photo">
             
             <div class="about-floating-stat">
               <div class="about-floating-number">+17</div>
               <div class="about-floating-label" data-i18n="about-exp-label">
-                سنوات من الخبرة في تقديم الرعاية الطبية والتجميلية
+                سنوات من الخبرة في تقديم الرعاية الطبية للمرأة
               </div>
             </div>
           </div>
@@ -1813,10 +1831,10 @@
       <span class="pill-badge pill-badge-gold" data-i18n="dept-tag">تخصصاتنا الطبية</span>
       <h2 class="section-h2"><span data-i18n="dept-title-a">اكتشفي</span> <span class="hero-gold-accent" data-i18n="dept-title-b">أقسام عيادة دكتورة سوزان</span></h2>
       <p class="section-subtitle-lead" data-i18n="dept-subtitle">
-        نقدم لكِ مجموعة متكاملة من التخصصات الطبية والتجميلية بأحدث التقنيات وعلى يد نخبة متخصصة.
+        افحصي واطمئني مع دكتورة سوزان — كل ما يخص المرأة.
       </p>
 
-      <div class="row g-4 text-start">
+      <div class="row g-4 text-start justify-content-center">
         <!-- 01: متابعة الحمل -->
         <div class="col-md-6 col-lg-3">
           <div class="dept-card">
@@ -1892,27 +1910,12 @@
           </div>
         </div>
 
-        <!-- 06: التجميل النسائي -->
-        <div class="col-md-6 col-lg-3">
-          <div class="dept-card">
-            <div class="dept-card-top">
-              <div class="dept-icon-square"><i class="bi bi-stars"></i></div>
-              <span class="dept-card-num">06</span>
-            </div>
-            <h4 class="dept-card-title" data-i18n="dept-6-title">التجميل النسائي</h4>
-            <p class="dept-card-text" data-i18n="dept-6-desc">
-              جلسات الليزر الوردي لتجديد الأنسجة، حقن البلازما والفيلر التجميلي لتحسين المظهر والوظيفة براحة وأمان.
-            </p>
-            <div class="dept-card-watermark"></div>
-          </div>
-        </div>
-
-        <!-- 07: الفحوصات الوقائية -->
+        <!-- 06: الفحوصات الوقائية -->
         <div class="col-md-6 col-lg-3">
           <div class="dept-card">
             <div class="dept-card-top">
               <div class="dept-icon-square"><i class="bi bi-clipboard2-pulse"></i></div>
-              <span class="dept-card-num">07</span>
+              <span class="dept-card-num">06</span>
             </div>
             <h4 class="dept-card-title" data-i18n="dept-7-title">الفحوصات الوقائية</h4>
             <p class="dept-card-text" data-i18n="dept-7-desc">
@@ -1922,12 +1925,12 @@
           </div>
         </div>
 
-        <!-- 08: سن انقطاع الطمث -->
+        <!-- 07: سن انقطاع الطمث -->
         <div class="col-md-6 col-lg-3">
           <div class="dept-card">
             <div class="dept-card-top">
               <div class="dept-icon-square"><i class="bi bi-brightness-high"></i></div>
-              <span class="dept-card-num">08</span>
+              <span class="dept-card-num">07</span>
             </div>
             <h4 class="dept-card-title" data-i18n="dept-8-title">سن انقطاع الطمث</h4>
             <p class="dept-card-text" data-i18n="dept-8-desc">
@@ -1964,7 +1967,7 @@
             </div>
             <h4 class="stat-ring-title" data-i18n="stat-ring-1-title">نسبة رضا العملاء</h4>
             <p class="stat-ring-desc" data-i18n="stat-ring-1-desc">
-              يحصل عملاؤنا على تجربة علاجية وتجميلية متكاملة تحقق تطلعاتهم وتمنحهم النتائج المرجوة.
+              يحصل عملاؤنا على تجربة علاجية متكاملة تحقق تطلعاتهم وتمنحهم النتائج المرجوة.
             </p>
           </div>
         </div>
@@ -1981,7 +1984,7 @@
             </div>
             <h4 class="stat-ring-title" data-i18n="stat-ring-2-title">نتائج وتجارب ناجحة</h4>
             <p class="stat-ring-desc" data-i18n="stat-ring-2-desc">
-              نجاح متميز في إجراءات متابعة الحمل، التجميل النسائي، واستشارات تنظيم الأسرة.
+              نجاح متميز في إجراءات متابعة الحمل، وعلاج الأمراض النسائية، واستشارات تنظيم الأسرة.
             </p>
           </div>
         </div>
@@ -1998,7 +2001,7 @@
             </div>
             <h4 class="stat-ring-title" data-i18n="stat-ring-3-title">تطور ونمو الخدمات</h4>
             <p class="stat-ring-desc" data-i18n="stat-ring-3-desc">
-              استقطاب أحدث الأجهزة الطبية وتطوير الكوادر لضمان تقديم أعلى مستويات الجودة والراحة.
+              الحرص الدائم على تطوير الخدمات والأجهزة الطبية لضمان تقديم أعلى مستويات الجودة والراحة.
             </p>
           </div>
         </div>
@@ -2015,64 +2018,15 @@
         <span class="pill-badge pill-badge-gold" data-i18n="showcase-tag">خدماتنا</span>
         <h2 class="section-h2" data-i18n="showcase-heading">خدماتنا المميزة</h2>
         <p class="section-subtitle-lead" data-i18n="showcase-lead">
-          حلول متكاملة للجمال والعناية الصحية بأحدث التقنيات وتحت إشراف نخبة من المختصين.
+          رعاية صحية متكاملة للمرأة بخبرة واهتمام.
         </p>
       </div>
 
-      <!-- Showcase 01: التجميل النسائي بالليزر -->
+      <!-- Showcase 01: متابعة الحمل والسونار البطني والداخلي -->
       <div class="showcase-block">
         <div class="row align-items-center g-5">
           <div class="col-lg-7">
-            <span class="showcase-service-tag" data-i18n="s1-tag">— خدمة 01 —</span>
-            <h3 class="showcase-title" data-i18n="s1-title">خدمات التجميل والتجديد النسائي بالليزر</h3>
-            <p class="showcase-subtitle" data-i18n="s1-subtitle">
-              نقدم حلولاً متكاملة وآمنة لجميع السيدات تحت إشراف نخبة من المختصين
-            </p>
-
-            <div class="mb-4">
-              <div class="showcase-check-item">
-                <div class="showcase-check-icon"><i class="bi bi-check-lg"></i></div>
-                <div class="showcase-check-content">
-                  <strong data-i18n="s1-f1-title">أجهزة حديثة ومتطورة</strong>
-                  <p data-i18n="s1-f1-desc">نستخدم أحدث تقنيات الليزر المعتمدة عالمياً لضمان أفضل النتائج لجميع السيدات.</p>
-                </div>
-              </div>
-              <div class="showcase-check-item">
-                <div class="showcase-check-icon"><i class="bi bi-check-lg"></i></div>
-                <div class="showcase-check-content">
-                  <strong data-i18n="s1-f2-title">جلسات آمنة وبدون ألم</strong>
-                  <p data-i18n="s1-f2-desc">أنظمة تبريد وتجديد متقدمة لتوفير أقصى درجات الراحة والأمان أثناء الجلسة.</p>
-                </div>
-              </div>
-              <div class="showcase-check-item">
-                <div class="showcase-check-icon"><i class="bi bi-check-lg"></i></div>
-                <div class="showcase-check-content">
-                  <strong data-i18n="s1-f3-title">إشراف طبي متخصص</strong>
-                  <p data-i18n="s1-f3-desc">جلسات تجرى بواسطة د. سوزان محمد عيسى لضمان أعلى مستويات الدقة والسلامة.</p>
-                </div>
-              </div>
-            </div>
-
-            <a href="https://wa.me/966569049926?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B3%D9%88%D8%B2%D8%A7%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D8%AA%D8%AC%D9%85%D9%8A%D9%84%20%D9%86%D8%B3%D8%A7%D8%A6%D9%8A" target="_blank" class="btn-dark-pill">
-              <i class="fab fa-whatsapp"></i> <span data-i18n="s1-btn">احجزي الآن عبر واتساب</span>
-            </a>
-          </div>
-
-          <div class="col-lg-5">
-            <div class="showcase-img-container">
-              <div class="showcase-offset-frame"></div>
-              <div class="showcase-corner-badge">01</div>
-              <img src="css/cosmetic-laser.jpg" alt="خدمات التجميل والتجديد النسائي بالليزر" class="showcase-photo">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Showcase 02: متابعة الحمل والسونار البطني والداخلي -->
-      <div class="showcase-block">
-        <div class="row align-items-center g-5 flex-lg-row-reverse">
-          <div class="col-lg-7">
-            <span class="showcase-service-tag" data-i18n="s2-tag">— خدمة 02 —</span>
+            <span class="showcase-service-tag" data-i18n="s2-tag">— خدمة 01 —</span>
             <h3 class="showcase-title" data-i18n="s2-title">متابعة الحمل وفحص السونار البطني والداخلي</h3>
             <p class="showcase-subtitle" data-i18n="s2-subtitle">
               رعاية متكاملة للأم والجنين طوال مراحل الحمل تحت إشراف دقيق
@@ -2110,18 +2064,18 @@
           <div class="col-lg-5">
             <div class="showcase-img-container">
               <div class="showcase-offset-frame"></div>
-              <div class="showcase-corner-badge">02</div>
+              <div class="showcase-corner-badge">01</div>
               <img src="css/pregnancy-ultrasound.jpg" alt="متابعة الحمل والسونار البطني والداخلي" class="showcase-photo">
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Showcase 03: تنظيم الأسرة ووسائل منع الحمل -->
+      <!-- Showcase 02: تنظيم الأسرة ووسائل منع الحمل -->
       <div class="showcase-block">
-        <div class="row align-items-center g-5">
+        <div class="row align-items-center g-5 flex-lg-row-reverse">
           <div class="col-lg-7">
-            <span class="showcase-service-tag" data-i18n="s3-tag">— خدمة 03 —</span>
+            <span class="showcase-service-tag" data-i18n="s3-tag">— خدمة 02 —</span>
             <h3 class="showcase-title" data-i18n="s3-title">تنظيم الأسرة ووسائل منع الحمل المتقدمة</h3>
             <p class="showcase-subtitle" data-i18n="s3-subtitle">
               استشارات مخصصة لاختيار الوسيلة الأنسب لصحتكِ وجسمكِ بأمان وراحة تامة
@@ -2159,7 +2113,7 @@
           <div class="col-lg-5">
             <div class="showcase-img-container">
               <div class="showcase-offset-frame"></div>
-              <div class="showcase-corner-badge">03</div>
+              <div class="showcase-corner-badge">02</div>
               <img src="css/contraception-consult.jpg" alt="تنظيم الأسرة ووسائل منع الحمل" class="showcase-photo">
             </div>
           </div>
@@ -2226,9 +2180,9 @@
         معلومات طبية موثوقة بقلم دكتورة سوزان محمد عيسى للإجابة عن تساؤلاتكِ الصحية.
       </p>
 
-      <div class="row g-4 text-start">
+      <div class="row g-4 text-start justify-content-center">
         <!-- Article 1: تنظيم الأسرة -->
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-5">
           <div class="article-card-box">
             <img src="css/contraception-consult.jpg" alt="وسائل منع الحمل وتنظيم الأسرة" class="article-thumb-img">
             <div class="article-body-content">
@@ -2244,25 +2198,8 @@
           </div>
         </div>
 
-        <!-- Article 2: التجميل النسائي بالليزر -->
-        <div class="col-md-4">
-          <div class="article-card-box">
-            <img src="css/cosmetic-laser.jpg" alt="التجميل والتجديد النسائي بالليزر" class="article-thumb-img">
-            <div class="article-body-content">
-              <span class="article-tag-badge" data-i18n="art-2-tag">التجميل النسائي</span>
-              <h4 class="article-card-title" data-i18n="art-2-title">حقائق عن الليزر الوردي وتجديد الأنسجة النسائية غير الجراحي</h4>
-              <p class="article-card-desc" data-i18n="art-2-desc">
-                كيف يعيد الليزر النسائي الحيوية والكولاجين ويعالج الجفاف وسلس البول الخفيف بدون أي جراحة أو ألم.
-              </p>
-              <button class="btn btn-link p-0 text-decoration-none btn-read-article read-article-trigger" data-article-id="2">
-                <span data-i18n="art-read-btn">اقرئي المقال كاملاً</span> <i class="bi bi-arrow-left"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
         <!-- Article 3: السونار البطني والداخلي -->
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-5">
           <div class="article-card-box">
             <img src="css/pregnancy-ultrasound.jpg" alt="السونار البطني والداخلي" class="article-thumb-img">
             <div class="article-body-content">
@@ -2319,7 +2256,7 @@
         <span class="pill-badge pill-badge-gold" data-i18n="faq-tag">الأسئلة الشائعة</span>
         <h2 class="section-h2" data-i18n="faq-title">إجابات وافية على استفساراتكِ الأكثر تكراراً</h2>
         <p class="section-subtitle-lead" data-i18n="faq-subtitle">
-          جمعنا لكِ أبرز الأسئلة حول متابعة الحمل، السونار، وسائل منع الحمل، والتجميل النسائي.
+          جمعنا لكِ أبرز الأسئلة حول متابعة الحمل، السونار، ووسائل منع الحمل.
         </p>
       </div>
 
@@ -2335,19 +2272,6 @@
               <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                 <div class="accordion-body" data-i18n="faq-a1">
                   السونار الداخلي (المهبلي) يعطي صورة فائقة الوضوح في الأسابيع الأولى من الحمل، ويستخدم لفحص دقيق للرحم والمبايض وسماكة بطانة الرحم والكشف عن أكياس المبيض. أما السونار البطني فيستخدم لمتابعة نمو الجنين وحركته ووضع المشيمة في مراحل الحمل المتوسطة والمتقدمة. كلا الفحصين آمنان تماماً وبدون أي ألم.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                  <span data-i18n="faq-q2">هل جلسات التجميل النسائي والليزر الوردي مؤلمة؟</span>
-                </button>
-              </h2>
-              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body" data-i18n="faq-a2">
-                  جلسات الليزر النسائي غير مؤلمة تماماً ولا تتطلب أي تخدير كلي أو إبر. تستغرق الجلسة من 15 إلى 20 دقيقة، ويمكن للمراجعة العودة لممارسة أنشطتها اليومية المعتادة مباشرة بعد الجلسة.
                 </div>
               </div>
             </div>
@@ -2373,7 +2297,7 @@
               </h2>
               <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body" data-i18n="faq-a4">
-                  العيادة متخصصة حصرياً في متابعة الحمل، الفحص بالسونار البطني والداخلي، وسائل تنظيم الأسرة، التجميل النسائي، وعلاج اضطرابات أمراض النساء وتأخر الإنجاب، ولا نقوم بإجراء عمليات التوليد. التواصل وحجز المواعيد يتم حصرياً عبر تطبيق واتساب لضمان ترتيب أوقات الزيارة بدقة.
+                  العيادة متخصصة حصرياً في متابعة الحمل، الفحص بالسونار البطني والداخلي، وسائل تنظيم الأسرة، وعلاج اضطرابات أمراض النساء وتأخر الإنجاب، ولا نقوم بإجراء عمليات التوليد. التواصل وحجز المواعيد يتم حصرياً عبر تطبيق واتساب لضمان ترتيب أوقات الزيارة بدقة.
                 </div>
               </div>
             </div>
@@ -2420,7 +2344,6 @@
               <label class="form-label fw-bold text-dark" for="serviceType" data-i18n="f-service">الخدمة المطلوبة:</label>
               <select class="form-select" id="serviceType" required>
                 <option value="متابعة حمل وسونار" data-i18n="svc-1">متابعة الحمل وفحص السونار البطني والداخلي</option>
-                <option value="تجميل نسائي بالليزر" data-i18n="svc-2">التجميل والتجديد النسائي بالليزر والبلازما</option>
                 <option value="استشارة وسائل منع الحمل" data-i18n="svc-3">تنظيم الأسرة واستشارات وسائل منع الحمل</option>
                 <option value="علاج أمراض نسائية وتأخر إنجاب" data-i18n="svc-4">علاج الأمراض النسائية والالتهابات وتأخر الحمل</option>
                 <option value="فحص وقائي ومسحة عنق الرحم" data-i18n="svc-5">الفحوصات الوقائية الشاملة ومسحة عنق الرحم</option>
@@ -2460,9 +2383,9 @@
       <div class="row align-items-center g-5">
         <div class="col-lg-5">
           <span class="pill-badge pill-badge-gold" data-i18n="loc-tag">موقع العيادة</span>
-          <h2 class="section-h2" data-i18n="loc-title">مجمع مورال الطبي • حفر الباطن</h2>
+          <h2 class="section-h2" data-i18n="loc-title">عيادة دكتورة سوزان • حفر الباطن</h2>
           <p class="text-muted mb-4" data-i18n="loc-subtitle">
-            شارع الأمير مقرن بن عبدالعزيز، حي الربوة، حفر الباطن، المملكة العربية السعودية.
+            مجمع مورال الطبي، شارع الأمير مقرن بن عبدالعزيز، حي الربوة، حفر الباطن، المملكة العربية السعودية.
           </p>
 
           <div class="d-flex flex-column gap-3 mb-4">
@@ -2508,15 +2431,14 @@
             <div class="brand-icon-emblem"><i class="bi bi-heart-pulse-fill"></i></div>
             <div>
               <h5 class="fw-bold text-white mb-0" data-i18n="brand-name">دكتورة سوزان محمد عيسى</h5>
-              <small class="text-danger fw-bold" data-i18n="brand-spec">أخصائية نساء وتوليد وتجميل نسائي</small>
+              <small class="text-danger fw-bold" data-i18n="brand-spec">أخصائية النساء والتوليد والعقم</small>
             </div>
           </div>
           <p class="small mb-3 text-secondary" data-i18n="foot-desc">
-            عيادة متخصصة بمجمع مورال الطبي بحفر الباطن. رعاية طبية متكاملة لصحة المرأة، متابعة الحمل، التجميل النسائي، وسائل منع الحمل، والسونار البطني والداخلي بخبرة 17 عاماً.
+            عيادة متخصصة بحفر الباطن. رعاية طبية متكاملة لصحة المرأة، متابعة الحمل، علاج تأخر الإنجاب، وسائل منع الحمل، والسونار البطني والداخلي بخبرة 17 عاماً.
           </p>
           <div class="d-flex gap-2">
             <span class="badge bg-secondary" data-i18n="foot-b1">حفر الباطن</span>
-            <span class="badge bg-secondary" data-i18n="foot-b2">مجمع مورال الطبي</span>
             <span class="badge bg-secondary" data-i18n="foot-b3">خبرة 17 عاماً</span>
           </div>
         </div>
@@ -2537,7 +2459,6 @@
           <h6 class="fw-bold text-white mb-3" data-i18n="f-services-list">التخصصات الطبية</h6>
           <ul class="list-unstyled small d-flex flex-column gap-2">
             <li><span data-i18n="dept-1-title">متابعة الحمل وصحة الجنين</span></li>
-            <li><span data-i18n="dept-6-title">التجميل والتجديد النسائي بالليزر</span></li>
             <li><span data-i18n="dept-4-title">تنظيم الأسرة ووسائل منع الحمل</span></li>
             <li><span data-i18n="dept-5-title">السونار البطني والداخلي</span></li>
             <li><span data-i18n="dept-2-title">علاج الأمراض النسائية واضطرابات الدورة</span></li>
@@ -2548,7 +2469,7 @@
         <div class="col-lg-3">
           <h6 class="fw-bold text-white mb-3" data-i18n="f-contact-head">بيانات الزيارة والتواصل</h6>
           <ul class="list-unstyled small d-flex flex-column gap-2">
-            <li><i class="bi bi-geo-alt text-danger me-2"></i> <span data-i18n="foot-address">مجمع مورال الطبي، شارع الأمير مقرن بن عبدالعزيز، حي الربوة، حفر الباطن.</span></li>
+            <li><i class="bi bi-geo-alt text-danger me-2"></i> <span data-i18n="foot-address">شارع الأمير مقرن بن عبدالعزيز، حي الربوة، حفر الباطن.</span></li>
             <li><i class="fab fa-whatsapp text-success me-2"></i> <span data-i18n="foot-wa-only">واتساب فقط: 0569049926</span></li>
             <li class="text-warning"><i class="bi bi-info-circle me-2"></i> <span data-i18n="foot-no-calls">لا نستقبل مكالمات هاتفية مباشرة</span></li>
           </ul>
@@ -2559,7 +2480,7 @@
 
       <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 small text-secondary">
         <div>
-          &copy; 2026 <span data-i18n="foot-copy">عيادة دكتورة سوزان محمد عيسى - مجمع مورال الطبي. جميع الحقوق محفوظة.</span>
+          &copy; 2026 <span data-i18n="foot-copy">عيادة دكتورة سوزان محمد عيسى. جميع الحقوق محفوظة.</span>
         </div>
         <div>
           <span data-i18n="foot-credit">تم التطوير والتصميم بواسطة</span> <a href="https://www.facebook.com/profile.php?id=61594550781374&locale=ar_AR" target="_blank" class="text-white fw-bold">Devora Web</a>
@@ -2667,7 +2588,7 @@
         const date = document.getElementById('prefDate').value;
         const notes = document.getElementById('patientNotes').value.trim();
 
-        let message = `مرحباً دكتورة سوزان عيسى، أود حجز موعد استشارة بمجمع مورال الطبي:\n`;
+        let message = `مرحباً دكتورة سوزان عيسى، أود حجز موعد استشارة:\n`;
         message += `• الاسم: ${name}\n`;
         message += `• رقم الجوال: ${phone}\n`;
         message += `• الخدمة المطلوبة: ${service}\n`;
@@ -2696,22 +2617,6 @@
           <p class="text-muted">نوصي دائماً بإجراء فحص بالسونار البطني أو الداخلي قبل اختيار الوسيلة للتأكد من وضع الرحم وخلوه من أي ألياف أو التهابات، ومتابعة استقرار الوسيلة بعد التركيب للاطمئنان الكامل.</p>
         `
       },
-      2: {
-        title: "حقائق عن الليزر الوردي وتجديد الأنسجة النسائية غير الجراحي",
-        category: "التجميل والتجديد النسائي",
-        img: "css/cosmetic-laser.jpg",
-        content: `
-          <p class="lead text-dark">يمثل التجميل النسائي غير الجراحي ثورة حقيقية في تحسين جودة حياة المرأة والتخلص من مشاكل الارتخاء والجفاف وسلس البول الخفيف.</p>
-          <h5 class="fw-bold mt-4 text-danger">كيف يعمل الليزر النسائي؟</h5>
-          <p class="text-muted">يعتمد الجهاز على تقنية نبضات ضوئية دقيقة تحفز إنتاج الكولاجين والإيلاستين الطبيعي، مما يعيد للأنسجة مرونتها وترطيبها ويقوي دعامة المثانة لعلاج تسرب البول الإجهادي الخفيف.</p>
-          <h5 class="fw-bold mt-4 text-danger">مميزات الإجراء بعيادة د. سوزان:</h5>
-          <ul class="text-muted">
-            <li>جلسة سريعة تستغرق 15 إلى 20 دقيقة فقط.</li>
-            <li>بدون أي جراحة أو ألم وبدون تخدير كلي.</li>
-            <li>خصوصية تامة واستئناف الأنشطة اليومية فوراً.</li>
-          </ul>
-        `
-      },
       3: {
         title: "أهمية الفحص بالسونار البطني والداخلي لمتابعة سلامة الحمل",
         category: "التشخيص وصحة الجنين",
@@ -2738,21 +2643,6 @@
           <p class="text-muted">• <strong>Subdermal implant:</strong> An easy and comfortable method providing up to 3 years of protection without remembering a daily pill.</p>
           <h5 class="fw-bold mt-4 text-danger">Dr. Suzan Mohamed Issa's advice:</h5>
           <p class="text-muted">We always recommend an abdominal or pelvic ultrasound before choosing a method to confirm the position of the uterus and rule out fibroids or infection, and a follow-up after insertion for complete reassurance.</p>
-        `
-      },
-      2: {
-        title: "Facts About Pink Laser and Non-Surgical Tissue Rejuvenation",
-        category: "Cosmetic Gynecology & Rejuvenation",
-        content: `
-          <p class="lead text-dark">Non-surgical cosmetic gynecology is a real breakthrough in improving women's quality of life and addressing laxity, dryness and mild urinary incontinence.</p>
-          <h5 class="fw-bold mt-4 text-danger">How does aesthetic laser work?</h5>
-          <p class="text-muted">The device uses precise light pulses that stimulate natural collagen and elastin production, restoring tissue elasticity and hydration and strengthening bladder support to treat mild stress urinary leakage.</p>
-          <h5 class="fw-bold mt-4 text-danger">Advantages of the procedure at Dr. Suzan's clinic:</h5>
-          <ul class="text-muted">
-            <li>A quick session of only 15 to 20 minutes.</li>
-            <li>No surgery, no pain and no general anesthesia.</li>
-            <li>Complete privacy and immediate return to daily activities.</li>
-          </ul>
         `
       },
       3: {
@@ -2788,10 +2678,10 @@
     // 5. BILINGUAL ARABIC / ENGLISH TRANSLATION ENGINE
     const translations = {
       ar: {
-        "topbar-location": "مجمع مورال الطبي • حفر الباطن - حي الربوة",
+        "topbar-location": "حفر الباطن - حي الربوة",
         "topbar-wa-notice": "التواصل والحجز عبر واتساب فقط",
         "brand-name": "دكتورة سوزان محمد عيسى",
-        "brand-spec": "أخصائية نساء وتوليد وتجميل نسائي",
+        "brand-spec": "أخصائية النساء والتوليد والعقم",
         "nav-home": "الرئيسية",
         "nav-about": "من نحن",
         "nav-services": "الخدمات",
@@ -2801,11 +2691,9 @@
         "nav-articles": "المقالات",
         "nav-location": "اتصل بنا",
         "nav-book-btn": "احجزي الآن",
-        "hero-badge": "مجمع مورال الطبي • حفر الباطن • خصوصية نسائية تامة",
-        "hero-h1-prefix": "عيادة دكتورة سوزان",
-        "hero-h1-highlight": "وجهتكِ الأولى",
-        "hero-h1-suffix": "للجمال والصحة",
-        "hero-lead": "عناية متكاملة بصحة المرأة، متابعة الحمل، وسائل تنظيم الأسرة، والتجميل النسائي في مكان واحد بأحدث المعايير الطبية.",
+        "hero-name": "دكتورة سوزان محمد عيسى",
+        "hero-specialty": "أخصائية النساء والتوليد والعقم",
+        "hero-lead": "عناية متكاملة بصحة المرأة وجمالها",
         "hero-btn-book": "احجزي موعداً عبر واتساب",
         "hero-btn-explore": "استكشفي خدماتنا",
         "stat-satisfaction": "رضا المراجعات",
@@ -2815,11 +2703,11 @@
         "art-view-all": "تصفحي المكتبة الطبية الكاملة"
       },
       en: {
-        __title: "Dr. Suzan Mohamed Issa | Obstetrics, Gynecology & Cosmetic Specialist",
-        "topbar-location": "Moral Medical Complex • Hafar Al-Batin - Ar Rabwah",
+        __title: "Dr. Suzan Mohamed Issa | Gynecology, Obstetrics & Infertility Specialist",
+        "topbar-location": "Hafar Al-Batin - Ar Rabwah",
         "topbar-wa-notice": "Communication & Booking via WhatsApp Only",
         "brand-name": "Dr. Suzan Mohamed Issa",
-        "brand-spec": "OB/GYN & Cosmetic Gynecology Specialist",
+        "brand-spec": "Gynecology, Obstetrics & Infertility Specialist",
         "nav-home": "Home",
         "nav-about": "About",
         "nav-services": "Services",
@@ -2829,11 +2717,9 @@
         "nav-articles": "Articles",
         "nav-location": "Contact",
         "nav-book-btn": "Book Now",
-        "hero-badge": "Moral Medical Complex • Hafar Al-Batin • 100% Female Privacy",
-        "hero-h1-prefix": "Dr. Suzan Clinic",
-        "hero-h1-highlight": "Your First Destination",
-        "hero-h1-suffix": "For Beauty & Health",
-        "hero-lead": "Integrated care for women's wellness, pregnancy care, contraception & family planning, and aesthetic gynecology in one premier clinic.",
+        "hero-name": "Dr. Suzan Mohamed Issa",
+        "hero-specialty": "Specialist in Gynecology, Obstetrics & Infertility",
+        "hero-lead": "Comprehensive care for women's health and beauty",
         "hero-btn-book": "Book via WhatsApp",
         "hero-btn-explore": "Explore Our Services",
         "stat-satisfaction": "Patient Satisfaction",
@@ -2841,25 +2727,25 @@
         "stat-privacy": "Female Medical Supervision",
         "hero-scroll": "Scroll Down",
         "about-tag": "About Us",
-        "about-intro-1": "Dr. Suzan Mohamed Issa Clinic at Moral Medical Complex in Hafar Al-Batin is a premier medical center delivering elite healthcare in obstetrics, gynecology, and aesthetic rejuvenation.",
-        "about-intro-2": "Combining certified international technologies with over 17 years of clinical excellence to offer you a treatment journey anchored in safety, precision, and privacy.",
+        "about-intro-1": "Dr. Suzan Mohamed Issa's clinic in Hafar Al-Batin delivers specialized, high-quality care in gynecology, obstetrics, pregnancy follow-up and fertility.",
+        "about-intro-2": "Combining certified modern technologies with over 17 years of clinical experience to offer you care built on safety, precision, and privacy.",
         "about-heading": "Why Choose Dr. Suzan Issa Clinic?",
-        "about-f1-title": "Specialized Medical Expertise:",
-        "about-f1-desc": "Over 17 years of clinical experience in gynecology, pregnancy care, and cosmetic rejuvenation.",
+        "about-f1-title": "Extensive Experience:",
+        "about-f1-desc": "Over 17 years of clinical experience in gynecology, obstetrics, pregnancy care and infertility.",
         "about-f2-title": "Advanced Technologies:",
-        "about-f2-desc": "State-of-the-art abdominal & pelvic ultrasound and aesthetic laser devices with rigorous sterilization.",
+        "about-f2-desc": "State-of-the-art abdominal & pelvic ultrasound devices with rigorous sterilization standards.",
         "about-f3-title": "Customized Care:",
-        "about-f3-desc": "Tailored therapeutic and cosmetic protocols crafted to achieve safe, natural, and lasting results.",
+        "about-f3-desc": "Tailored treatment plans crafted for each patient to achieve safe and lasting results.",
         "about-f4-title": "Comfort & Complete Privacy:",
         "about-f4-desc": "Contemporary design and tranquil female environment ensuring total peace of mind.",
         "vision-title": "Our Vision",
-        "vision-desc": "To be the most trusted premier destination for advanced women's healthcare and aesthetic wellness in Hafar Al-Batin.",
+        "vision-desc": "To be the most trusted destination for advanced women's healthcare in Hafar Al-Batin.",
         "mission-title": "Our Mission",
         "mission-desc": "Promoting natural wellness and women's health through compassionate, evidence-based, and innovative care.",
         "about-book-btn": "Book Consultation via WhatsApp",
-        "about-exp-label": "Years of Experience in Women's Healthcare & Aesthetics",
+        "about-exp-label": "Years of Experience in Women's Healthcare",
         "dept-tag": "Our Medical Specialties",
-        "dept-subtitle": "Comprehensive medical and aesthetic services equipped with cutting-edge technologies.",
+        "dept-subtitle": "Get checked and be reassured with Dr. Suzan — everything related to women.",
         "dept-1-title": "Pregnancy Care",
         "dept-1-desc": "Comprehensive supervision of normal and high-risk pregnancies, diagnostic ultrasound, and required lab tests.",
         "dept-2-title": "Gynecological Conditions",
@@ -2870,8 +2756,6 @@
         "dept-4-desc": "Expert counseling on diverse contraceptive methods, IUD insertion & tracking, and hormonal implants.",
         "dept-5-title": "Abdominal & Pelvic Ultrasound",
         "dept-5-desc": "High-precision ultrasound scanning for fetal growth, uterine health, ovarian cyst detection, and pelvic wellness.",
-        "dept-6-title": "Cosmetic Gynecology",
-        "dept-6-desc": "Laser tissue rejuvenation, PRP therapy, and aesthetic fillers for enhanced comfort and intimate wellness.",
         "dept-7-title": "Preventive Screening",
         "dept-7-desc": "Early detection screenings for breast and cervical health (Pap smear) and comprehensive routine checkups.",
         "dept-8-title": "Menopause & Wellness",
@@ -2879,25 +2763,15 @@
         "stats-tag": "Our Achievements",
         "stats-subtitle": "Proud of the outcomes and smiles achieved with our valued patients.",
         "stat-ring-1-title": "Patient Satisfaction",
-        "stat-ring-1-desc": "Our patients enjoy an integrated therapeutic and aesthetic journey that fulfills their expectations.",
+        "stat-ring-1-desc": "Our patients enjoy an integrated treatment journey that fulfills their expectations.",
         "stat-ring-2-title": "Successful Outcomes",
-        "stat-ring-2-desc": "Outstanding success in pregnancy monitoring, non-surgical intimate rejuvenation, and family planning.",
+        "stat-ring-2-desc": "Outstanding success in pregnancy monitoring, gynecological care, and family planning.",
         "stat-ring-3-title": "Continuous Growth",
-        "stat-ring-3-desc": "Continuously adopting premier technologies to ensure the highest standards of safety and comfort.",
+        "stat-ring-3-desc": "Continuously improving our services and equipment to ensure the highest standards of safety and comfort.",
         "showcase-tag": "Our Services",
         "showcase-heading": "Signature Clinical Showcase",
-        "showcase-lead": "Integrated health and aesthetic solutions under certified medical supervision.",
-        "s1-tag": "— Service 01 —",
-        "s1-title": "Aesthetic Laser & Intimate Rejuvenation",
-        "s1-subtitle": "Safe, non-surgical solutions tailored for women under specialist supervision",
-        "s1-f1-title": "Cutting-Edge Laser Systems",
-        "s1-f1-desc": "We utilize globally certified medical aesthetic devices to deliver optimal, natural results.",
-        "s1-f2-title": "Virtually Painless Sessions",
-        "s1-f2-desc": "Integrated cooling mechanisms ensuring complete comfort with zero surgical downtime.",
-        "s1-f3-title": "Direct Specialist Care",
-        "s1-f3-desc": "Procedures performed personally by Dr. Suzan Mohamed Issa with unmatched precision.",
-        "s1-btn": "Book Session via WhatsApp",
-        "s2-tag": "— Service 02 —",
+        "showcase-lead": "Integrated women's healthcare delivered with expertise and attention.",
+        "s2-tag": "— Service 01 —",
         "s2-title": "Pregnancy Monitoring & Diagnostic Ultrasound",
         "s2-subtitle": "Continuous compassionate care for you and your baby throughout pregnancy",
         "s2-f1-title": "High-Risk & Routine Pregnancy Care",
@@ -2907,7 +2781,7 @@
         "s2-f3-title": "Laboratory & Diagnostic Tests",
         "s2-f3-desc": "Screening for gestational diabetes, blood pressure, and essential maternal health parameters.",
         "s2-btn": "Book Pregnancy Checkup via WhatsApp",
-        "s3-tag": "— Service 03 —",
+        "s3-tag": "— Service 02 —",
         "s3-title": "Family Planning & Contraceptive Counseling",
         "s3-subtitle": "Personalized methods suited to your health and family planning goals",
         "s3-f1-title": "Thorough Health Assessment",
@@ -2932,7 +2806,7 @@
         "art-view-all": "Browse the Full Medical Library",
         "faq-tag": "FAQ",
         "faq-title": "Clear Answers to Common Inquiries",
-        "faq-subtitle": "Compiled answers regarding pregnancy care, ultrasound, contraception, and aesthetics.",
+        "faq-subtitle": "Compiled answers regarding pregnancy care, ultrasound and contraception.",
         "form-tag": "WhatsApp Consultation Booking",
         "form-title": "Book Appointment With Dr. Suzan Mohamed Issa",
         "form-subtitle": "Fill in the details below to transmit your booking directly to WhatsApp for rapid confirmation:",
@@ -2948,8 +2822,8 @@
         "f-submit": "Send Booking Directly via WhatsApp",
         "f-privacy-note": "All personal and medical information is handled with 100% strict medical confidentiality.",
         "loc-tag": "Clinic Location",
-        "loc-title": "Moral Medical Complex • Hafar Al-Batin",
-        "loc-subtitle": "Prince Muqrin bin Abdulaziz Street, Ar Rabwah District, Hafar Al-Batin, Saudi Arabia.",
+        "loc-title": "Dr. Suzan's Clinic • Hafar Al-Batin",
+        "loc-subtitle": "Moral Medical Complex, Prince Muqrin bin Abdulaziz Street, Ar Rabwah District, Hafar Al-Batin, Saudi Arabia.",
         "loc-map-btn": "Open Location in Google Maps",
         "modal-book-cta": "Consult Doctor via WhatsApp",
         "foot-wa-only": "WhatsApp Only: 0569049926",
@@ -2964,30 +2838,24 @@
         "art-1-tag": "Family Planning",
         "art-1-title": "Your Complete Guide to Choosing the Right Contraceptive for Your Body",
         "art-1-desc": "An accurate scientific comparison between hormonal and copper IUDs and implants, and how to choose what is best for your comfort and health.",
-        "art-2-tag": "Cosmetic Gynecology",
-        "art-2-title": "Facts About Pink Laser and Non-Surgical Tissue Rejuvenation",
-        "art-2-desc": "How aesthetic laser restores vitality and collagen and treats dryness and mild urinary incontinence without surgery or pain.",
         "art-3-tag": "Diagnostics & Fetal Health",
         "art-3-title": "Why Abdominal & Transvaginal Ultrasound Matter for Pregnancy Safety",
         "art-3-desc": "When is transvaginal ultrasound used versus abdominal? And how each accurately shows fetal growth and uterine and ovarian health.",
         "faq-q1": "What is the difference between abdominal and transvaginal ultrasound?",
         "faq-a1": "Transvaginal ultrasound gives an extremely clear image in the early weeks of pregnancy and is used to examine the uterus, ovaries and endometrial thickness and to detect ovarian cysts. Abdominal ultrasound is used to monitor fetal growth, movement and placental position in the middle and later stages of pregnancy. Both scans are completely safe and painless.",
-        "faq-q2": "Are cosmetic gynecology and pink laser sessions painful?",
-        "faq-a2": "Laser sessions are not painful and do not require general anesthesia or needles. A session takes 15 to 20 minutes, and you can return to your normal daily activities right after.",
         "faq-q3": "How do I choose the right contraceptive method?",
         "faq-a3": "The choice depends on a thorough medical assessment of your health, blood pressure, breastfeeding status and menstrual pattern. Dr. Suzan will examine you and discuss suitable options such as the copper IUD, hormonal IUD or implant to find the most comfortable and safest method for you.",
         "faq-q4": "Do you offer delivery? How do I book an appointment?",
-        "faq-a4": "The clinic specializes exclusively in pregnancy follow-up, abdominal and transvaginal ultrasound, family planning, cosmetic gynecology, and treatment of gynecological disorders and infertility. We do not perform deliveries. Communication and booking are handled exclusively via WhatsApp to schedule visits precisely.",
+        "faq-a4": "The clinic specializes exclusively in pregnancy follow-up, abdominal and transvaginal ultrasound, family planning, and treatment of gynecological disorders and infertility. We do not perform deliveries. Communication and booking are handled exclusively via WhatsApp to schedule visits precisely.",
         "loc-feature-1": "Easily accessible prime location",
         "loc-feature-1-desc": "Ample, convenient parking for all patients.",
         "loc-feature-2": "Communication & Appointments",
         "loc-feature-2-desc": "Via WhatsApp only: 0569049926",
-        "foot-desc": "A specialized clinic at Moral Medical Complex in Hafar Al-Batin. Comprehensive women's healthcare, pregnancy follow-up, cosmetic gynecology, contraception and abdominal & pelvic ultrasound with 17 years of experience.",
+        "foot-desc": "A specialized clinic in Hafar Al-Batin. Comprehensive women's healthcare, pregnancy follow-up, contraception, infertility care and abdominal & pelvic ultrasound with 17 years of experience.",
         "foot-b1": "Hafar Al-Batin",
-        "foot-b2": "Moral Medical Complex",
         "foot-b3": "17 Years of Experience",
-        "foot-address": "Moral Medical Complex, Prince Muqrin bin Abdulaziz St., Ar Rabwah District, Hafar Al-Batin.",
-        "foot-copy": "Dr. Suzan Mohamed Issa Clinic - Moral Medical Complex. All rights reserved.",
+        "foot-address": "Prince Muqrin bin Abdulaziz St., Ar Rabwah District, Hafar Al-Batin.",
+        "foot-copy": "Dr. Suzan Mohamed Issa Clinic. All rights reserved.",
         "foot-credit": "Designed & developed by",
         "cyc-26": "26 days",
         "cyc-28": "28 days (typical)",
@@ -2995,7 +2863,6 @@
         "cyc-32": "32 days",
         "cyc-35": "35 days",
         "svc-1": "Pregnancy follow-up & abdominal / pelvic ultrasound",
-        "svc-2": "Cosmetic gynecology & rejuvenation with laser and PRP",
         "svc-3": "Family planning & contraception consultation",
         "svc-4": "Gynecological conditions, infections & infertility",
         "svc-5": "Comprehensive preventive screening & Pap smear",
