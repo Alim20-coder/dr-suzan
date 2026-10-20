@@ -10,7 +10,7 @@
   <meta name="keywords" content="دكتورة سوزان محمد عيسى, دكتورة نساء حفر الباطن, متابعة الحمل, وسائل منع الحمل, تنظيم الأسرة, سونار بطني وداخلي, علاج تأخر الإنجاب, العقم, حفر الباطن">
   <meta name="author" content="Devora Web">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#E87A90">
+  <meta name="theme-color" content="#C6A15B">
 
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
@@ -24,7 +24,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Physician",
-    "name": "دكتورة سوزان محمد عيسى - Dr. Suzan Mohamed Issa",
+    "name": "دكتورة سوزان محمد عيسى - Dr. Suzan Mohamed Issa",
     "image": "css/dr-suzan-profile.png",
     "medicalSpecialty": ["Gynecologic", "Obstetric"],
     "telephone": "+966569049926",
@@ -74,30 +74,37 @@
        BRAND IDENTITY TOKENS (Preserved Brand Colors + Luxury UI)
        ======================================================== */
     :root {
-      --primary-pink: #E87A90;
-      --primary-pink-dark: #C9546B;
-      --primary-pink-light: #FDF0F3;
-      --primary-pink-subtle: #FFF7F9;
+      --primary-pink: #C6A15B;
+      --primary-pink-dark: #A68037;
+      --primary-pink-light: #F1F4EA;
+      --primary-pink-subtle: #FDFAF1;
       
-      --gold-accent: #C5A059;
+      --gold-accent: #C6A15B;
       --gold-dark: #A68037;
-      --gold-light: #FBF6EC;
+      --gold-light: #FDFAF1;
       
-      --medical-blue: #4EA8DE;
-      --medical-blue-dark: #2080BA;
-      --medical-blue-light: #F0F7FC;
-      --medical-blue-deep: #1B6B9E;
-      --light-blue-bg: #EAF4FB;
+      --medical-blue: #5A7A7D;
+      --medical-blue-dark: #133235;
+      --medical-blue-light: #F1F4EA;
+      --medical-blue-deep: #133235;
+      --light-blue-bg: #E3E9D8;
 
-      --dark-slate: #1C2833;
-      --dark-navy: #0F172A;
-      --text-muted: #64748B;
-      --body-bg: #FAF7F2; /* Warm luxury ivory background from reference s */
+      --dark-slate: #133235;
+      --dark-navy: #113336;
+      --text-muted: #5A7A7D;
+      --body-bg: #FFFFFF; /* Warm luxury ivory background from reference s */
       --pure-white: #FFFFFF;
 
-      --card-border: rgba(232, 122, 144, 0.14);
-      --card-shadow: 0 12px 35px rgba(28, 40, 51, 0.05);
-      --card-hover-shadow: 0 20px 45px rgba(201, 84, 107, 0.12);
+      --card-border: rgba(198, 161, 91, 0.14);
+      --card-shadow: 0 12px 35px rgba(19, 50, 53, 0.05);
+      --card-hover-shadow: 0 20px 45px rgba(166, 128, 55, 0.12);
+      --background: #fdfaf1;
+      --foreground: #133235;
+      --secondary: #e3e9d8;
+      --accent: #c6a15b;
+      --muted-foreground: #5a7a7d;
+      --border: #dde8d0;
+      --deep-teal: #113336;
       --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
@@ -143,8 +150,8 @@
        TOP NOTIFICATION BAR & WHATSAPP-ONLY NOTICE
        ======================================================== */
     #sec-topbar {
-      background: #1C2833;
-      color: #E2E8F0;
+      background: #133235;
+      color: #DDE8D0;
       font-size: 0.85rem;
       padding: 8px 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -154,7 +161,7 @@
       align-items: center;
       gap: 8px;
       font-weight: 600;
-      color: #F8FAFC;
+      color: #FDFAF1;
     }
     #sec-topbar .wa-badge-pill {
       background: rgba(37, 211, 102, 0.18);
@@ -171,7 +178,7 @@
 
     /* ======================================================== */
     #sec-navbar {
-      background: rgba(250, 247, 242, 0.96);
+      background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       position: -webkit-sticky !important;
@@ -183,14 +190,14 @@
       z-index: 1050;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
       padding: 14px 0;
-      border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+      border-bottom: 1px solid rgba(198, 161, 91, 0.15);
       transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
     }
     #sec-navbar.nav-scrolled {
       background: rgba(255, 255, 255, 0.98);
       box-shadow: 0 6px 25px rgba(0, 0, 0, 0.09);
       padding: 10px 0;
-      border-bottom-color: rgba(197, 160, 89, 0.28);
+      border-bottom-color: rgba(198, 161, 91, 0.28);
     }
     #sec-navbar .container {
       max-width: 1420px;
@@ -207,13 +214,13 @@
       width: 44px;
       height: 44px;
       border-radius: 14px;
-      background: linear-gradient(135deg, var(--primary-pink) 0%, var(--gold-accent) 100%);
+      background: linear-gradient(135deg, var(--gold-accent) 0%, #B88E4F 100%);
       color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 20px;
-      box-shadow: 0 8px 20px rgba(232, 122, 144, 0.35);
+      box-shadow: 0 8px 20px rgba(198, 161, 91, 0.35);
       flex-shrink: 0;
     }
     .brand-title {
@@ -339,14 +346,14 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      box-shadow: 0 6px 20px rgba(197, 160, 89, 0.35);
+      box-shadow: 0 6px 20px rgba(198, 161, 91, 0.35);
       border: none;
       transition: var(--transition);
       white-space: nowrap;
     }
     .btn-luxury-gold:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(197, 160, 89, 0.48);
+      box-shadow: 0 10px 25px rgba(198, 161, 91, 0.48);
       color: #FFFFFF !important;
     }
 
@@ -369,7 +376,7 @@
     .hero-dark-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(20, 26, 38, 0.52) 0%, rgba(20, 26, 38, 0.42) 50%, rgba(20, 26, 38, 0.68) 100%);
+      background: linear-gradient(180deg, rgba(17, 51, 54, 0.52) 0%, rgba(17, 51, 54, 0.42) 50%, rgba(17, 51, 54, 0.68) 100%);
       z-index: 1;
     }
     /* Organic curved frosted backdrop shapes */
@@ -434,7 +441,7 @@
       padding: 14px 34px;
       border-radius: 50px;
       border: none;
-      box-shadow: 0 10px 30px rgba(197, 160, 89, 0.45);
+      box-shadow: 0 10px 30px rgba(198, 161, 91, 0.45);
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -442,11 +449,11 @@
     }
     .btn-hero-solid:hover {
       transform: translateY(-3px);
-      box-shadow: 0 15px 35px rgba(197, 160, 89, 0.6);
+      box-shadow: 0 15px 35px rgba(198, 161, 91, 0.6);
       color: #FFFFFF !important;
     }
     .btn-hero-glass {
-      background: rgba(30, 41, 59, 0.65);
+      background: rgba(19, 50, 53, 0.65);
       backdrop-filter: blur(12px);
       color: #FFFFFF !important;
       font-weight: 700;
@@ -501,7 +508,7 @@
     }
     .hero-stat-label {
       font-size: 0.88rem;
-      color: #64748B;
+      color: #5A7A7D;
       font-weight: 600;
       margin: 0;
     }
@@ -509,7 +516,7 @@
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      background: rgba(197, 160, 89, 0.15);
+      background: rgba(198, 161, 91, 0.15);
       color: var(--gold-accent);
       display: flex;
       align-items: center;
@@ -560,7 +567,7 @@
       align-items: center;
       gap: 8px;
       padding: 6px 20px;
-      background: rgba(232, 122, 144, 0.14);
+      background: rgba(198, 161, 91, 0.14);
       color: var(--primary-pink-dark);
       border-radius: 50px;
       font-size: 0.88rem;
@@ -569,7 +576,7 @@
       letter-spacing: 0.5px;
     }
     .pill-badge-gold {
-      background: rgba(197, 160, 89, 0.15);
+      background: rgba(198, 161, 91, 0.15);
       color: var(--gold-dark);
     }
     .section-h2 {
@@ -604,7 +611,7 @@
       width: 24px;
       height: 24px;
       border-radius: 50%;
-      background: rgba(197, 160, 89, 0.18);
+      background: rgba(198, 161, 91, 0.18);
       color: var(--gold-dark);
       display: flex;
       align-items: center;
@@ -615,7 +622,7 @@
     }
     .about-check-text {
       font-size: 0.98rem;
-      color: #334155;
+      color: #133235;
       line-height: 1.65;
     }
     .about-check-text strong {
@@ -626,7 +633,7 @@
     /* Vision & Mission Cards  */
     .about-vision-card {
       background: #FFFFFF;
-      border: 1px solid rgba(197, 160, 89, 0.22);
+      border: 1px solid rgba(198, 161, 91, 0.22);
       border-radius: 20px;
       padding: 22px 26px;
       box-shadow: var(--card-shadow);
@@ -658,7 +665,7 @@
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      background: rgba(197, 160, 89, 0.12);
+      background: rgba(198, 161, 91, 0.12);
       color: var(--gold-accent);
       display: flex;
       align-items: center;
@@ -689,7 +696,7 @@
       padding: 16px 24px;
       border-radius: 20px;
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-      border: 1px solid rgba(197, 160, 89, 0.2);
+      border: 1px solid rgba(198, 161, 91, 0.2);
       display: flex;
       align-items: center;
       gap: 14px;
@@ -730,7 +737,7 @@
     .dept-card:hover {
       transform: translateY(-8px);
       box-shadow: var(--card-hover-shadow);
-      border-color: rgba(232, 122, 144, 0.35);
+      border-color: rgba(198, 161, 91, 0.35);
     }
     .dept-card-top {
       display: flex;
@@ -741,14 +748,14 @@
     .dept-card-num {
       font-size: 1.1rem;
       font-weight: 800;
-      color: #94A3B8;
+      color: #AEBFBC;
       letter-spacing: 1px;
     }
     .dept-icon-square {
       width: 58px;
       height: 58px;
       border-radius: 18px;
-      background: rgba(197, 160, 89, 0.12);
+      background: rgba(198, 161, 91, 0.12);
       color: var(--gold-dark);
       display: flex;
       align-items: center;
@@ -782,7 +789,7 @@
       left: -20px;
       width: 90px;
       height: 90px;
-      background: rgba(197, 160, 89, 0.06);
+      background: rgba(198, 161, 91, 0.06);
       border-radius: 0 90px 0 0;
       pointer-events: none;
       transition: var(--transition);
@@ -790,25 +797,25 @@
     .dept-card:hover .dept-card-watermark {
       width: 110px;
       height: 110px;
-      background: rgba(232, 122, 144, 0.08);
+      background: rgba(198, 161, 91, 0.08);
     }
 
     /* ======================================================== */
     #sec-stats {
       padding: 95px 0;
-      background: linear-gradient(180deg, #EAF4FB 0%, #DCEEFA 100%);
-      border-top: 1px solid rgba(32, 128, 186, 0.15);
-      border-bottom: 1px solid rgba(32, 128, 186, 0.15);
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+      border-top: 1px solid rgba(19, 50, 53, 0.15);
+      border-bottom: 1px solid rgba(19, 50, 53, 0.15);
     }
     #sec-stats .pill-badge {
       background: #FFFFFF;
       color: var(--medical-blue-deep);
-      box-shadow: 0 4px 14px rgba(32, 128, 186, 0.15);
+      box-shadow: 0 4px 14px rgba(19, 50, 53, 0.15);
     }
     #sec-stats .section-h2 { color: var(--dark-slate); }
     #sec-stats .hero-gold-accent { color: var(--medical-blue-dark); }
-    #sec-stats .section-subtitle-lead { color: #475569; }
-    #sec-stats .stat-ring-card { border-color: rgba(32, 128, 186, 0.18); }
+    #sec-stats .section-subtitle-lead { color: #5A7A7D; }
+    #sec-stats .stat-ring-card { border-color: rgba(19, 50, 53, 0.18); }
     #sec-stats .stat-ring-card:hover { border-color: var(--medical-blue); }
     .stat-ring-card {
       background: #FFFFFF;
@@ -823,7 +830,7 @@
     .stat-ring-card:hover {
       transform: translateY(-8px);
       box-shadow: var(--card-hover-shadow);
-      border-color: rgba(197, 160, 89, 0.35);
+      border-color: rgba(198, 161, 91, 0.35);
     }
     .ring-wrapper {
       position: relative;
@@ -838,7 +845,7 @@
     }
     .ring-bg {
       fill: none;
-      stroke: #F1F5F9;
+      stroke: #F1F4EA;
       stroke-width: 8;
     }
     .ring-progress-pink,
@@ -892,7 +899,7 @@
       background: #FFFFFF;
       border-radius: 32px;
       padding: 50px 45px;
-      border: 1px solid rgba(197, 160, 89, 0.18);
+      border: 1px solid rgba(198, 161, 91, 0.18);
       box-shadow: var(--card-shadow);
       margin-bottom: 45px;
       transition: var(--transition);
@@ -930,7 +937,7 @@
       width: 26px;
       height: 26px;
       border-radius: 50%;
-      background: rgba(197, 160, 89, 0.16);
+      background: rgba(198, 161, 91, 0.16);
       color: var(--gold-dark);
       display: flex;
       align-items: center;
@@ -962,13 +969,13 @@
       align-items: center;
       gap: 10px;
       transition: var(--transition);
-      box-shadow: 0 8px 25px rgba(28, 40, 51, 0.25);
+      box-shadow: 0 8px 25px rgba(19, 50, 53, 0.25);
     }
     .btn-dark-pill:hover {
       background: var(--primary-pink-dark);
       color: #FFFFFF !important;
       transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(201, 84, 107, 0.35);
+      box-shadow: 0 12px 30px rgba(166, 128, 55, 0.35);
     }
 
     /* Asymmetric Photo with Corner Badge and Offset Outline */
@@ -982,7 +989,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      border: 2px solid rgba(197, 160, 89, 0.35);
+      border: 2px solid rgba(198, 161, 91, 0.35);
       border-radius: 32px;
       pointer-events: none;
       transform: scale(0.98);
@@ -1013,7 +1020,7 @@
       border-radius: 14px;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
       z-index: 2;
-      border: 1px solid rgba(197, 160, 89, 0.25);
+      border: 1px solid rgba(198, 161, 91, 0.25);
     }
 
     /* ========================================================
@@ -1022,40 +1029,40 @@
     #sec-calculator {
       padding: 95px 0;
       background:
-        radial-gradient(circle at 85% 15%, rgba(232, 122, 144, 0.22) 0%, transparent 55%),
-        radial-gradient(circle at 15% 85%, rgba(197, 160, 89, 0.12) 0%, transparent 50%),
-        linear-gradient(180deg, #FFF6F8 0%, #FCE8EE 100%);
-      border-top: 1px solid rgba(232, 122, 144, 0.2);
-      border-bottom: 1px solid rgba(232, 122, 144, 0.2);
+        radial-gradient(circle at 85% 15%, rgba(198, 161, 91, 0.22) 0%, transparent 55%),
+        radial-gradient(circle at 15% 85%, rgba(198, 161, 91, 0.12) 0%, transparent 50%),
+        linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+      border-top: 1px solid rgba(198, 161, 91, 0.2);
+      border-bottom: 1px solid rgba(198, 161, 91, 0.2);
     }
     #sec-calculator .pill-badge {
       background: #FFFFFF;
       color: var(--primary-pink-dark);
-      border: 1px solid rgba(232, 122, 144, 0.35);
-      box-shadow: 0 4px 14px rgba(232, 122, 144, 0.12);
+      border: 1px solid rgba(198, 161, 91, 0.35);
+      box-shadow: 0 4px 14px rgba(198, 161, 91, 0.12);
     }
     #sec-calculator .section-h2 {
       color: var(--dark-slate);
     }
     #sec-calculator .section-subtitle-lead {
-      color: #64748B;
+      color: #5A7A7D;
     }
     #sec-calculator .calc-card-wrap {
       background: #FFFFFF;
-      border: 1px solid rgba(232, 122, 144, 0.22);
+      border: 1px solid rgba(198, 161, 91, 0.22);
       border-radius: 28px;
       padding: 40px;
-      box-shadow: 0 20px 50px rgba(232, 122, 144, 0.1);
+      box-shadow: 0 20px 50px rgba(198, 161, 91, 0.1);
       max-width: 840px;
       margin: 0 auto;
     }
     #sec-calculator .calc-result-box {
-      background: #FFF5F7;
+      background: #FDFAF1;
       border: 1.5px solid var(--primary-pink);
       border-radius: 22px;
       padding: 28px;
       margin-top: 30px;
-      box-shadow: 0 10px 30px rgba(232, 122, 144, 0.12);
+      box-shadow: 0 10px 30px rgba(198, 161, 91, 0.12);
     }
     .btn-calc-submit {
       width: 100%;
@@ -1154,13 +1161,13 @@
       padding: 14px 40px;
       border-radius: 50px;
       border: none;
-      box-shadow: 0 10px 30px rgba(232, 122, 144, 0.38);
+      box-shadow: 0 10px 30px rgba(198, 161, 91, 0.38);
       transition: var(--transition);
       text-decoration: none;
     }
     .btn-articles-all:hover {
       transform: translateY(-3px);
-      box-shadow: 0 15px 38px rgba(201, 84, 107, 0.52);
+      box-shadow: 0 15px 38px rgba(166, 128, 55, 0.52);
       background: linear-gradient(135deg, var(--primary-pink-dark) 0%, var(--primary-pink) 100%);
       color: #FFFFFF !important;
     }
@@ -1197,7 +1204,7 @@
     }
     .accordion-body {
       padding: 20px 24px;
-      color: #475569;
+      color: #5A7A7D;
       line-height: 1.8;
       font-size: 0.98rem;
     }
@@ -1212,7 +1219,7 @@
     .booking-panel {
       background: #FFFFFF;
       border-radius: 32px;
-      border: 1px solid rgba(197, 160, 89, 0.22);
+      border: 1px solid rgba(198, 161, 91, 0.22);
       padding: 50px 40px;
       box-shadow: var(--card-shadow);
       max-width: 860px;
@@ -1221,13 +1228,13 @@
     .form-control, .form-select {
       border-radius: 14px;
       padding: 13px 18px;
-      border: 1px solid #CBD5E1;
+      border: 1px solid #DDE8D0;
       font-size: 0.96rem;
       transition: var(--transition);
     }
     .form-control:focus, .form-select:focus {
       border-color: var(--primary-pink);
-      box-shadow: 0 0 0 4px rgba(232, 122, 144, 0.15);
+      box-shadow: 0 0 0 4px rgba(198, 161, 91, 0.15);
     }
     .btn-wa-submit {
       background: #25D366;
@@ -1269,13 +1276,13 @@
        GRAND FOOTER
        ======================================================== */
     #sec-footer {
-      background: #111827;
-      color: #94A3B8;
+      background: #113336;
+      color: #AEBFBC;
       padding: 85px 0 35px;
       border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
     #sec-footer a {
-      color: #94A3B8;
+      color: #AEBFBC;
     }
     #sec-footer a:hover {
       color: var(--primary-pink);
@@ -1324,7 +1331,7 @@
       z-index: 999;
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(10px);
-      border: 1px solid rgba(197, 160, 89, 0.35);
+      border: 1px solid rgba(198, 161, 91, 0.35);
       border-radius: 50px;
       padding: 9px 18px;
       display: flex;
@@ -1340,7 +1347,7 @@
       background: #FFFFFF;
       border-color: var(--gold-accent);
       transform: translateY(-2px);
-      box-shadow: 0 12px 30px rgba(197, 160, 89, 0.25);
+      box-shadow: 0 12px 30px rgba(198, 161, 91, 0.25);
     }
     .lang-badge-pill {
       background: var(--gold-accent);
@@ -1352,9 +1359,9 @@
 
     /* Mobile Drawer */
     .menu-trigger-btn {
-      background: rgba(197, 160, 89, 0.12);
+      background: rgba(198, 161, 91, 0.12);
       color: var(--gold-dark);
-      border: 1px solid rgba(197, 160, 89, 0.25);
+      border: 1px solid rgba(198, 161, 91, 0.25);
       width: 44px;
       height: 44px;
       border-radius: 12px;
@@ -1371,7 +1378,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(15, 23, 42, 0.65);
+      background: rgba(17, 51, 54, 0.65);
       backdrop-filter: blur(8px);
       z-index: 1050;
       opacity: 0;
@@ -1403,7 +1410,7 @@
     .sheet-handle-bar {
       width: 60px;
       height: 5px;
-      background: #E2E8F0;
+      background: #DDE8D0;
       border-radius: 10px;
       margin: 0 auto 20px auto;
     }
@@ -1417,12 +1424,12 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      background: #F8FAFC;
+      background: #FDFAF1;
       padding: 14px 16px;
       border-radius: 16px;
       color: var(--dark-slate);
       font-weight: 700;
-      border: 1px solid #EEF2F6;
+      border: 1px solid #F1F4EA;
     }
 
     @media (max-width: 991px) {
@@ -1560,6 +1567,29 @@
     @media (max-width: 480px) {
       .hero-specialty { padding: 8px 18px; text-align: center; }
     }
+  
+    /* ===== Unified palette + white background overrides ===== */
+    html, body, section, #sec-stats, #sec-calculator { background-color: #FFFFFF; }
+    #sec-stats, #sec-calculator { background-image: none; border-color: var(--border); }
+    .text-danger, .text-primary, .text-warning { color: var(--accent) !important; }
+    .text-dark { color: var(--foreground) !important; }
+    .text-secondary { color: #AEBFBC !important; }
+    .alert-warning { background: var(--background); color: var(--foreground); border: 1px solid var(--border) !important; }
+    #sec-footer .badge.bg-secondary { background: rgba(255,255,255,0.12) !important; color: #fff; }
+    #sec-footer h5, #sec-footer h6 { color: #FFFFFF !important; }
+    #sec-footer small.text-danger { color: var(--accent) !important; }
+    #sec-booking-form .section-h2 { font-size: clamp(1.45rem, 5.6vw, 2.5rem); }
+    @media (max-width: 576px) {
+      #sec-booking-form .booking-panel { padding: 36px 16px; }
+      #sec-location .section-h2 { font-size: clamp(1.45rem, 6.4vw, 2.2rem); }
+    }
+  
+    /* Keep doctor name and address units on one line (mobile) */
+    @media (max-width: 767px) {
+      .section-h2 { font-size: clamp(1.35rem, 6vw, 2rem) !important; }
+      #sec-booking-form .section-h2 { font-size: clamp(1.3rem, 5.4vw, 2rem) !important; }
+      #sec-location .section-h2 { font-size: clamp(1.3rem, 5.8vw, 2rem) !important; }
+    }
   </style>
 </head>
 <body>
@@ -1583,7 +1613,7 @@
     <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
       <div class="topbar-notice">
         <i class="bi bi-geo-alt-fill text-danger"></i>
-        <span data-i18n="topbar-location">حفر الباطن - حي الربوة</span>
+        <span data-i18n="topbar-location">حفر الباطن - حي الربوة</span>
       </div>
       <div class="d-flex align-items-center gap-3">
         <span class="wa-badge-pill">
@@ -1603,7 +1633,7 @@
           <i class="bi bi-heart-pulse-fill"></i>
         </div>
         <div>
-          <div class="brand-title" data-i18n="brand-name">دكتورة سوزان محمد عيسى</div>
+          <div class="brand-title" data-i18n="brand-name">دكتورة سوزان محمد عيسى</div>
           <div class="brand-subtitle" data-i18n="brand-spec">أخصائية النساء والتوليد والعقم</div>
         </div>
       </a>
@@ -1667,7 +1697,7 @@
 
     <div class="container hero-container">
       <h1 class="hero-h1">
-        <span data-i18n="hero-name">دكتورة سوزان محمد عيسى</span>
+        <span data-i18n="hero-name">دكتورة سوزان محمد عيسى</span>
       </h1>
 
       <div class="hero-specialty">
@@ -1740,14 +1770,14 @@
         <div class="col-lg-7">
           <span class="pill-badge pill-badge-gold" data-i18n="about-tag">من نحن</span>
           <p class="text-muted mb-2" data-i18n="about-intro-1">
-            عيادة دكتورة سوزان محمد عيسى بحفر الباطن، صرح طبي متخصص يقدم خدمات متكاملة رفيعة المستوى في طب وجراحة أمراض النساء، متابعة الحمل، وعلاج تأخر الإنجاب.
+            عيادة دكتورة سوزان محمد عيسى بحفر الباطن، عيادة نسائية تقدم خدمات متكاملة رفيعة المستوى في طب وجراحة أمراض النساء، متابعة الحمل، وعلاج تأخر الإنجاب.
           </p>
           <p class="text-muted mb-4" data-i18n="about-intro-2">
             نجمع بين أحدث التقنيات الطبية المعتمدة عالمياً والخبرات السريرية الطويلة الممتدة لأكثر من 17 عاماً لمنحكِ تجربة علاجية قائمة على الأمان، الدقة، والاحترافية.
           </p>
 
           <h3 class="section-h2 mb-4" data-i18n="about-heading">
-            لماذا عيادة دكتورة سوزان عيسى؟
+            لماذا عيادة دكتورة سوزان عيسى؟
           </h3>
 
           <!-- 4-Item Feature Checklist -->
@@ -1809,7 +1839,7 @@
         <!-- Left Column (Framed Doctor Photo & Floating Stat) -->
         <div class="col-lg-5">
           <div class="about-img-wrapper">
-            <img src="css/dr-suzan-profile.png" alt="دكتورة سوزان محمد عيسى - أخصائية النساء والتوليد والعقم" class="about-framed-photo">
+            <img src="css/dr-suzan-profile.png" alt="دكتورة سوزان محمد عيسى - أخصائية النساء والتوليد والعقم" class="about-framed-photo">
             
             <div class="about-floating-stat">
               <div class="about-floating-number">+17</div>
@@ -1829,9 +1859,9 @@
   <section id="sec-departments">
     <div class="container text-center">
       <span class="pill-badge pill-badge-gold" data-i18n="dept-tag">تخصصاتنا الطبية</span>
-      <h2 class="section-h2"><span data-i18n="dept-title-a">اكتشفي</span> <span class="hero-gold-accent" data-i18n="dept-title-b">أقسام عيادة دكتورة سوزان</span></h2>
+      <h2 class="section-h2"><span data-i18n="dept-title-a">اكتشفي</span> <span class="hero-gold-accent" data-i18n="dept-title-b">عيادة دكتورة سوزان</span></h2>
       <p class="section-subtitle-lead" data-i18n="dept-subtitle">
-        افحصي واطمئني مع دكتورة سوزان — كل ما يخص المرأة.
+        افحصي واطمئني مع دكتورة سوزان — كل ما يخص المرأة.
       </p>
 
       <div class="row g-4 text-start justify-content-center">
@@ -2105,8 +2135,8 @@
               </div>
             </div>
 
-            <a href="https://wa.me/966569049926?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B3%D9%88%D8%B2%D8%A7%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AD%D9%88%D9%84%20%D9%88%D8%B3%D8%A7%D8%A6%D9%84%20%D9%85%D9%86%D8%B9%20%D8%A7%D9%84%D8%AD%D9%85%D9%84" target="_blank" class="btn-dark-pill">
-              <i class="fab fa-whatsapp"></i> <span data-i18n="s3-btn">استشيري الدكتورة عبر واتساب</span>
+            <a href="https://wa.me/966569049926?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B3%D9%88%D8%B2%D8%A7%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF" target="_blank" class="btn-dark-pill">
+              <i class="fab fa-whatsapp"></i> <span data-i18n="s3-btn">احجزي موعدك عبر واتساب</span>
             </a>
           </div>
 
@@ -2177,7 +2207,7 @@
       <span class="pill-badge pill-badge-gold" data-i18n="art-tag">المكتبة الطبية</span>
       <h2 class="section-h2" data-i18n="art-title">مقالات ونصائح طبية لصحة المرأة</h2>
       <p class="section-subtitle-lead" data-i18n="art-subtitle">
-        معلومات طبية موثوقة بقلم دكتورة سوزان محمد عيسى للإجابة عن تساؤلاتكِ الصحية.
+        معلومات طبية موثوقة بقلم دكتورة سوزان محمد عيسى للإجابة عن تساؤلاتكِ الصحية.
       </p>
 
       <div class="row g-4 text-start justify-content-center">
@@ -2240,7 +2270,7 @@
         </div>
         <div class="modal-footer border-top bg-light">
           <a href="https://wa.me/966569049926" target="_blank" class="btn-wa-submit py-2 px-4 fs-6" style="width: auto;">
-            <i class="fab fa-whatsapp"></i> <span data-i18n="modal-book-cta">استشيري الدكتورة عبر واتساب</span>
+            <i class="fab fa-whatsapp"></i> <span data-i18n="modal-book-cta">احجزي موعدك عبر واتساب</span>
           </a>
         </div>
       </div>
@@ -2271,7 +2301,7 @@
               </h2>
               <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                 <div class="accordion-body" data-i18n="faq-a1">
-                  السونار الداخلي (المهبلي) يعطي صورة فائقة الوضوح في الأسابيع الأولى من الحمل، ويستخدم لفحص دقيق للرحم والمبايض وسماكة بطانة الرحم والكشف عن أكياس المبيض. أما السونار البطني فيستخدم لمتابعة نمو الجنين وحركته ووضع المشيمة في مراحل الحمل المتوسطة والمتقدمة. كلا الفحصين آمنان تماماً وبدون أي ألم.
+                  السونار الداخلي (المهبلي) يعطي صورة فائقة الوضوح، ويستخدم لفحص دقيق للرحم والمبايض وسماكة بطانة الرحم والكشف عن أكياس المبيض. أما السونار البطني فيستخدم لمتابعة نمو الجنين وحركته ووضع المشيمة في مراحل الحمل المتوسطة والمتقدمة. كلا الفحصين آمنان تماماً وبدون أي ألم.
                 </div>
               </div>
             </div>
@@ -2284,7 +2314,7 @@
               </h2>
               <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body" data-i18n="faq-a3">
-                  اختيار الوسيلة يعتمد على تقييم طبي شامل لحالتكِ الصحية، ضغط الدم، الرضاعة الطبيعية، وطبيعة الدورة الشهرية. تقوم الدكتورة سوزان بفحصكِ ومناقشة الخيارات المناسبة مثل اللولب النحاسي أو الهرموني أو الكبسولة لتحديد الوسيلة الأكثر راحة وأماناً لكِ.
+                  اختيار الوسيلة يعتمد على تقييم طبي شامل لحالتكِ الصحية، ضغط الدم، الرضاعة الطبيعية، وطبيعة الدورة الشهرية. تقوم الدكتورة سوزان بفحصكِ ومناقشة الخيارات المناسبة مثل اللولب النحاسي أو الهرموني أو الكبسولة لتحديد الوسيلة الأكثر راحة وأماناً لكِ.
                 </div>
               </div>
             </div>
@@ -2314,8 +2344,8 @@
     <div class="container">
       <div class="booking-panel">
         <div class="text-center mb-4">
-          <span class="pill-badge pill-badge-gold" data-i18n="form-tag">حجز استشارة عبر واتساب</span>
-          <h2 class="section-h2" data-i18n="form-title">احجزي موعدكِ مع دكتورة سوزان محمد عيسى</h2>
+          <span class="pill-badge pill-badge-gold" data-i18n="form-tag">حجز موعد عبر واتساب</span>
+          <h2 class="section-h2" data-i18n="form-title">احجزي موعدكِ مع دكتورة سوزان محمد عيسى</h2>
           <p class="text-muted" data-i18n="form-subtitle">
             يرجى ملء البيانات أدناه ليتم إرسال طلب الحجز وتنسيق الموعد المناسب مباشرة عبر واتساب:
           </p>
@@ -2348,6 +2378,7 @@
                 <option value="علاج أمراض نسائية وتأخر إنجاب" data-i18n="svc-4">علاج الأمراض النسائية والالتهابات وتأخر الحمل</option>
                 <option value="فحص وقائي ومسحة عنق الرحم" data-i18n="svc-5">الفحوصات الوقائية الشاملة ومسحة عنق الرحم</option>
                 <option value="استشارة سن الأمل وانقطاع الطمث" data-i18n="svc-6">استشارة سن انقطاع الطمث وتحسين جودة الحياة</option>
+                <option value="التجميل النسائي" data-i18n="svc-7">التجميل النسائي</option>
               </select>
             </div>
 
@@ -2383,9 +2414,9 @@
       <div class="row align-items-center g-5">
         <div class="col-lg-5">
           <span class="pill-badge pill-badge-gold" data-i18n="loc-tag">موقع العيادة</span>
-          <h2 class="section-h2" data-i18n="loc-title">عيادة دكتورة سوزان • حفر الباطن</h2>
+          <h2 class="section-h2" data-i18n="loc-title">عيادة دكتورة سوزان • حفر الباطن</h2>
           <p class="text-muted mb-4" data-i18n="loc-subtitle">
-            مجمع مورال الطبي، شارع الأمير مقرن بن عبدالعزيز، حي الربوة، حفر الباطن، المملكة العربية السعودية.
+            مجمع مورال الطبي، شارع الأمير مقرن بن عبدالعزيز، حي الربوة، حفر الباطن، المملكة العربية السعودية.
           </p>
 
           <div class="d-flex flex-column gap-3 mb-4">
@@ -2430,15 +2461,15 @@
           <div class="d-flex align-items-center gap-2 mb-3">
             <div class="brand-icon-emblem"><i class="bi bi-heart-pulse-fill"></i></div>
             <div>
-              <h5 class="fw-bold text-white mb-0" data-i18n="brand-name">دكتورة سوزان محمد عيسى</h5>
+              <h5 class="fw-bold text-white mb-0" data-i18n="brand-name">دكتورة سوزان محمد عيسى</h5>
               <small class="text-danger fw-bold" data-i18n="brand-spec">أخصائية النساء والتوليد والعقم</small>
             </div>
           </div>
           <p class="small mb-3 text-secondary" data-i18n="foot-desc">
-            عيادة متخصصة بحفر الباطن. رعاية طبية متكاملة لصحة المرأة، متابعة الحمل، علاج تأخر الإنجاب، وسائل منع الحمل، والسونار البطني والداخلي بخبرة 17 عاماً.
+            عيادة متخصصة بحفر الباطن. رعاية طبية متكاملة لصحة المرأة، متابعة الحمل، علاج تأخر الإنجاب، وسائل منع الحمل، والسونار البطني والداخلي بخبرة 17 عاماً.
           </p>
           <div class="d-flex gap-2">
-            <span class="badge bg-secondary" data-i18n="foot-b1">حفر الباطن</span>
+            <span class="badge bg-secondary" data-i18n="foot-b1">حفر الباطن</span>
             <span class="badge bg-secondary" data-i18n="foot-b3">خبرة 17 عاماً</span>
           </div>
         </div>
@@ -2469,9 +2500,8 @@
         <div class="col-lg-3">
           <h6 class="fw-bold text-white mb-3" data-i18n="f-contact-head">بيانات الزيارة والتواصل</h6>
           <ul class="list-unstyled small d-flex flex-column gap-2">
-            <li><i class="bi bi-geo-alt text-danger me-2"></i> <span data-i18n="foot-address">شارع الأمير مقرن بن عبدالعزيز، حي الربوة، حفر الباطن.</span></li>
-            <li><i class="fab fa-whatsapp text-success me-2"></i> <span data-i18n="foot-wa-only">واتساب فقط: 0569049926</span></li>
-            <li class="text-warning"><i class="bi bi-info-circle me-2"></i> <span data-i18n="foot-no-calls">لا نستقبل مكالمات هاتفية مباشرة</span></li>
+            <li><i class="bi bi-geo-alt text-danger me-2"></i> <span data-i18n="foot-address">شارع الأمير مقرن بن عبدالعزيز، حي الربوة، حفر الباطن.</span></li>
+            <li><i class="fab fa-whatsapp text-success me-2"></i> <span data-i18n="foot-wa-only">واتساب والاتصال: 0569049926</span></li>
           </ul>
         </div>
       </div>
@@ -2480,7 +2510,7 @@
 
       <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 small text-secondary">
         <div>
-          &copy; 2026 <span data-i18n="foot-copy">عيادة دكتورة سوزان محمد عيسى. جميع الحقوق محفوظة.</span>
+          &copy; 2026 <span data-i18n="foot-copy">عيادة دكتورة سوزان محمد عيسى. جميع الحقوق محفوظة.</span>
         </div>
         <div>
           <span data-i18n="foot-credit">تم التطوير والتصميم بواسطة</span> <a href="https://www.facebook.com/profile.php?id=61594550781374&locale=ar_AR" target="_blank" class="text-white fw-bold">Devora Web</a>
@@ -2588,7 +2618,7 @@
         const date = document.getElementById('prefDate').value;
         const notes = document.getElementById('patientNotes').value.trim();
 
-        let message = `مرحباً دكتورة سوزان عيسى، أود حجز موعد استشارة:\n`;
+        let message = `مرحباً دكتورة سوزان عيسى، أود حجز موعد استشارة:\n`;
         message += `• الاسم: ${name}\n`;
         message += `• رقم الجوال: ${phone}\n`;
         message += `• الخدمة المطلوبة: ${service}\n`;
@@ -2610,10 +2640,10 @@
         content: `
           <p class="lead text-dark">يعد اختيار وسيلة منع الحمل قراراً صحياً هاماً يتطلب تقييماً دقيقاً لحالتكِ الصحية ونمط حياتكِ لضمان أقصى درجات الفعالية والراحة.</p>
           <h5 class="fw-bold mt-4 text-danger">أنواع وسائل منع الحمل الحديثة:</h5>
-          <p class="text-muted">• <strong>اللولب الهرموني:</strong> يتميز بكفاءة فائقة تصل إلى أكثر من 99%، ويعمل على تقليل كمية وآلام الدورة الشهرية، ويبقى فعالاً لعدة سنوات مع إمكانية إزالته بسهولة عند الرغبة بالحمل.</p>
           <p class="text-muted">• <strong>اللولب النحاسي:</strong> خيار غير هرموني مثالي للسيدات اللاتي لا يفضلن التأثيرات الهرمونية، ويوفر حماية طويلة الأمد فور تركيبه.</p>
+          <p class="text-muted">• <strong>اللولب الهرموني:</strong> يتميز بكفاءة فائقة، ويعمل على تقليل كمية وآلام الدورة الشهرية، ويبقى فعالاً لعدة سنوات مع إمكانية إزالته بسهولة عند الرغبة بالحمل.</p>
           <p class="text-muted">• <strong>كبسولات منع الحمل تحت الجلد:</strong> وسيلة سهلة ومريحة توفر حماية ممتدة لمدة 3 سنوات دون الحاجة لتذكر تناول الحبوب اليومية.</p>
-          <h5 class="fw-bold mt-4 text-danger">نصيحة دكتورة سوزان محمد عيسى:</h5>
+          <h5 class="fw-bold mt-4 text-danger">نصيحة دكتورة سوزان محمد عيسى:</h5>
           <p class="text-muted">نوصي دائماً بإجراء فحص بالسونار البطني أو الداخلي قبل اختيار الوسيلة للتأكد من وضع الرحم وخلوه من أي ألياف أو التهابات، ومتابعة استقرار الوسيلة بعد التركيب للاطمئنان الكامل.</p>
         `
       },
@@ -2624,7 +2654,7 @@
         content: `
           <p class="lead text-dark">يعد الفحص التلفزيوني (السونار) الركيزة الأولى في تقييم سلامة الجنين وصحة الرحم والمبايض في كل مرحلة.</p>
           <h5 class="fw-bold mt-4 text-danger">السونار الداخلي (المهبلي):</h5>
-          <p class="text-muted">يستخدم في الأسابيع الأولى من الحمل للتأكد من وجود كيس الحمل داخل الرحم، وسماع نبض الجنين مبكراً، وتشخيص أكياس المبيض والنزيف غير المنتظم بأعلى دقة ممكنة.</p>
+          <p class="text-muted">يستخدم للتأكد من وجود كيس الحمل داخل الرحم، وسماع نبض الجنين مبكراً، وتشخيص أكياس المبيض والنزيف غير المنتظم بأعلى دقة ممكنة.</p>
           <h5 class="fw-bold mt-4 text-danger">السونار البطني:</h5>
           <p class="text-muted">يستخدم في الثلثين الثاني والثالث لمتابعة قياسات نمو الجنين، والتأكد من وزن الجنين وموقع المشيمة وكمية السائل الأمنيوسي المحيط به.</p>
         `
@@ -2638,10 +2668,10 @@
         content: `
           <p class="lead text-dark">Choosing a contraceptive is an important health decision that requires a careful assessment of your health and lifestyle to ensure maximum effectiveness and comfort.</p>
           <h5 class="fw-bold mt-4 text-danger">Modern contraceptive options:</h5>
-          <p class="text-muted">• <strong>Hormonal IUD:</strong> Over 99% effective, reduces menstrual flow and cramps, stays effective for several years and can be removed easily when you wish to conceive.</p>
           <p class="text-muted">• <strong>Copper IUD:</strong> A hormone-free option ideal for women who prefer to avoid hormonal effects, offering long-term protection immediately after insertion.</p>
+          <p class="text-muted">• <strong>Hormonal IUD:</strong> Highly effective, reduces menstrual flow and cramps, stays effective for several years and can be removed easily when you wish to conceive.</p>
           <p class="text-muted">• <strong>Subdermal implant:</strong> An easy and comfortable method providing up to 3 years of protection without remembering a daily pill.</p>
-          <h5 class="fw-bold mt-4 text-danger">Dr. Suzan Mohamed Issa's advice:</h5>
+          <h5 class="fw-bold mt-4 text-danger">Dr. Suzan Mohamed Issa's advice:</h5>
           <p class="text-muted">We always recommend an abdominal or pelvic ultrasound before choosing a method to confirm the position of the uterus and rule out fibroids or infection, and a follow-up after insertion for complete reassurance.</p>
         `
       },
@@ -2651,7 +2681,7 @@
         content: `
           <p class="lead text-dark">Ultrasound is the first pillar in assessing fetal wellbeing and the health of the uterus and ovaries at every stage.</p>
           <h5 class="fw-bold mt-4 text-danger">Transvaginal (pelvic) ultrasound:</h5>
-          <p class="text-muted">Used in the early weeks to confirm the gestational sac is inside the uterus, hear the fetal heartbeat early, and diagnose ovarian cysts and irregular bleeding with the highest possible accuracy.</p>
+          <p class="text-muted">Used to confirm the gestational sac is inside the uterus, hear the fetal heartbeat early, and diagnose ovarian cysts and irregular bleeding with the highest possible accuracy.</p>
           <h5 class="fw-bold mt-4 text-danger">Abdominal ultrasound:</h5>
           <p class="text-muted">Used in the second and third trimesters to track fetal growth measurements, estimate fetal weight, and check placental position and the amount of amniotic fluid.</p>
         `
@@ -2678,9 +2708,9 @@
     // 5. BILINGUAL ARABIC / ENGLISH TRANSLATION ENGINE
     const translations = {
       ar: {
-        "topbar-location": "حفر الباطن - حي الربوة",
+        "topbar-location": "حفر الباطن - حي الربوة",
         "topbar-wa-notice": "التواصل والحجز عبر واتساب فقط",
-        "brand-name": "دكتورة سوزان محمد عيسى",
+        "brand-name": "دكتورة سوزان محمد عيسى",
         "brand-spec": "أخصائية النساء والتوليد والعقم",
         "nav-home": "الرئيسية",
         "nav-about": "من نحن",
@@ -2691,7 +2721,7 @@
         "nav-articles": "المقالات",
         "nav-location": "اتصل بنا",
         "nav-book-btn": "احجزي الآن",
-        "hero-name": "دكتورة سوزان محمد عيسى",
+        "hero-name": "دكتورة سوزان محمد عيسى",
         "hero-specialty": "أخصائية النساء والتوليد والعقم",
         "hero-lead": "عناية متكاملة بصحة المرأة وجمالها",
         "hero-btn-book": "احجزي موعداً عبر واتساب",
@@ -2703,10 +2733,10 @@
         "art-view-all": "تصفحي المكتبة الطبية الكاملة"
       },
       en: {
-        __title: "Dr. Suzan Mohamed Issa | Gynecology, Obstetrics & Infertility Specialist",
-        "topbar-location": "Hafar Al-Batin - Ar Rabwah",
+        __title: "Dr. Suzan Mohamed Issa | Gynecology, Obstetrics & Infertility Specialist",
+        "topbar-location": "Hafar Al-Batin - Ar Rabwah",
         "topbar-wa-notice": "Communication & Booking via WhatsApp Only",
-        "brand-name": "Dr. Suzan Mohamed Issa",
+        "brand-name": "Dr. Suzan Mohamed Issa",
         "brand-spec": "Gynecology, Obstetrics & Infertility Specialist",
         "nav-home": "Home",
         "nav-about": "About",
@@ -2717,7 +2747,7 @@
         "nav-articles": "Articles",
         "nav-location": "Contact",
         "nav-book-btn": "Book Now",
-        "hero-name": "Dr. Suzan Mohamed Issa",
+        "hero-name": "Dr. Suzan Mohamed Issa",
         "hero-specialty": "Specialist in Gynecology, Obstetrics & Infertility",
         "hero-lead": "Comprehensive care for women's health and beauty",
         "hero-btn-book": "Book via WhatsApp",
@@ -2727,9 +2757,9 @@
         "stat-privacy": "Female Medical Supervision",
         "hero-scroll": "Scroll Down",
         "about-tag": "About Us",
-        "about-intro-1": "Dr. Suzan Mohamed Issa's clinic in Hafar Al-Batin delivers specialized, high-quality care in gynecology, obstetrics, pregnancy follow-up and fertility.",
+        "about-intro-1": "Dr. Suzan Mohamed Issa's clinic in Hafar Al-Batin delivers specialized, high-quality care in gynecology, obstetrics, pregnancy follow-up and fertility.",
         "about-intro-2": "Combining certified modern technologies with over 17 years of clinical experience to offer you care built on safety, precision, and privacy.",
-        "about-heading": "Why Choose Dr. Suzan Issa Clinic?",
+        "about-heading": "Why Choose Dr. Suzan Issa Clinic?",
         "about-f1-title": "Extensive Experience:",
         "about-f1-desc": "Over 17 years of clinical experience in gynecology, obstetrics, pregnancy care and infertility.",
         "about-f2-title": "Advanced Technologies:",
@@ -2739,7 +2769,7 @@
         "about-f4-title": "Comfort & Complete Privacy:",
         "about-f4-desc": "Contemporary design and tranquil female environment ensuring total peace of mind.",
         "vision-title": "Our Vision",
-        "vision-desc": "To be the most trusted destination for advanced women's healthcare in Hafar Al-Batin.",
+        "vision-desc": "To be the most trusted destination for advanced women's healthcare in Hafar Al-Batin.",
         "mission-title": "Our Mission",
         "mission-desc": "Promoting natural wellness and women's health through compassionate, evidence-based, and innovative care.",
         "about-book-btn": "Book Consultation via WhatsApp",
@@ -2790,7 +2820,7 @@
         "s3-f2-desc": "Safe, gentle placement of hormonal or copper IUDs and contraceptive implants.",
         "s3-f3-title": "Continuous Follow-Up Support",
         "s3-f3-desc": "Routine ultrasound checks and immediate WhatsApp support for your inquiries.",
-        "s3-btn": "Consult Doctor via WhatsApp",
+        "s3-btn": "Book Your Appointment via WhatsApp",
         "calc-tag": "Clinical Pregnancy Calculator",
         "calc-title": "Calculate Due Date & Fetal Gestational Weeks",
         "calc-subtitle": "Accurate tool based on Naegele's rule to estimate gestational age and milestones.",
@@ -2801,14 +2831,14 @@
         "calc-book-cta": "Book Ultrasound & Pregnancy Checkup via WhatsApp",
         "art-tag": "Medical Library",
         "art-title": "Medical Insights & Women's Health Advice",
-        "art-subtitle": "Verified medical education written by Dr. Suzan Mohamed Issa.",
+        "art-subtitle": "Verified medical education written by Dr. Suzan Mohamed Issa.",
         "art-read-btn": "Read Full Article",
         "art-view-all": "Browse the Full Medical Library",
         "faq-tag": "FAQ",
         "faq-title": "Clear Answers to Common Inquiries",
         "faq-subtitle": "Compiled answers regarding pregnancy care, ultrasound and contraception.",
-        "form-tag": "WhatsApp Consultation Booking",
-        "form-title": "Book Appointment With Dr. Suzan Mohamed Issa",
+        "form-tag": "WhatsApp Appointment Booking",
+        "form-title": "Book Appointment With Dr. Suzan Mohamed Issa",
         "form-subtitle": "Fill in the details below to transmit your booking directly to WhatsApp for rapid confirmation:",
         "form-wa-alert": "Notice: Communication and appointment confirmations are handled exclusively through WhatsApp. We do not accept incoming phone calls to preserve clinic tranquility.",
         "f-name": "Full Name:",
@@ -2822,14 +2852,14 @@
         "f-submit": "Send Booking Directly via WhatsApp",
         "f-privacy-note": "All personal and medical information is handled with 100% strict medical confidentiality.",
         "loc-tag": "Clinic Location",
-        "loc-title": "Dr. Suzan's Clinic • Hafar Al-Batin",
-        "loc-subtitle": "Moral Medical Complex, Prince Muqrin bin Abdulaziz Street, Ar Rabwah District, Hafar Al-Batin, Saudi Arabia.",
+        "loc-title": "Dr. Suzan's Clinic • Hafar Al-Batin",
+        "loc-subtitle": "Moral Medical Complex, Prince Muqrin bin Abdulaziz Street, Ar Rabwah District, Hafar Al-Batin, Saudi Arabia.",
         "loc-map-btn": "Open Location in Google Maps",
-        "modal-book-cta": "Consult Doctor via WhatsApp",
-        "foot-wa-only": "WhatsApp Only: 0569049926",
+        "modal-book-cta": "Book Your Appointment via WhatsApp",
+        "foot-wa-only": "WhatsApp & Calls: 0569049926",
         "foot-no-calls": "No direct phone calls accepted",
         "dept-title-a": "Explore",
-        "dept-title-b": "Dr. Suzan's Clinic Departments",
+        "dept-title-b": "Dr. Suzan's Clinic",
         "stats-title-a": "Numbers That",
         "stats-title-b": "Reflect Your Trust",
         "nav-faq": "FAQ",
@@ -2842,7 +2872,7 @@
         "art-3-title": "Why Abdominal & Transvaginal Ultrasound Matter for Pregnancy Safety",
         "art-3-desc": "When is transvaginal ultrasound used versus abdominal? And how each accurately shows fetal growth and uterine and ovarian health.",
         "faq-q1": "What is the difference between abdominal and transvaginal ultrasound?",
-        "faq-a1": "Transvaginal ultrasound gives an extremely clear image in the early weeks of pregnancy and is used to examine the uterus, ovaries and endometrial thickness and to detect ovarian cysts. Abdominal ultrasound is used to monitor fetal growth, movement and placental position in the middle and later stages of pregnancy. Both scans are completely safe and painless.",
+        "faq-a1": "Transvaginal ultrasound gives an extremely clear image and is used to examine the uterus, ovaries and endometrial thickness and to detect ovarian cysts. Abdominal ultrasound is used to monitor fetal growth, movement and placental position in the middle and later stages of pregnancy. Both scans are completely safe and painless.",
         "faq-q3": "How do I choose the right contraceptive method?",
         "faq-a3": "The choice depends on a thorough medical assessment of your health, blood pressure, breastfeeding status and menstrual pattern. Dr. Suzan will examine you and discuss suitable options such as the copper IUD, hormonal IUD or implant to find the most comfortable and safest method for you.",
         "faq-q4": "Do you offer delivery? How do I book an appointment?",
@@ -2851,11 +2881,11 @@
         "loc-feature-1-desc": "Ample, convenient parking for all patients.",
         "loc-feature-2": "Communication & Appointments",
         "loc-feature-2-desc": "Via WhatsApp only: 0569049926",
-        "foot-desc": "A specialized clinic in Hafar Al-Batin. Comprehensive women's healthcare, pregnancy follow-up, contraception, infertility care and abdominal & pelvic ultrasound with 17 years of experience.",
-        "foot-b1": "Hafar Al-Batin",
+        "foot-desc": "A specialized clinic in Hafar Al-Batin. Comprehensive women's healthcare, pregnancy follow-up, contraception, infertility care and abdominal & pelvic ultrasound with 17 years of experience.",
+        "foot-b1": "Hafar Al-Batin",
         "foot-b3": "17 Years of Experience",
-        "foot-address": "Prince Muqrin bin Abdulaziz St., Ar Rabwah District, Hafar Al-Batin.",
-        "foot-copy": "Dr. Suzan Mohamed Issa Clinic. All rights reserved.",
+        "foot-address": "Prince Muqrin bin Abdulaziz St., Ar Rabwah District, Hafar Al-Batin.",
+        "foot-copy": "Dr. Suzan Mohamed Issa Clinic. All rights reserved.",
         "foot-credit": "Designed & developed by",
         "cyc-26": "26 days",
         "cyc-28": "28 days (typical)",
@@ -2867,6 +2897,7 @@
         "svc-4": "Gynecological conditions, infections & infertility",
         "svc-5": "Comprehensive preventive screening & Pap smear",
         "svc-6": "Menopause consultation & quality-of-life care",
+        "svc-7": "Women's cosmetic & aesthetic care",
         "f-quick-links": "Quick Links",
         "f-services-list": "Medical Specialties",
         "f-contact-head": "Visiting & Contact Info"
