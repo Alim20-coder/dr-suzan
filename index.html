@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>دكتورة سوزان محمد عيسى | أخصائية النساء والتوليد والعقم - حفر الباطن</title>
+  <title>دكتورة سوزان محمد عيسى | أخصائية النساء والتوليد والعقم والتجميل النسائي - حفر الباطن</title>
   
   <!-- SEO Meta Tags -->
   <meta name="description" content="عيادة دكتورة سوزان محمد عيسى - خبرة 17 عاماً في طب وجراحة أمراض النساء، متابعة الحمل، علاج تأخر الإنجاب، وسائل منع الحمل، والسونار البطني والداخلي في حفر الباطن. افحصي واطمئني مع دكتورة سوزان.">
@@ -14,7 +14,7 @@
 
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="دكتورة سوزان محمد عيسى | أخصائية النساء والتوليد والعقم">
+  <meta property="og:title" content="دكتورة سوزان محمد عيسى | أخصائية النساء والتوليد والعقم والتجميل النسائي">
   <meta property="og:description" content="عيادة متخصصة في حفر الباطن. خبرة 17 عاماً في رعاية المرأة، متابعة الحمل، علاج العقم، وتنظيم الأسرة. التواصل عبر واتساب.">
   <meta property="og:image" content="css/dr-suzan-profile.png">
   <meta property="og:locale" content="ar_SA">
@@ -376,7 +376,7 @@
     .hero-dark-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(17, 51, 54, 0.52) 0%, rgba(17, 51, 54, 0.42) 50%, rgba(17, 51, 54, 0.68) 100%);
+      background: linear-gradient(180deg, rgba(17, 51, 54, 0.80) 0%, rgba(17, 51, 54, 0.74) 50%, rgba(17, 51, 54, 0.92) 100%);
       z-index: 1;
     }
     /* Organic curved frosted backdrop shapes */
@@ -418,6 +418,7 @@
       display: inline-block;
     }
     .hero-lead-text {
+      white-space: pre-line;
       font-size: clamp(1.05rem, 1.8vw, 1.3rem);
       color: rgba(255, 255, 255, 0.92);
       max-width: 760px;
@@ -1547,25 +1548,40 @@
     }
   
     /* Hero: name + specialty */
-    #sec-hero .hero-h1 { margin-bottom: 16px; }
+    /* Name + specialty share one column so the specialty sits exactly under the name */
+    .hero-identity {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: fit-content;
+      max-width: 100%;
+      margin: 0 auto 22px;
+      transform: translateX(14px); /* nudge slightly to the right */
+    }
+    #sec-hero .hero-h1 { margin-bottom: 14px; white-space: nowrap; }
     .hero-specialty {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      padding: 8px 26px;
-      margin-bottom: 22px;
+      gap: 8px;
+      padding: 7px 20px;
+      margin-bottom: 0;
       background: rgba(255, 255, 255, 0.12);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.25);
-      border-radius: 50px;
-      font-size: clamp(1.05rem, 2vw, 1.5rem);
+      border-radius: 32px;
+      white-space: nowrap;
+      text-align: center;
+      line-height: 1.6;
+      font-size: clamp(0.62rem, 3.1vw, 1.05rem);
       font-weight: 800;
       color: #F0D9A0;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     }
     @media (max-width: 480px) {
-      .hero-specialty { padding: 8px 18px; text-align: center; }
+      .hero-specialty { padding: 6px 12px; gap: 6px; text-align: center; }
+      .hero-identity { transform: translateX(8px); }
+      #sec-hero .hero-h1 { font-size: clamp(1.45rem, 7.2vw, 2rem); }
     }
   
     /* ===== Unified palette + white background overrides ===== */
@@ -1634,7 +1650,7 @@
         </div>
         <div>
           <div class="brand-title" data-i18n="brand-name">دكتورة سوزان محمد عيسى</div>
-          <div class="brand-subtitle" data-i18n="brand-spec">أخصائية النساء والتوليد والعقم</div>
+          <div class="brand-subtitle" data-i18n="brand-spec">أخصائية النساء والتوليد والعقم والتجميل النسائي</div>
         </div>
       </a>
 
@@ -1696,17 +1712,20 @@
     <div class="hero-organic-blob-2"></div>
 
     <div class="container hero-container">
-      <h1 class="hero-h1">
-        <span data-i18n="hero-name">دكتورة سوزان محمد عيسى</span>
-      </h1>
+      <div class="hero-identity">
+        <h1 class="hero-h1">
+          <span data-i18n="hero-name">دكتورة سوزان محمد عيسى</span>
+        </h1>
 
-      <div class="hero-specialty">
-        <i class="bi bi-heart-pulse-fill"></i>
-        <span data-i18n="hero-specialty">أخصائية النساء والتوليد والعقم</span>
+        <div class="hero-specialty">
+          <i class="bi bi-heart-pulse-fill"></i>
+          <span class="hero-specialty-text" data-i18n="hero-specialty">أخصائية النساء والتوليد والعقم والتجميل النسائي</span>
+        </div>
       </div>
 
       <p class="hero-lead-text" data-i18n="hero-lead">
         عناية متكاملة بصحة المرأة وجمالها
+التجميل النسائي وكل ما يمنحك الشباب والثقة
       </p>
 
       <div class="hero-btn-group">
@@ -1839,7 +1858,7 @@
         <!-- Left Column (Framed Doctor Photo & Floating Stat) -->
         <div class="col-lg-5">
           <div class="about-img-wrapper">
-            <img src="css/dr-suzan-profile.png" alt="دكتورة سوزان محمد عيسى - أخصائية النساء والتوليد والعقم" class="about-framed-photo">
+            <img src="css/dr-suzan-profile.png" alt="دكتورة سوزان محمد عيسى - أخصائية النساء والتوليد والعقم والتجميل النسائي" class="about-framed-photo">
             
             <div class="about-floating-stat">
               <div class="about-floating-number">+17</div>
@@ -1965,6 +1984,21 @@
             <h4 class="dept-card-title" data-i18n="dept-8-title">سن انقطاع الطمث</h4>
             <p class="dept-card-text" data-i18n="dept-8-desc">
               التعامل مع أعراض انقطاع الطمث والهبات الساخنة وتقديم العلاج الداعم لتحسين جودة الحياة.
+            </p>
+            <div class="dept-card-watermark"></div>
+          </div>
+        </div>
+
+        <!-- 08: التجميل النسائي -->
+        <div class="col-md-6 col-lg-3">
+          <div class="dept-card">
+            <div class="dept-card-top">
+              <div class="dept-icon-square"><i class="bi bi-stars"></i></div>
+              <span class="dept-card-num">08</span>
+            </div>
+            <h4 class="dept-card-title" data-i18n="dept-9-title">التجميل النسائي</h4>
+            <p class="dept-card-text" data-i18n="dept-9-desc">
+              التجميل النسائي وكل ما يمنحك الشباب والثقة بالنفس، برعاية متخصصة وخصوصية تامة.
             </p>
             <div class="dept-card-watermark"></div>
           </div>
@@ -2322,12 +2356,12 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                  <span data-i18n="faq-q4">هل يتوفر لديكم توليد؟ وكيف يتم حجز المواعيد؟</span>
+                  <span data-i18n="faq-q4">هل يتوفر لديكم خدمة التجميل النسائي؟</span>
                 </button>
               </h2>
               <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body" data-i18n="faq-a4">
-                  العيادة متخصصة حصرياً في متابعة الحمل، الفحص بالسونار البطني والداخلي، وسائل تنظيم الأسرة، وعلاج اضطرابات أمراض النساء وتأخر الإنجاب، ولا نقوم بإجراء عمليات التوليد. التواصل وحجز المواعيد يتم حصرياً عبر تطبيق واتساب لضمان ترتيب أوقات الزيارة بدقة.
+                  نعم، يتوفر لدينا التجميل النسائي بكل أنواعه، ونحرص على تحسين صحة المنطقة النسائية، ويتوفر لدينا استشارات ومتابعة للحالات الخاصة حسب احتياج كل سيدة.
                 </div>
               </div>
             </div>
@@ -2462,7 +2496,7 @@
             <div class="brand-icon-emblem"><i class="bi bi-heart-pulse-fill"></i></div>
             <div>
               <h5 class="fw-bold text-white mb-0" data-i18n="brand-name">دكتورة سوزان محمد عيسى</h5>
-              <small class="text-danger fw-bold" data-i18n="brand-spec">أخصائية النساء والتوليد والعقم</small>
+              <small class="text-danger fw-bold" data-i18n="brand-spec">أخصائية النساء والتوليد والعقم والتجميل النسائي</small>
             </div>
           </div>
           <p class="small mb-3 text-secondary" data-i18n="foot-desc">
@@ -2711,7 +2745,7 @@
         "topbar-location": "حفر الباطن - حي الربوة",
         "topbar-wa-notice": "التواصل والحجز عبر واتساب فقط",
         "brand-name": "دكتورة سوزان محمد عيسى",
-        "brand-spec": "أخصائية النساء والتوليد والعقم",
+        "brand-spec": "أخصائية النساء والتوليد والعقم والتجميل النسائي",
         "nav-home": "الرئيسية",
         "nav-about": "من نحن",
         "nav-services": "الخدمات",
@@ -2722,8 +2756,8 @@
         "nav-location": "اتصل بنا",
         "nav-book-btn": "احجزي الآن",
         "hero-name": "دكتورة سوزان محمد عيسى",
-        "hero-specialty": "أخصائية النساء والتوليد والعقم",
-        "hero-lead": "عناية متكاملة بصحة المرأة وجمالها",
+        "hero-specialty": "أخصائية النساء والتوليد والعقم والتجميل النسائي",
+        "hero-lead": "عناية متكاملة بصحة المرأة وجمالها\nالتجميل النسائي وكل ما يمنحك الشباب والثقة",
         "hero-btn-book": "احجزي موعداً عبر واتساب",
         "hero-btn-explore": "استكشفي خدماتنا",
         "stat-satisfaction": "رضا المراجعات",
@@ -2733,11 +2767,11 @@
         "art-view-all": "تصفحي المكتبة الطبية الكاملة"
       },
       en: {
-        __title: "Dr. Suzan Mohamed Issa | Gynecology, Obstetrics & Infertility Specialist",
+        __title: "Dr. Suzan Mohamed Issa | Gynecology, Obstetrics, Infertility & Cosmetic Gynecology Specialist",
         "topbar-location": "Hafar Al-Batin - Ar Rabwah",
         "topbar-wa-notice": "Communication & Booking via WhatsApp Only",
         "brand-name": "Dr. Suzan Mohamed Issa",
-        "brand-spec": "Gynecology, Obstetrics & Infertility Specialist",
+        "brand-spec": "Gynecology, Obstetrics, Infertility & Cosmetic Gynecology Specialist",
         "nav-home": "Home",
         "nav-about": "About",
         "nav-services": "Services",
@@ -2748,8 +2782,8 @@
         "nav-location": "Contact",
         "nav-book-btn": "Book Now",
         "hero-name": "Dr. Suzan Mohamed Issa",
-        "hero-specialty": "Specialist in Gynecology, Obstetrics & Infertility",
-        "hero-lead": "Comprehensive care for women's health and beauty",
+        "hero-specialty": "Specialist in Gynecology, Obstetrics, Infertility & Cosmetic Gynecology",
+        "hero-lead": "Comprehensive care for women's health and beauty\nCosmetic gynecology and everything that gives you youth and confidence",
         "hero-btn-book": "Book via WhatsApp",
         "hero-btn-explore": "Explore Our Services",
         "stat-satisfaction": "Patient Satisfaction",
@@ -2790,6 +2824,8 @@
         "dept-7-desc": "Early detection screenings for breast and cervical health (Pap smear) and comprehensive routine checkups.",
         "dept-8-title": "Menopause & Wellness",
         "dept-8-desc": "Managing menopausal symptoms and providing supportive care to elevate quality of life.",
+        "dept-9-title": "Cosmetic Gynecology",
+        "dept-9-desc": "Cosmetic gynecology and everything that gives you youth and confidence, with specialized care and full privacy.",
         "stats-tag": "Our Achievements",
         "stats-subtitle": "Proud of the outcomes and smiles achieved with our valued patients.",
         "stat-ring-1-title": "Patient Satisfaction",
@@ -2875,8 +2911,8 @@
         "faq-a1": "Transvaginal ultrasound gives an extremely clear image and is used to examine the uterus, ovaries and endometrial thickness and to detect ovarian cysts. Abdominal ultrasound is used to monitor fetal growth, movement and placental position in the middle and later stages of pregnancy. Both scans are completely safe and painless.",
         "faq-q3": "How do I choose the right contraceptive method?",
         "faq-a3": "The choice depends on a thorough medical assessment of your health, blood pressure, breastfeeding status and menstrual pattern. Dr. Suzan will examine you and discuss suitable options such as the copper IUD, hormonal IUD or implant to find the most comfortable and safest method for you.",
-        "faq-q4": "Do you offer delivery? How do I book an appointment?",
-        "faq-a4": "The clinic specializes exclusively in pregnancy follow-up, abdominal and transvaginal ultrasound, family planning, and treatment of gynecological disorders and infertility. We do not perform deliveries. Communication and booking are handled exclusively via WhatsApp to schedule visits precisely.",
+        "faq-q4": "Do you offer cosmetic gynecology services?",
+        "faq-a4": "Yes, we offer cosmetic gynecology in all its forms, and we are committed to improving feminine intimate health. We also provide consultations and follow-up for special cases according to each woman's needs.",
         "loc-feature-1": "Easily accessible prime location",
         "loc-feature-1-desc": "Ample, convenient parking for all patients.",
         "loc-feature-2": "Communication & Appointments",
