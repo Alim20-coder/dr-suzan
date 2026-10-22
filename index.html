@@ -2780,7 +2780,7 @@
         const modalImgSrc = cardThumb ? cardThumb.getAttribute('src') : art.img;
         document.getElementById('artModalBody').innerHTML = `
           <img src="${modalImgSrc}" alt="${art.title}" onerror="this.style.display='none'" class="img-fluid rounded-4 mb-3 w-100" style="max-height: 320px; object-fit: cover;">
-          <span class="badge bg-danger-subtle text-danger mb-2">${art.category}</span>
+          <span class="article-tag-badge">${art.category}</span>
           ${art.content}
         `;
         const modal = new bootstrap.Modal(document.getElementById('articleModal'));
