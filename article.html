@@ -1,0 +1,741 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المقالات الطبية والتوعوية | دكتورة سوزان محمد عيسى</title>
+  
+  <meta name="description" content="المكتبة الطبية لعيادة دكتورة سوزان محمد عيسى - خبرة 17 عاماً في أمراض النساء، متابعة الحمل، وسائل منع الحمل، وعلاج تأخر الإنجاب في حفر الباطن.">
+  <meta name="author" content="Devora Web">
+  <meta name="theme-color" content="#C6A15B">
+
+  <!-- Google Fonts & Bootstrap 5 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" id="bootstrap-css">
+  <script>
+    (function () {
+      var l = 'ar';
+      try {
+        var q = new URLSearchParams(location.search).get('lang');
+        if (q === 'en' || q === 'ar') l = q;
+        else if (localStorage.getItem('dr_suzan_lang') === 'en') l = 'en';
+      } catch (e) {}
+      if (l === 'en') {
+        document.documentElement.lang = 'en';
+        document.documentElement.dir = 'ltr';
+        var b = document.getElementById('bootstrap-css');
+        if (b) b.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css';
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-pink: #C6A15B;
+      --primary-pink-dark: #A68037;
+      --primary-pink-light: #F1F4EA;
+      --gold-accent: #C6A15B;
+      --gold-dark: #A68037;
+      --medical-blue: #5A7A7D;
+      --medical-blue-dark: #133235;
+      --medical-blue-deep: #133235;
+      --light-blue-bg: #E3E9D8;
+      --dark-slate: #133235;
+      --text-muted: #5A7A7D;
+      --body-bg: #FFFFFF;
+      --card-shadow: 0 12px 35px rgba(19, 50, 53, 0.05);
+      --transition: all 0.3s ease;
+    }
+
+    body {
+      font-family: 'Cairo', 'Tajawal', sans-serif;
+      background-color: var(--body-bg);
+      color: var(--dark-slate);
+      line-height: 1.8;
+      overflow-x: clip;
+      position: relative;
+    }
+
+    body.en-mode {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      direction: ltr;
+      text-align: left;
+    }
+    section { overflow-x: clip; }
+    /* Numbers identical in AR and EN */
+    .stat-num {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+      font-variant-numeric: tabular-nums lining-nums !important;
+      direction: ltr !important;
+      unicode-bidi: isolate;
+      display: inline-block;
+    }
+
+    a {
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .article-header-nav {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      padding: 14px 0;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1050;
+      border-bottom: 1px solid rgba(198, 161, 91, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .brand-icon-emblem {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--gold-accent) 0%, #B88E4F 100%);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+
+    /* Section 1: BLUE hero */
+    .article-hero {
+      background:
+        radial-gradient(circle at 90% 0%, rgba(90, 122, 125, 0.45) 0%, rgba(90, 122, 125, 0) 55%),
+        linear-gradient(135deg, #133235 0%, #133235 100%);
+      padding: 65px 0 45px 0;
+      text-align: center;
+    }
+    .article-hero h1,
+    .article-hero h1 span { color: #FFFFFF !important; }
+    .article-hero .lead,
+    .article-hero .lead span { color: rgba(255, 255, 255, 0.94) !important; }
+    .article-hero .badge {
+      background: #FFFFFF !important;
+      color: var(--medical-blue-deep) !important;
+    }
+
+    /* Section 2: LIGHT BLUE articles area */
+    .article-content-section {
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    }
+    .article-content-section .article-card-main { border-color: rgba(19, 50, 53, 0.18); }
+    .article-content-section .article-card-main:hover { border-color: var(--medical-blue); box-shadow: 0 20px 45px rgba(19, 50, 53, 0.16); }
+
+    .article-card-main {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: var(--card-shadow);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      padding: 40px;
+      margin-bottom: 45px;
+      scroll-margin-top: 100px;
+      transition: var(--transition);
+    }
+
+    .article-card-main:hover {
+      box-shadow: 0 20px 45px rgba(166, 128, 55, 0.12);
+      border-color: rgba(198, 161, 91, 0.25);
+    }
+
+    .article-cover-img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 25px;
+    }
+
+    .article-tag-badge {
+      background: var(--primary-pink-light);
+      color: var(--primary-pink-dark);
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .doctor-callout-box {
+      background: #FDFAF1;
+      border-right: 5px solid var(--primary-pink);
+      padding: 24px;
+      border-radius: 16px;
+      margin: 30px 0;
+    }
+
+    .en-mode .doctor-callout-box {
+      border-right: none;
+      border-left: 5px solid var(--primary-pink);
+    }
+
+    .btn-luxury-pink {
+      background: linear-gradient(135deg, var(--gold-accent) 0%, #B88E4F 100%);
+      color: #fff !important;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 50px;
+      border: none;
+      box-shadow: 0 8px 25px rgba(198, 161, 91, 0.35);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+    }
+
+    .btn-luxury-pink:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(198, 161, 91, 0.5);
+    }
+
+    .btn-back-home {
+      background: #fff;
+      color: var(--dark-slate);
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      font-weight: 700;
+      padding: 8px 20px;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+
+    .btn-back-home:hover {
+      background: var(--dark-slate);
+      color: #fff;
+    }
+
+    .toc-sticky-card {
+      background: #fff;
+      border-radius: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      padding: 28px;
+      box-shadow: var(--card-shadow);
+      position: sticky;
+      top: 100px;
+    }
+
+    .toc-item-link {
+      padding: 12px 14px;
+      border-radius: 12px;
+      color: var(--dark-slate);
+      font-weight: 600;
+      font-size: 0.94rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+      transition: var(--transition);
+    }
+
+    .toc-item-link:hover {
+      background: var(--primary-pink-light);
+      color: var(--primary-pink-dark);
+      transform: translateX(-4px);
+    }
+
+    .en-mode .toc-item-link:hover {
+      transform: translateX(4px);
+    }
+
+    .floating-lang-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 1040;
+      background: #FFFFFF;
+      border: 1px solid rgba(198, 161, 91, 0.35);
+      border-radius: 50px;
+      padding: 9px 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      color: var(--dark-slate);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    footer {
+      background: #113336;
+      color: #FFFFFF !important;
+      padding: 60px 0 30px 0;
+    }
+
+    footer a {
+      color: #AEBFBC;
+    }
+
+    footer a:hover {
+      color: var(--primary-pink);
+    }
+
+    .en-mode .bi-arrow-right, .en-mode .bi-arrow-left {
+      display: inline-block;
+      transform: scaleX(-1);
+    }
+  
+    /* ===== Unified palette + white background ===== */
+    html, body, section { background-color: #FFFFFF; }
+    .text-danger, .text-primary, .text-warning { color: #C6A15B !important; }
+    .text-dark { color: #133235 !important; }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Language Switcher -->
+  <button class="floating-lang-btn" id="floatingLangBtn" title="Switch Language" aria-label="Language Switcher">
+    <i class="bi bi-translate text-warning"></i>
+    <span id="langBtnText">English</span>
+    <span class="badge bg-warning text-dark" id="langBadgePill">EN</span>
+  </button>
+
+  <!-- Header Navigation -->
+  <header class="article-header-nav">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+        <div class="brand-icon-emblem"><i class="bi bi-heart-pulse-fill"></i></div>
+        <div>
+          <div class="fw-bold text-dark fs-5" data-i18n="art-brand-name">دكتورة سوزان محمد عيسى</div>
+          <small class="text-danger fw-bold" data-i18n="art-brand-spec">أخصائية النساء والتوليد والعقم</small>
+        </div>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <a href="index.html" class="btn-back-home"><i class="bi bi-arrow-right"></i> <span data-i18n="art-back-home">العودة للرئيسية</span></a>
+        <a href="https://wa.me/966569049926?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B3%D9%88%D8%B2%D8%A7%D9%86" target="_blank" class="btn-luxury-pink d-none d-md-inline-flex">
+          <i class="fab fa-whatsapp"></i> <span data-i18n="art-book-btn">احجزي موعدك عبر واتساب</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Hero -->
+  <section class="article-hero">
+    <div class="container">
+      <span class="badge bg-danger text-white px-3 py-2 rounded-pill mb-2 fw-bold"><span data-i18n="art-hero-badge">المكتبة الطبية والتوعوية</span></span>
+      <h1 class="display-5 fw-bold text-dark mb-3"><span data-i18n="art-hero-title">مقالات ونصائح طبية موثوقة لصحتكِ وأمومتكِ</span></h1>
+      <p class="lead text-muted mx-auto" style="max-width: 680px;">
+        <span data-i18n="art-hero-desc">إرشادات طبية دقيقة بقلم دكتورة سوزان محمد عيسى - خبرة 17 عاماً في طب النساء، متابعة الحمل، وعلاج تأخر الإنجاب بحفر الباطن.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Articles Content Area -->
+  <section class="py-5 article-content-section">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Table of Contents Sidebar -->
+        <div class="col-lg-4 order-lg-2">
+          <div class="toc-sticky-card">
+            <h5 class="fw-bold mb-3 text-dark"><i class="bi bi-list-stars text-danger me-2"></i> <span data-i18n="toc-title">فهرس المقالات</span></h5>
+            <div class="d-flex flex-column">
+              <a href="#article-1" class="toc-item-link">
+                <i class="bi bi-file-earmark-medical"></i>
+                <span data-i18n="toc-1">1. تنظيم الأسرة ووسائل منع الحمل</span>
+              </a>
+              <a href="#article-2" class="toc-item-link">
+                <i class="bi bi-file-earmark-medical"></i>
+                <span data-i18n="toc-2">2. تأخر الحمل ومتابعة التبويض</span>
+              </a>
+              <a href="#article-3" class="toc-item-link">
+                <i class="bi bi-file-earmark-medical"></i>
+                <span data-i18n="toc-3">3. السونار</span>
+              </a>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="p-3 bg-light rounded-3 text-center">
+              <h6 class="fw-bold text-dark mb-2" data-i18n="toc-help-title">هل لديكِ استفسار طبي خاص؟</h6>
+              <p class="small text-muted mb-3" data-i18n="toc-help-desc">التواصل وحجز المواعيد متاح حصرياً عبر تطبيق واتساب لضمان ترتيب أوقات الزيارة بدقة.</p>
+              <a href="https://wa.me/966569049926" target="_blank" class="btn btn-success btn-sm w-100 rounded-pill py-2">
+                <i class="fab fa-whatsapp fs-6 me-1"></i> <span data-i18n="toc-wa-btn">احجزي موعدك عبر واتساب</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Articles -->
+        <div class="col-lg-8 order-lg-1">
+          
+          <!-- Article 1: Contraception -->
+          <article id="article-1" class="article-card-main">
+            <span class="article-tag-badge"><i class="bi bi-shield-check"></i> <span data-i18n="a1-tag">تنظيم الأسرة وصحة المرأة</span></span>
+            <h2 class="fw-bold text-dark mb-3"><span data-i18n="a1-title">دليلكِ الشامل لاختيار وسيلة منع الحمل الأنسب لجسمكِ</span></h2>
+            <div class="d-flex align-items-center gap-3 text-muted small mb-4">
+              <span><i class="bi bi-person-fill text-danger"></i> <span data-i18n="author-name">د. سوزان محمد عيسى</span></span>
+              <span>•</span>
+              <span><i class="bi bi-geo-alt-fill"></i> <span data-i18n="author-place">حفر الباطن</span></span>
+              <span>•</span>
+              <span><i class="bi bi-clock"></i> <span data-i18n="a1-read">قراءة 4 دقائق</span></span>
+            </div>
+
+            <img src="css/p1.jpeg" alt="تنظيم الأسرة ووسائل منع الحمل" class="article-cover-img">
+
+            <div class="article-body-text">
+              <p class="lead">
+                <span data-i18n="a1-lead">يعد تنظيم الأسرة واختيار وسيلة منع الحمل المناسبة خطوة أساسية للحفاظ على صحة المرأة الجسدية والنفسية، وتجنب الحمل غير المخطط له، خاصة في فترات الرضاعة أو بعد التعافي من حمل سابق.</span>
+              </p>
+
+              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a1-h1">أبرز وسائل منع الحمل الحديثة المتوفرة:</span></h4>
+              <p>
+                <span data-i18n="a1-p1">تتنوع الخيارات الطبية المتاحة لتناسب مختلف الحالات والاحتياجات الفردية لكل سيدة:</span>
+              </p>
+
+              <ul>
+                <li><strong data-i18n="a1-b2-title">اللولب النحاسي:</strong> <span data-i18n="a1-b2-desc">خيار غير هرموني آمن تماماً، يناسب السيدات اللاتي لا يرغبن في تأثيرات هرمونية، ويوفر حماية طويلة ومستقرة.</span></li>
+                <li><strong data-i18n="a1-b1-title">اللولب الهرموني (Mirena):</strong> <span data-i18n="a1-b1-desc">يتميز بفاعلية عالية، ويسهم في تقليل غزارة وآلام الدورة الشهرية، مع استمرار مفعوله لعدة سنوات وإمكانية الحمل فور إزالته.</span></li>
+                <li><strong data-i18n="a1-b3-title">كبسولات منع الحمل تحت الجلد (Nexplanon):</strong> <span data-i18n="a1-b3-desc">كبسولة صغيرة توضع تحت جلد الذراع بإجراء بسيط وسريع، وتمنحكِ حماية ممتدة لـ 3 سنوات دون القلق بشأن تذكر الحبوب اليومية.</span></li>
+              </ul>
+
+              <div class="doctor-callout-box">
+                <h5 class="fw-bold text-danger mb-2"><i class="bi bi-quote"></i> <span data-i18n="a1-quote-title">نصيحة دكتورة سوزان محمد عيسى:</span></h5>
+                <p class="mb-0 text-dark">
+                  <span data-i18n="a1-quote">"لا توجد وسيلة واحدة تناسب الجميع. استشارة الطبيبة المتخصصة والفحص بالسونار قبل التركيب هما الضمان الأساسي لاختيار الوسيلة الأكثر أماناً وملاءمة لجسمكِ."</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center flex-wrap gap-2">
+              <a href="https://wa.me/966569049926?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AD%D9%88%D9%84%20%D9%88%D8%B3%D8%A7%D8%A6%D9%84%20%D9%85%D9%86%D8%B9%20%D8%A7%D9%84%D8%AD%D9%85%D9%84" target="_blank" class="btn-luxury-pink"><span data-i18n="a1-cta">احجزي موعدك عبر واتساب</span></a>
+              <a href="https://wa.me/966569049926" target="_blank" class="btn btn-outline-success rounded-pill px-4">
+                <i class="fab fa-whatsapp"></i> <span data-i18n="wa-inquiry">واتساب</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 2: Fertility / Delayed Pregnancy -->
+          <article id="article-2" class="article-card-main">
+            <span class="article-tag-badge"><i class="bi bi-flower1"></i> <span data-i18n="a2-tag">تأخر الحمل والخصوبة</span></span>
+            <h2 class="fw-bold text-dark mb-3"><span data-i18n="a2-title">تأخر الحمل: متى تراجعين الدكتورة وكيف تتم متابعة التبويض؟</span></h2>
+            <div class="d-flex align-items-center gap-3 text-muted small mb-4">
+              <span><i class="bi bi-person-fill text-danger"></i> <span data-i18n="author-name">د. سوزان محمد عيسى</span></span>
+              <span>•</span>
+              <span><i class="bi bi-geo-alt-fill"></i> <span data-i18n="author-place">حفر الباطن</span></span>
+              <span>•</span>
+              <span><i class="bi bi-clock"></i> <span data-i18n="a2-read">قراءة 4 دقائق</span></span>
+            </div>
+
+            <img src="css/haml.jpeg" alt="تأخر الحمل ومتابعة التبويض" class="article-cover-img">
+
+            <div class="article-body-text">
+              <p class="lead">
+                <span data-i18n="a2-lead">تأخر الحمل حالة شائعة، والتقييم المبكر يساعد على معرفة السبب وبدء العلاج المناسب في الوقت الصحيح، بعيداً عن القلق والتخمين.</span>
+              </p>
+
+              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a2-h1">متى تراجعين الدكتورة؟</span></h4>
+              <p>
+                <span data-i18n="a2-p1">يُعرَّف تأخر الحمل بعدم حدوثه بعد عام كامل من المحاولة المنتظمة. ويُنصح بالمراجعة بعد 6 أشهر فقط إذا كان عمركِ 35 عاماً فأكثر، أو إذا كانت الدورة الشهرية غير منتظمة، أو وُجد تاريخ مرضي نسائي سابق.</span>
+              </p>
+
+              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a2-h2">ماذا يشمل التقييم والمتابعة؟</span></h4>
+              <ul>
+                <li><strong data-i18n="a2-b1-title">السونار الداخلي:</strong> <span data-i18n="a2-b1-desc">لفحص الرحم والمبيضين والكشف عن الأكياس أو الألياف أو أي عوامل قد تؤثر على الحمل.</span></li>
+                <li><strong data-i18n="a2-b2-title">متابعة التبويض:</strong> <span data-i18n="a2-b2-desc">تتبع نمو الحويصلة بالسونار خلال الدورة لتحديد موعد التبويض وأنسب أيام للحمل.</span></li>
+                <li><strong data-i18n="a2-b3-title">التحاليل الهرمونية:</strong> <span data-i18n="a2-b3-desc">تُطلب عند الحاجة لتقييم وظائف المبيض والغدة الدرقية وغيرها من الهرمونات المؤثرة على الخصوبة.</span></li>
+              </ul>
+
+              <div class="doctor-callout-box">
+                <h5 class="fw-bold text-danger mb-2"><i class="bi bi-quote"></i> <span data-i18n="a2-quote-title">رأي دكتورة سوزان محمد عيسى:</span></h5>
+                <p class="mb-0 text-dark">
+                  <span data-i18n="a2-quote">"الفحص المبكر يوفر عليكِ الوقت والقلق ويمنحكِ إجابات واضحة. ويُفضَّل أن يكون تقييم الزوج جزءاً من الخطة منذ البداية."</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center flex-wrap gap-2">
+              <a href="https://wa.me/966569049926?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%AA%D8%A3%D8%AE%D8%B1%20%D8%A7%D9%84%D8%AD%D9%85%D9%84" target="_blank" class="btn-luxury-pink"><span data-i18n="a2-cta">احجزي موعدك عبر واتساب</span></a>
+              <a href="https://wa.me/966569049926" target="_blank" class="btn btn-outline-success rounded-pill px-4">
+                <i class="fab fa-whatsapp"></i> <span data-i18n="wa-inquiry">واتساب</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 3: Ultrasound -->
+          <article id="article-3" class="article-card-main">
+            <span class="article-tag-badge"><i class="bi bi-display"></i> <span data-i18n="a3-tag">التشخيص وصحة الجنين</span></span>
+            <h2 class="fw-bold text-dark mb-3"><span data-i18n="a3-title">أهمية الفحص بالسونار لمتابعة سلامة الحمل</span></h2>
+            <div class="d-flex align-items-center gap-3 text-muted small mb-4">
+              <span><i class="bi bi-person-fill text-danger"></i> <span data-i18n="author-name">د. سوزان محمد عيسى</span></span>
+              <span>•</span>
+              <span><i class="bi bi-geo-alt-fill"></i> <span data-i18n="author-place">حفر الباطن</span></span>
+              <span>•</span>
+              <span><i class="bi bi-clock"></i> <span data-i18n="a3-read">قراءة 4 دقائق</span></span>
+            </div>
+
+            <img src="css/p2.jpeg" alt="السونار" class="article-cover-img">
+
+            <div class="article-body-text">
+              <p class="lead">
+                <span data-i18n="a3-lead">يعد السونار الركيزة التشخيصية الأكثر أهمية للاطمئنان على مراحل نمو الجنين، وموقع المشيمة، والتأكد من صحة وسلامة الرحم والمبايض.</span>
+              </p>
+
+              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a3-h1">الفروق والفوائد الطبية:</span></h4>
+              <ul>
+                <li><strong data-i18n="a3-b1-title">السونار الداخلي (المهبلي):</strong> <span data-i18n="a3-b1-desc">يوفر دقة فائقة في الأسابيع الأولى، ويكشف عن كيس الحمل ونبض الجنين مبكراً، كما يحدد سلامة المبيضين بدقة متناهية.</span></li>
+                <li><strong data-i18n="a3-b2-title">السونار:</strong> <span data-i18n="a3-b2-desc">الفحص الأساسي خلال الثلثين الثاني والثالث لمراقبة نمو الجنين، وقياس محيط الرأس، وفحص كمية السائل المحيط به.</span></li>
+              </ul>
+            </div>
+
+            <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center flex-wrap gap-2">
+              <a href="https://wa.me/966569049926?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D9%81%D8%AD%D8%B5%20%D8%B3%D9%88%D9%86%D8%A7%D8%B1" target="_blank" class="btn-luxury-pink"><span data-i18n="a3-cta">احجزي موعدك عبر واتساب</span></a>
+              <a href="https://wa.me/966569049926" target="_blank" class="btn btn-outline-success rounded-pill px-4">
+                <i class="fab fa-whatsapp"></i> <span data-i18n="wa-inquiry">واتساب</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-2">&copy; 2026 <span data-i18n="foot-copy">عيادة دكتورة سوزان محمد عيسى - حفر الباطن. جميع الحقوق محفوظة.</span></p>
+      <small class="text-secondary"><span data-i18n="foot-wa">التواصل وتأكيد المواعيد متاح حصرياً عبر تطبيق واتساب:</span> <span class="stat-num">0569049926</span></small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const translations = {
+      ar: {
+        "art-brand-name": "دكتورة سوزان محمد عيسى",
+        "art-brand-spec": "أخصائية النساء والتوليد والعقم",
+        "art-back-home": "العودة للرئيسية",
+        "art-book-btn": "احجزي موعدك عبر واتساب",
+        "art-hero-badge": "المكتبة الطبية والتوعوية",
+        "art-hero-title": "مقالات ونصائح طبية موثوقة لصحتكِ وأمومتكِ",
+        "art-hero-desc": "إرشادات طبية دقيقة بقلم دكتورة سوزان محمد عيسى - خبرة 17 عاماً في طب النساء، متابعة الحمل، وعلاج تأخر الإنجاب بحفر الباطن.",
+        "toc-title": "فهرس المقالات",
+        "toc-1": "1. تنظيم الأسرة ووسائل منع الحمل",
+        "toc-2": "2. تأخر الحمل ومتابعة التبويض",
+        "toc-3": "3. السونار",
+        "toc-help-title": "هل لديكِ استفسار طبي خاص؟",
+        "toc-help-desc": "التواصل وحجز المواعيد متاح حصرياً عبر تطبيق واتساب لضمان ترتيب أوقات الزيارة بدقة.",
+        "toc-wa-btn": "احجزي موعدك عبر واتساب",
+        "a1-tag": "تنظيم الأسرة وصحة المرأة",
+        "a1-title": "دليلكِ الشامل لاختيار وسيلة منع الحمل الأنسب لجسمكِ",
+        "author-name": "د. سوزان محمد عيسى",
+        "author-place": "حفر الباطن",
+        "a1-read": "قراءة 4 دقائق",
+        "a1-lead": "يعد تنظيم الأسرة واختيار وسيلة منع الحمل المناسبة خطوة أساسية للحفاظ على صحة المرأة الجسدية والنفسية، وتجنب الحمل غير المخطط له، خاصة في فترات الرضاعة أو بعد التعافي من حمل سابق.",
+        "a1-h1": "أبرز وسائل منع الحمل الحديثة المتوفرة:",
+        "a1-p1": "تتنوع الخيارات الطبية المتاحة لتناسب مختلف الحالات والاحتياجات الفردية لكل سيدة:",
+        "a1-b1-title": "اللولب الهرموني (Mirena):",
+        "a1-b1-desc": "يتميز بفاعلية عالية، ويسهم في تقليل غزارة وآلام الدورة الشهرية، مع استمرار مفعوله لعدة سنوات وإمكانية الحمل فور إزالته.",
+        "a1-b2-title": "اللولب النحاسي:",
+        "a1-b2-desc": "خيار غير هرموني آمن تماماً، يناسب السيدات اللاتي لا يرغبن في تأثيرات هرمونية، ويوفر حماية طويلة ومستقرة.",
+        "a1-b3-title": "كبسولات منع الحمل تحت الجلد (Nexplanon):",
+        "a1-b3-desc": "كبسولة صغيرة توضع تحت جلد الذراع بإجراء بسيط وسريع، وتمنحكِ حماية ممتدة لـ 3 سنوات دون القلق بشأن تذكر الحبوب اليومية.",
+        "a1-quote-title": "نصيحة دكتورة سوزان محمد عيسى:",
+        "a1-quote": "\"لا توجد وسيلة واحدة تناسب الجميع. استشارة الطبيبة المتخصصة والفحص بالسونار قبل التركيب هما الضمان الأساسي لاختيار الوسيلة الأكثر أماناً وملاءمة لجسمكِ.\"",
+        "a1-cta": "احجزي موعدك عبر واتساب",
+        "wa-inquiry": "واتساب",
+        "a2-tag": "تأخر الحمل والخصوبة",
+        "a2-title": "تأخر الحمل: متى تراجعين الدكتورة وكيف تتم متابعة التبويض؟",
+        "a2-read": "قراءة 4 دقائق",
+        "a2-lead": "تأخر الحمل حالة شائعة، والتقييم المبكر يساعد على معرفة السبب وبدء العلاج المناسب في الوقت الصحيح، بعيداً عن القلق والتخمين.",
+        "a2-h1": "متى تراجعين الدكتورة؟",
+        "a2-p1": "يُعرَّف تأخر الحمل بعدم حدوثه بعد عام كامل من المحاولة المنتظمة. ويُنصح بالمراجعة بعد 6 أشهر فقط إذا كان عمركِ 35 عاماً فأكثر، أو إذا كانت الدورة الشهرية غير منتظمة، أو وُجد تاريخ مرضي نسائي سابق.",
+        "a2-h2": "ماذا يشمل التقييم والمتابعة؟",
+        "a2-b1-title": "السونار الداخلي:",
+        "a2-b1-desc": "لفحص الرحم والمبيضين والكشف عن الأكياس أو الألياف أو أي عوامل قد تؤثر على الحمل.",
+        "a2-b2-title": "متابعة التبويض:",
+        "a2-b2-desc": "تتبع نمو الحويصلة بالسونار خلال الدورة لتحديد موعد التبويض وأنسب أيام للحمل.",
+        "a2-b3-title": "التحاليل الهرمونية:",
+        "a2-b3-desc": "تُطلب عند الحاجة لتقييم وظائف المبيض والغدة الدرقية وغيرها من الهرمونات المؤثرة على الخصوبة.",
+        "a2-quote-title": "رأي دكتورة سوزان محمد عيسى:",
+        "a2-quote": "\"الفحص المبكر يوفر عليكِ الوقت والقلق ويمنحكِ إجابات واضحة. ويُفضَّل أن يكون تقييم الزوج جزءاً من الخطة منذ البداية.\"",
+        "a2-cta": "احجزي موعدك عبر واتساب",
+        "a3-tag": "التشخيص وصحة الجنين",
+        "a3-title": "أهمية الفحص بالسونار لمتابعة سلامة الحمل",
+        "a3-read": "قراءة 4 دقائق",
+        "a3-lead": "يعد السونار الركيزة التشخيصية الأكثر أهمية للاطمئنان على مراحل نمو الجنين، وموقع المشيمة، والتأكد من صحة وسلامة الرحم والمبايض.",
+        "a3-h1": "الفروق والفوائد الطبية:",
+        "a3-b1-title": "السونار الداخلي (المهبلي):",
+        "a3-b1-desc": "يوفر دقة فائقة في الأسابيع الأولى، ويكشف عن كيس الحمل ونبض الجنين مبكراً، كما يحدد سلامة المبيضين بدقة متناهية.",
+        "a3-b2-title": "السونار:",
+        "a3-b2-desc": "الفحص الأساسي خلال الثلثين الثاني والثالث لمراقبة نمو الجنين، وقياس محيط الرأس، وفحص كمية السائل المحيط به.",
+        "a3-cta": "احجزي موعدك عبر واتساب",
+        "foot-copy": "عيادة دكتورة سوزان محمد عيسى - حفر الباطن. جميع الحقوق محفوظة.",
+        "foot-wa": "التواصل وتأكيد المواعيد متاح حصرياً عبر تطبيق واتساب:"
+      },
+      en: {
+        "__title": "Medical Articles & Insights | Dr. Suzan Mohamed Issa Clinic",
+        "art-brand-name": "Dr. Suzan Mohamed Issa",
+        "art-brand-spec": "Gynecology, Obstetrics & Infertility Specialist",
+        "art-back-home": "Back to Home",
+        "art-book-btn": "Book Your Appointment via WhatsApp",
+        "art-hero-badge": "Medical & Health Library",
+        "art-hero-title": "Trusted Medical Articles for Women's Health & Wellness",
+        "art-hero-desc": "Accurate medical education by Dr. Suzan Mohamed Issa - 17 years of experience in gynecology, pregnancy care, and infertility in Hafar Al-Batin.",
+        "toc-title": "Article Index",
+        "toc-1": "1. Family Planning & Contraception",
+        "toc-2": "2. Delayed Pregnancy & Ovulation Tracking",
+        "toc-3": "3. Abdominal & Pelvic Ultrasound",
+        "toc-help-title": "Have a Specific Medical Inquiry?",
+        "toc-help-desc": "Appointments and inquiries are handled exclusively via WhatsApp to arrange visit times smoothly.",
+        "toc-wa-btn": "Book Your Appointment via WhatsApp",
+        "a1-tag": "Family Planning & Women's Health",
+        "a1-title": "Comprehensive Guide to Choosing the Best Contraceptive for Your Body",
+        "author-name": "Dr. Suzan Mohamed Issa",
+        "author-place": "Hafar Al-Batin",
+        "a1-read": "4 min read",
+        "a1-lead": "Family planning and selecting the proper contraceptive method is an essential step to safeguard physical and emotional well-being and prevent unplanned pregnancies, especially during breastfeeding.",
+        "a1-h1": "Top Modern Contraceptive Options:",
+        "a1-p1": "Diverse medical solutions exist to suit every woman's individual health profile:",
+        "a1-b1-title": "Hormonal IUD (Mirena):",
+        "a1-b1-desc": "Over 99% efficacy, reduces heavy periods and menstrual cramps, lasts several years, and allows fertility restoration upon removal.",
+        "a1-b2-title": "Copper IUD:",
+        "a1-b2-desc": "A hormone-free, highly safe alternative providing reliable long-term protection without systemic hormonal effects.",
+        "a1-b3-title": "Subdermal Implants (Nexplanon):",
+        "a1-b3-desc": "A small flexible rod placed under the arm skin, delivering 3 years of worry-free contraception without daily pill tracking.",
+        "a1-quote-title": "Dr. Suzan's Advice:",
+        "a1-quote": "\"No single contraceptive fits everyone. A specialist consultation and ultrasound check before placement guarantee the safest option for your body.\"",
+        "a1-cta": "Book Your Appointment via WhatsApp",
+        "wa-inquiry": "WhatsApp",
+        "a2-tag": "Infertility & Fertility Care",
+        "a2-title": "Delayed Pregnancy: When to See the Doctor and How Ovulation Is Monitored",
+        "a2-read": "4 min read",
+        "a2-lead": "Delayed pregnancy is common, and early evaluation helps identify the cause and start the right treatment at the right time, without worry or guesswork.",
+        "a2-h1": "When should you see the doctor?",
+        "a2-p1": "Delayed pregnancy is defined as not conceiving after a full year of regular attempts. It is advised to consult after just 6 months if you are 35 or older, if your cycles are irregular, or if you have a prior gynecological history.",
+        "a2-h2": "What does the evaluation and follow-up include?",
+        "a2-b1-title": "Transvaginal ultrasound:",
+        "a2-b1-desc": "Examines the uterus and ovaries and detects cysts, fibroids or any factors that may affect conception.",
+        "a2-b2-title": "Ovulation tracking:",
+        "a2-b2-desc": "Follicle growth is monitored by ultrasound during the cycle to pinpoint ovulation and the best days to conceive.",
+        "a2-b3-title": "Hormonal tests:",
+        "a2-b3-desc": "Ordered when needed to assess ovarian and thyroid function and other hormones that affect fertility.",
+        "a2-quote-title": "Dr. Suzan's Perspective:",
+        "a2-quote": "\"Early evaluation saves you time and worry and gives you clear answers. Including your partner's assessment in the plan from the start is recommended.\"",
+        "a2-cta": "Book Your Appointment via WhatsApp",
+        "a3-tag": "Diagnostics & Fetal Health",
+        "a3-title": "The Value of Abdominal & Pelvic Ultrasound in Pregnancy Monitoring",
+        "a3-read": "4 min read",
+        "a3-lead": "Ultrasound scanning is the cornerstone diagnostic tool for confirming gestational progress, placental location, and overall uterine and ovarian health.",
+        "a3-h1": "Medical Differences & Benefits:",
+        "a3-b1-title": "Transvaginal (Pelvic) Ultrasound:",
+        "a3-b1-desc": "Offers supreme clarity in early pregnancy, confirming gestational sac and fetal cardiac activity while assessing ovaries with extreme precision.",
+        "a3-b2-title": "Abdominal Ultrasound:",
+        "a3-b2-desc": "The primary scan in the second and third trimesters to evaluate fetal growth parameters, head circumference, and amniotic fluid volume.",
+        "a3-cta": "Book Your Appointment via WhatsApp",
+        "foot-copy": "Dr. Suzan Mohamed Issa Clinic - Hafar Al-Batin. All rights reserved.",
+        "foot-wa": "Communication and appointment confirmation are available exclusively via WhatsApp:"
+      }
+    };
+
+    var LANG_KEY = 'dr_suzan_lang';
+    var BS_CSS = {
+      ar: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css',
+      en: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'
+    };
+    var currentLang = 'ar';
+
+    function applyLanguage(lang) {
+      currentLang = lang;
+      var isEn = (lang === 'en');
+      var root = document.documentElement;
+      root.setAttribute('lang', lang);
+      root.setAttribute('dir', isEn ? 'ltr' : 'rtl');
+      document.body.classList.toggle('en-mode', isEn);
+
+      var bs = document.getElementById('bootstrap-css');
+      if (bs) bs.href = BS_CSS[lang];
+
+      document.querySelectorAll('[data-i18n]').forEach(function (el) {
+        var key = el.getAttribute('data-i18n');
+        var val = (translations[lang] || {})[key];
+        if (val !== undefined) {
+          if (el.children.length === 0) {
+            el.textContent = val;
+          } else {
+            for (var n = el.firstChild; n; n = n.nextSibling) {
+              if (n.nodeType === 3 && n.nodeValue.trim()) {
+                n.nodeValue = n.nodeValue.match(/^\s*/)[0] + val + n.nodeValue.match(/\s*$/)[0];
+                break;
+              }
+            }
+          }
+        }
+      });
+
+      if ((translations[lang] || {}).__title) {
+        document.title = translations[lang].__title;
+      }
+
+      var label = isEn ? 'العربية' : 'English';
+      var b = document.getElementById('langBtnText');
+      if (b) b.textContent = label;
+      var pill = document.getElementById('langBadgePill');
+      if (pill) pill.textContent = isEn ? 'AR' : 'EN';
+
+      document.querySelectorAll('a[href]').forEach(function (a) {
+        var href = a.getAttribute('href');
+        if (!href || !/^(index|article)\.html/.test(href)) return;
+        var m = href.match(/^([^?#]*)(\?[^#]*)?(#.*)?$/);
+        a.setAttribute('href', m[1] + '?lang=' + lang + (m[3] || ''));
+      });
+    }
+
+    function toggleLanguage() {
+      var next = (currentLang === 'ar') ? 'en' : 'ar';
+      applyLanguage(next);
+      try { localStorage.setItem(LANG_KEY, next); } catch (e) {}
+    }
+    window.toggleLanguage = toggleLanguage;
+
+    var btn = document.getElementById('floatingLangBtn');
+    if (btn) btn.addEventListener('click', toggleLanguage);
+
+    (function init() {
+      var l = 'ar';
+      try {
+        var q = new URLSearchParams(location.search).get('lang');
+        if (q === 'en' || q === 'ar') l = q;
+        else if (localStorage.getItem(LANG_KEY) === 'en') l = 'en';
+      } catch (e) {}
+      applyLanguage(l);
+    })();
+  </script>
+
+  <script>
+  /* Mobile: keep each heading on a single line by shrinking its font (floor 14px) */
+  (function () {
+    var SEL = 'h1, h2, h4, h5, h6';
+    function fit() {
+      var mobile = window.matchMedia('(max-width: 767px)').matches;
+      document.querySelectorAll(SEL).forEach(function (el) {
+        el.style.fontSize = ''; el.style.whiteSpace = '';
+        if (!mobile) return;
+        var fs = parseFloat(getComputedStyle(el).fontSize), min = 14;
+        el.style.whiteSpace = 'nowrap';
+        while (el.scrollWidth > el.clientWidth + 1 && fs > min) { fs -= 0.5; el.style.fontSize = fs + 'px'; }
+        if (el.scrollWidth > el.clientWidth + 1) { el.style.whiteSpace = ''; el.style.fontSize = ''; }
+      });
+    }
+    window.addEventListener('load', fit);
+    window.addEventListener('resize', fit);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+    document.addEventListener('click', function () { setTimeout(fit, 80); });
+  })();
+  </script>
+</body>
+</html>
