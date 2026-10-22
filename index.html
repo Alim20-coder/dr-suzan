@@ -1643,6 +1643,19 @@
       .btn-luxury-gold i { display: none; }
       .brand-title { font-size: 0.74rem; }
     }
+
+    /* ===== Hero: experience line + address (address always on ONE line) ===== */
+    .hero-lead-block { max-width: 760px; margin: 0 auto 35px auto; }
+    .hero-lead-block .hero-lead-text { margin: 0 auto 6px auto; text-wrap: balance; }
+    .hero-address {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.92);
+      font-weight: 600;
+      line-height: 1.8;
+      white-space: nowrap;
+      text-align: center;
+      font-size: clamp(0.8rem, 3.9vw, 1.15rem);
+    }
   </style>
 </head>
 <body>
@@ -1760,10 +1773,10 @@
         </div>
       </div>
 
-      <p class="hero-lead-text" data-i18n="hero-lead">
-        عناية متكاملة بصحة المرأة وجمالها
-التجميل النسائي وكل ما يمنحك الشباب والثقة
-      </p>
+      <div class="hero-lead-block">
+        <p class="hero-lead-text" data-i18n="hero-lead">خبرة 17 عاماً من العناية المتكاملة بصحة المرأة</p>
+        <p class="hero-address" data-i18n="hero-address">حفر الباطن - المملكة العربية السعودية</p>
+      </div>
 
       <div class="hero-btn-group">
         <a href="https://wa.me/966569049926?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B3%D9%88%D8%B2%D8%A7%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9" target="_blank" class="btn-hero-solid">
@@ -2707,7 +2720,7 @@
       1: {
         title: "دليلكِ الشامل لاختيار وسيلة منع الحمل الأنسب لجسمكِ",
         category: "تنظيم الأسرة",
-        img: "css/contraception-consult.jpg",
+        img: "css/lawlab.jpeg",
         content: `
           <p class="lead text-dark">يعد اختيار وسيلة منع الحمل قراراً صحياً هاماً يتطلب تقييماً دقيقاً لحالتكِ الصحية ونمط حياتكِ لضمان أقصى درجات الفعالية والراحة.</p>
           <h5 class="fw-bold mt-4 text-danger">أنواع وسائل منع الحمل الحديثة:</h5>
@@ -2721,7 +2734,7 @@
       3: {
         title: "أهمية الفحص بالسونار لمتابعة سلامة الحمل",
         category: "التشخيص وصحة الجنين",
-        img: "css/pregnancy-ultrasound.jpg",
+        img: "css/p2.jpeg",
         content: `
           <p class="lead text-dark">يعد الفحص التلفزيوني (السونار) الركيزة الأولى في تقييم سلامة الجنين وصحة الرحم والمبايض في كل مرحلة.</p>
           <h5 class="fw-bold mt-4 text-danger">السونار:</h5>
@@ -2762,8 +2775,11 @@
         if (!base) return;
         const art = (currentLang === 'en' && articlesDataEn[id]) ? Object.assign({}, base, articlesDataEn[id]) : base;
         document.getElementById('artModalTitle').innerText = art.title;
+        // use the same image shown on the article card outside the modal
+        const cardThumb = btn.closest('.article-card-box') ? btn.closest('.article-card-box').querySelector('.article-thumb-img') : null;
+        const modalImgSrc = cardThumb ? cardThumb.getAttribute('src') : art.img;
         document.getElementById('artModalBody').innerHTML = `
-          <img src="${art.img}" class="img-fluid rounded-4 mb-3 w-100" style="max-height: 320px; object-fit: cover;">
+          <img src="${modalImgSrc}" alt="${art.title}" onerror="this.style.display='none'" class="img-fluid rounded-4 mb-3 w-100" style="max-height: 320px; object-fit: cover;">
           <span class="badge bg-danger-subtle text-danger mb-2">${art.category}</span>
           ${art.content}
         `;
@@ -2790,7 +2806,8 @@
         "nav-book-btn": "احجزي الآن",
         "hero-name": "دكتورة سوزان محمد عيسى",
         "hero-specialty": "أخصائية النساء والتوليد والعقم والتجميل النسائي",
-        "hero-lead": "عناية متكاملة بصحة المرأة وجمالها\nالتجميل النسائي وكل ما يمنحك الشباب والثقة",
+        "hero-lead": "خبرة 17 عاماً من العناية المتكاملة بصحة المرأة",
+        "hero-address": "حفر الباطن - المملكة العربية السعودية",
         "hero-btn-book": "احجزي موعداً عبر واتساب",
         "hero-btn-explore": "استكشفي خدماتنا",
         "stat-satisfaction": "رضا المراجعات",
@@ -2816,7 +2833,8 @@
         "nav-book-btn": "Book Now",
         "hero-name": "Dr. Suzan Mohamed Issa",
         "hero-specialty": "Specialist in Gynecology, Obstetrics, Infertility & Cosmetic Gynecology",
-        "hero-lead": "Comprehensive care for women's health and beauty\nCosmetic gynecology and everything that gives you youth and confidence",
+        "hero-lead": "17 years of comprehensive care for women's health",
+        "hero-address": "Hafar Al-Batin - Kingdom of Saudi Arabia",
         "hero-btn-book": "Book via WhatsApp",
         "hero-btn-explore": "Explore Our Services",
         "stat-satisfaction": "Patient Satisfaction",
