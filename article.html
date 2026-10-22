@@ -292,6 +292,62 @@
     html, body, section { background-color: #FFFFFF; }
     .text-danger, .text-primary, .text-warning { color: #C6A15B !important; }
     .text-dark { color: #133235 !important; }
+
+    /* ===== Responsive (mobile / tablet) ===== */
+    .article-brand { min-width: 0; }
+    .article-brand > div:last-child { min-width: 0; }
+    .article-body-text { overflow-wrap: break-word; word-break: normal; }
+    .article-body-text ul { padding-inline-start: 1.5rem; }
+
+    @media (max-width: 991px) {
+      .article-content-section .row.g-5 { --bs-gutter-x: 1.5rem; --bs-gutter-y: 1.5rem; }
+      .toc-sticky-card { position: static; }
+      .article-card-main { padding: 30px 26px; margin-bottom: 30px; }
+    }
+
+    @media (max-width: 767px) {
+      .article-header-nav { padding: 10px 0; }
+      .article-header-nav .container { flex-wrap: nowrap; gap: 8px; padding-left: 12px; padding-right: 12px; }
+      .article-brand { flex: 0 1 auto; gap: 8px !important; }
+      .article-brand .brand-icon-emblem { width: 38px; height: 38px; font-size: 18px; border-radius: 10px; flex-shrink: 0; }
+      .article-brand .fs-5 { font-size: 0.95rem !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .article-brand small { display: block; font-size: 0.7rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .article-nav-actions { flex-shrink: 0; }
+      .btn-back-home { padding: 6px 12px; font-size: 0.8rem; white-space: nowrap; gap: 6px; }
+
+      .article-hero { padding: 40px 0 30px; }
+      .article-hero h1 { font-size: clamp(1.5rem, 6.4vw, 2rem); line-height: 1.5; }
+      .article-hero .lead { font-size: 1rem; }
+
+      .article-content-section.py-5 { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+      .article-content-section .row.g-5 { --bs-gutter-x: 0; --bs-gutter-y: 1.25rem; }
+
+      .article-card-main { padding: 22px 16px; border-radius: 18px; margin-bottom: 24px; scroll-margin-top: 80px; }
+      .article-card-main h2 { font-size: 1.3rem; line-height: 1.6; }
+      .article-card-main h4 { font-size: 1.05rem; }
+      .article-card-main > .d-flex.text-muted { flex-wrap: wrap; row-gap: 4px; column-gap: 10px !important; }
+      .article-cover-img { max-height: 240px; border-radius: 14px; margin-bottom: 18px; }
+      .article-body-text .lead { font-size: 1rem; }
+      .article-body-text ul { padding-inline-start: 1.1rem; margin-bottom: 1rem; }
+      .doctor-callout-box { padding: 16px; margin: 22px 0; border-radius: 14px; }
+      .doctor-callout-box { border-right-width: 4px; }
+      .en-mode .doctor-callout-box { border-right: none; border-left-width: 4px; }
+
+      .toc-sticky-card { padding: 20px 16px; border-radius: 16px; }
+      .toc-item-link { padding: 10px 12px; font-size: 0.9rem; }
+
+      .floating-lang-btn { bottom: 16px; right: 16px; padding: 7px 14px; }
+    }
+
+    @media (max-width: 400px) {
+      .article-header-nav .container { gap: 6px; padding-left: 10px; padding-right: 10px; }
+      .article-brand { gap: 6px !important; }
+      .article-brand .brand-icon-emblem { width: 34px; height: 34px; font-size: 16px; }
+      .article-brand .fs-5 { font-size: 0.82rem !important; }
+      .article-brand small { display: none; }
+      .btn-back-home { padding: 6px 10px; font-size: 0.74rem; }
+      .article-card-main { padding: 20px 14px; }
+    }
   </style>
 </head>
 <body>
@@ -306,14 +362,14 @@
   <!-- Header Navigation -->
   <header class="article-header-nav">
     <div class="container d-flex justify-content-between align-items-center">
-      <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+      <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none article-brand">
         <div class="brand-icon-emblem"><i class="bi bi-heart-pulse-fill"></i></div>
         <div>
           <div class="fw-bold text-dark fs-5" data-i18n="art-brand-name">دكتورة سوزان محمد عيسى</div>
           <small class="text-danger fw-bold" data-i18n="art-brand-spec">أخصائية النساء والتوليد والعقم</small>
         </div>
       </a>
-      <div class="d-flex align-items-center gap-2">
+      <div class="d-flex align-items-center gap-2 article-nav-actions">
         <a href="index.html" class="btn-back-home"><i class="bi bi-arrow-right"></i> <span data-i18n="art-back-home">العودة للرئيسية</span></a>
         <a href="https://wa.me/966569049926?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B3%D9%88%D8%B2%D8%A7%D9%86" target="_blank" class="btn-luxury-pink d-none d-md-inline-flex">
           <i class="fab fa-whatsapp"></i> <span data-i18n="art-book-btn">احجزي موعدك عبر واتساب</span>
@@ -444,7 +500,7 @@
 
               <h4 class="fw-bold text-danger mt-4"><span data-i18n="a2-h2">ماذا يشمل التقييم والمتابعة؟</span></h4>
               <ul>
-                <li><strong data-i18n="a2-b1-title">السونار الداخلي:</strong> <span data-i18n="a2-b1-desc">لفحص الرحم والمبيضين والكشف عن الأكياس أو الألياف أو أي عوامل قد تؤثر على الحمل.</span></li>
+                <li><strong data-i18n="a2-b1-title">السونار:</strong> <span data-i18n="a2-b1-desc">لفحص الرحم والمبيضين والكشف عن الأكياس أو الألياف أو أي عوامل قد تؤثر على الحمل.</span></li>
                 <li><strong data-i18n="a2-b2-title">متابعة التبويض:</strong> <span data-i18n="a2-b2-desc">تتبع نمو الحويصلة بالسونار خلال الدورة لتحديد موعد التبويض وأنسب أيام للحمل.</span></li>
                 <li><strong data-i18n="a2-b3-title">التحاليل الهرمونية:</strong> <span data-i18n="a2-b3-desc">تُطلب عند الحاجة لتقييم وظائف المبيض والغدة الدرقية وغيرها من الهرمونات المؤثرة على الخصوبة.</span></li>
               </ul>
@@ -484,10 +540,9 @@
                 <span data-i18n="a3-lead">يعد السونار الركيزة التشخيصية الأكثر أهمية للاطمئنان على مراحل نمو الجنين، وموقع المشيمة، والتأكد من صحة وسلامة الرحم والمبايض.</span>
               </p>
 
-              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a3-h1">الفروق والفوائد الطبية:</span></h4>
+              <h4 class="fw-bold text-danger mt-4"><span data-i18n="a3-h1">الفوائد الطبية:</span></h4>
               <ul>
-                <li><strong data-i18n="a3-b1-title">السونار الداخلي (المهبلي):</strong> <span data-i18n="a3-b1-desc">يوفر دقة فائقة في الأسابيع الأولى، ويكشف عن كيس الحمل ونبض الجنين مبكراً، كما يحدد سلامة المبيضين بدقة متناهية.</span></li>
-                <li><strong data-i18n="a3-b2-title">السونار:</strong> <span data-i18n="a3-b2-desc">الفحص الأساسي خلال الثلثين الثاني والثالث لمراقبة نمو الجنين، وقياس محيط الرأس، وفحص كمية السائل المحيط به.</span></li>
+                <li><strong data-i18n="a3-b1-title">السونار:</strong> <span data-i18n="a3-b1-desc">يوفر دقة فائقة في الأسابيع الأولى، ويكشف عن كيس الحمل ونبض الجنين مبكراً، ويحدد سلامة المبيضين بدقة متناهية، كما يُعد الفحص الأساسي خلال الثلثين الثاني والثالث لمراقبة نمو الجنين، وقياس محيط الرأس، وفحص كمية السائل المحيط به.</span></li>
               </ul>
             </div>
 
@@ -555,7 +610,7 @@
         "a2-h1": "متى تراجعين الدكتورة؟",
         "a2-p1": "يُعرَّف تأخر الحمل بعدم حدوثه بعد عام كامل من المحاولة المنتظمة. ويُنصح بالمراجعة بعد 6 أشهر فقط إذا كان عمركِ 35 عاماً فأكثر، أو إذا كانت الدورة الشهرية غير منتظمة، أو وُجد تاريخ مرضي نسائي سابق.",
         "a2-h2": "ماذا يشمل التقييم والمتابعة؟",
-        "a2-b1-title": "السونار الداخلي:",
+        "a2-b1-title": "السونار:",
         "a2-b1-desc": "لفحص الرحم والمبيضين والكشف عن الأكياس أو الألياف أو أي عوامل قد تؤثر على الحمل.",
         "a2-b2-title": "متابعة التبويض:",
         "a2-b2-desc": "تتبع نمو الحويصلة بالسونار خلال الدورة لتحديد موعد التبويض وأنسب أيام للحمل.",
@@ -568,11 +623,9 @@
         "a3-title": "أهمية الفحص بالسونار لمتابعة سلامة الحمل",
         "a3-read": "قراءة 4 دقائق",
         "a3-lead": "يعد السونار الركيزة التشخيصية الأكثر أهمية للاطمئنان على مراحل نمو الجنين، وموقع المشيمة، والتأكد من صحة وسلامة الرحم والمبايض.",
-        "a3-h1": "الفروق والفوائد الطبية:",
-        "a3-b1-title": "السونار الداخلي (المهبلي):",
-        "a3-b1-desc": "يوفر دقة فائقة في الأسابيع الأولى، ويكشف عن كيس الحمل ونبض الجنين مبكراً، كما يحدد سلامة المبيضين بدقة متناهية.",
-        "a3-b2-title": "السونار:",
-        "a3-b2-desc": "الفحص الأساسي خلال الثلثين الثاني والثالث لمراقبة نمو الجنين، وقياس محيط الرأس، وفحص كمية السائل المحيط به.",
+        "a3-h1": "الفوائد الطبية:",
+        "a3-b1-title": "السونار:",
+        "a3-b1-desc": "يوفر دقة فائقة في الأسابيع الأولى، ويكشف عن كيس الحمل ونبض الجنين مبكراً، ويحدد سلامة المبيضين بدقة متناهية، كما يُعد الفحص الأساسي خلال الثلثين الثاني والثالث لمراقبة نمو الجنين، وقياس محيط الرأس، وفحص كمية السائل المحيط به.",
         "a3-cta": "احجزي موعدك عبر واتساب",
         "foot-copy": "عيادة دكتورة سوزان محمد عيسى - حفر الباطن. جميع الحقوق محفوظة.",
         "foot-wa": "التواصل وتأكيد المواعيد متاح حصرياً عبر تطبيق واتساب:"
@@ -589,7 +642,7 @@
         "toc-title": "Article Index",
         "toc-1": "1. Family Planning & Contraception",
         "toc-2": "2. Delayed Pregnancy & Ovulation Tracking",
-        "toc-3": "3. Abdominal & Pelvic Ultrasound",
+        "toc-3": "3. Ultrasound",
         "toc-help-title": "Have a Specific Medical Inquiry?",
         "toc-help-desc": "Appointments and inquiries are handled exclusively via WhatsApp to arrange visit times smoothly.",
         "toc-wa-btn": "Book Your Appointment via WhatsApp",
@@ -618,7 +671,7 @@
         "a2-h1": "When should you see the doctor?",
         "a2-p1": "Delayed pregnancy is defined as not conceiving after a full year of regular attempts. It is advised to consult after just 6 months if you are 35 or older, if your cycles are irregular, or if you have a prior gynecological history.",
         "a2-h2": "What does the evaluation and follow-up include?",
-        "a2-b1-title": "Transvaginal ultrasound:",
+        "a2-b1-title": "Ultrasound:",
         "a2-b1-desc": "Examines the uterus and ovaries and detects cysts, fibroids or any factors that may affect conception.",
         "a2-b2-title": "Ovulation tracking:",
         "a2-b2-desc": "Follicle growth is monitored by ultrasound during the cycle to pinpoint ovulation and the best days to conceive.",
@@ -628,14 +681,12 @@
         "a2-quote": "\"Early evaluation saves you time and worry and gives you clear answers. Including your partner's assessment in the plan from the start is recommended.\"",
         "a2-cta": "Book Your Appointment via WhatsApp",
         "a3-tag": "Diagnostics & Fetal Health",
-        "a3-title": "The Value of Abdominal & Pelvic Ultrasound in Pregnancy Monitoring",
+        "a3-title": "The Value of Ultrasound in Pregnancy Monitoring",
         "a3-read": "4 min read",
         "a3-lead": "Ultrasound scanning is the cornerstone diagnostic tool for confirming gestational progress, placental location, and overall uterine and ovarian health.",
-        "a3-h1": "Medical Differences & Benefits:",
-        "a3-b1-title": "Transvaginal (Pelvic) Ultrasound:",
-        "a3-b1-desc": "Offers supreme clarity in early pregnancy, confirming gestational sac and fetal cardiac activity while assessing ovaries with extreme precision.",
-        "a3-b2-title": "Abdominal Ultrasound:",
-        "a3-b2-desc": "The primary scan in the second and third trimesters to evaluate fetal growth parameters, head circumference, and amniotic fluid volume.",
+        "a3-h1": "Medical Benefits:",
+        "a3-b1-title": "Ultrasound:",
+        "a3-b1-desc": "Offers supreme clarity in early pregnancy, confirming gestational sac and fetal cardiac activity while assessing ovaries with extreme precision, and is the primary scan in the second and third trimesters to evaluate fetal growth parameters, head circumference, and amniotic fluid volume.",
         "a3-cta": "Book Your Appointment via WhatsApp",
         "foot-copy": "Dr. Suzan Mohamed Issa Clinic - Hafar Al-Batin. All rights reserved.",
         "foot-wa": "Communication and appointment confirmation are available exclusively via WhatsApp:"

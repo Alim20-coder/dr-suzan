@@ -6,8 +6,8 @@
   <title>دكتورة سوزان محمد عيسى | أخصائية النساء والتوليد والعقم والتجميل النسائي - حفر الباطن</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="عيادة دكتورة سوزان محمد عيسى - خبرة 17 عاماً في طب وجراحة أمراض النساء، متابعة الحمل، علاج تأخر الإنجاب، وسائل منع الحمل، والسونار البطني والداخلي في حفر الباطن. افحصي واطمئني مع دكتورة سوزان.">
-  <meta name="keywords" content="دكتورة سوزان محمد عيسى, دكتورة نساء حفر الباطن, متابعة الحمل, وسائل منع الحمل, تنظيم الأسرة, سونار بطني وداخلي, علاج تأخر الإنجاب, العقم, حفر الباطن">
+  <meta name="description" content="عيادة دكتورة سوزان محمد عيسى - خبرة 17 عاماً في طب وجراحة أمراض النساء، متابعة الحمل، علاج تأخر الإنجاب، وسائل منع الحمل، والسونار في حفر الباطن. افحصي واطمئني مع دكتورة سوزان.">
+  <meta name="keywords" content="دكتورة سوزان محمد عيسى, دكتورة نساء حفر الباطن, متابعة الحمل, وسائل منع الحمل, تنظيم الأسرة, سونار, علاج تأخر الإنجاب, العقم, حفر الباطن">
   <meta name="author" content="Devora Web">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#C6A15B">
@@ -1615,6 +1615,34 @@
       #sec-location .loc-title-name,
       #sec-location .loc-title-city { font-size: clamp(1.35rem, 2.3vw, 1.8rem); }
     }
+
+    /* ===== Navbar responsive fix: nothing may be pushed off-screen (hamburger fully visible) ===== */
+    @media (max-width: 991px) {
+      #sec-navbar .container { gap: 8px; min-width: 0; }
+      .brand-logo-wrap { flex: 0 1 auto; min-width: 0; gap: 10px; }
+      .brand-logo-wrap > div:not(.brand-icon-emblem) { min-width: 0; }
+      .brand-title,
+      .brand-subtitle { overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+      .nav-actions { flex-shrink: 0; }
+      .menu-trigger-btn { flex-shrink: 0; }
+    }
+    @media (max-width: 767px) {
+      .nav-actions { gap: 8px !important; }
+      .brand-logo-wrap { gap: 8px; }
+    }
+    @media (max-width: 400px) {
+      #sec-navbar .container { padding-left: 12px; padding-right: 12px; gap: 6px; }
+      .nav-actions { gap: 6px !important; }
+      .brand-icon-emblem { width: 34px; height: 34px; font-size: 16px; border-radius: 9px; }
+      .brand-logo-wrap { gap: 6px; }
+      .brand-title { font-size: 0.8rem; }
+      .btn-luxury-gold { padding: 6px 10px; font-size: 0.76rem; gap: 4px; }
+      .menu-trigger-btn { width: 34px; height: 34px; font-size: 16px; border-radius: 9px; }
+    }
+    @media (max-width: 340px) {
+      .btn-luxury-gold i { display: none; }
+      .brand-title { font-size: 0.74rem; }
+    }
   </style>
 </head>
 <body>
@@ -1676,7 +1704,7 @@
       </ul>
 
       <!-- Action Items: WhatsApp link & Booking CTA Button -->
-      <div class="d-flex align-items-center gap-3">
+      <div class="d-flex align-items-center gap-3 nav-actions">
         <a href="https://wa.me/966569049926?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B3%D9%88%D8%B2%D8%A7%D9%86" target="_blank" class="nav-wa-link d-none d-md-inline-flex">
           <i class="fab fa-whatsapp text-success fs-5"></i> <span>0569049926</span>
         </a>
@@ -1813,7 +1841,7 @@
             <div class="about-check-item">
               <div class="about-check-icon"><i class="bi bi-check-lg"></i></div>
               <div class="about-check-text">
-                <strong data-i18n="about-f2-title">أحدث التقنيات:</strong> <span data-i18n="about-f2-desc">استخدام أحدث أجهزة السونار البطني والداخلي وفق أعلى معايير الجودة والتعقيم.</span>
+                <strong data-i18n="about-f2-title">أحدث التقنيات:</strong> <span data-i18n="about-f2-desc">استخدام أحدث أجهزة السونار وفق أعلى معايير الجودة والتعقيم.</span>
               </div>
             </div>
             <div class="about-check-item">
@@ -1952,16 +1980,16 @@
           </div>
         </div>
 
-        <!-- 05: السونار بطني وداخلي -->
+        <!-- 05: السونار -->
         <div class="col-md-6 col-lg-3">
           <div class="dept-card">
             <div class="dept-card-top">
               <div class="dept-icon-square"><i class="bi bi-display"></i></div>
               <span class="dept-card-num">05</span>
             </div>
-            <h4 class="dept-card-title" data-i18n="dept-5-title">سونار بطني وداخلي</h4>
+            <h4 class="dept-card-title" data-i18n="dept-5-title">سونار</h4>
             <p class="dept-card-text" data-i18n="dept-5-desc">
-              فحص بالأشعة التلفزيونية البطنية والمهبلية الدقيقة لمتابعة الجنين، فحص الرحم والمبايض والكشف عن الأكياس.
+              فحص بالأشعة التلفزيونية الدقيقة لمتابعة الجنين، فحص الرحم والمبايض والكشف عن الأكياس.
             </p>
             <div class="dept-card-watermark"></div>
           </div>
@@ -2094,7 +2122,7 @@
         </p>
       </div>
 
-      <!-- Showcase 01: متابعة الحمل والسونار البطني والداخلي -->
+      <!-- Showcase 01: متابعة الحمل والسونار -->
       <div class="showcase-block">
         <div class="row align-items-center g-5">
           <div class="col-lg-7">
@@ -2115,7 +2143,7 @@
               <div class="showcase-check-item">
                 <div class="showcase-check-icon"><i class="bi bi-check-lg"></i></div>
                 <div class="showcase-check-content">
-                  <strong data-i18n="s2-f2-title">سونار بطني وداخلي عالي الدقة</strong>
+                  <strong data-i18n="s2-f2-title">سونار عالي الدقة</strong>
                   <p data-i18n="s2-f2-desc">كشف مبكر ودقيق على سلامة الرحم والمبايض ونمو أعضاء الجنين في كل مرحلة.</p>
                 </div>
               </div>
@@ -2270,15 +2298,15 @@
           </div>
         </div>
 
-        <!-- Article 3: السونار البطني والداخلي -->
+        <!-- Article 3: السونار -->
         <div class="col-md-6 col-lg-5">
           <div class="article-card-box">
-            <img src="css/p2.jpeg" alt="السونار البطني والداخلي" class="article-thumb-img">
+            <img src="css/p2.jpeg" alt="السونار" class="article-thumb-img">
             <div class="article-body-content">
               <span class="article-tag-badge" data-i18n="art-3-tag">التشخيص وصحة الجنين</span>
-              <h4 class="article-card-title" data-i18n="art-3-title">أهمية الفحص بالسونار البطني والداخلي لمتابعة سلامة الحمل</h4>
+              <h4 class="article-card-title" data-i18n="art-3-title">أهمية الفحص بالسونار لمتابعة سلامة الحمل</h4>
               <p class="article-card-desc" data-i18n="art-3-desc">
-                متى يتم استخدام السونار الداخلي مقارنة بالبطني؟ وكيف يكشف بدقة عن نمو الجنين وسلامة الرحم والمبايض.
+                كيف يكشف السونار بدقة عن نمو الجنين وسلامة الرحم والمبايض؟
               </p>
               <button class="btn btn-link p-0 text-decoration-none btn-read-article read-article-trigger" data-article-id="3">
                 <span data-i18n="art-read-btn">اقرئي المقال كاملاً</span> <i class="bi bi-arrow-left"></i>
@@ -2338,12 +2366,12 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                  <span data-i18n="faq-q1">ما الفرق بين السونار البطني والسونار الداخلي (المهبلي)؟</span>
+                  <span data-i18n="faq-q1">ما أهمية السونار في متابعة الحمل؟</span>
                 </button>
               </h2>
               <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                 <div class="accordion-body" data-i18n="faq-a1">
-                  السونار الداخلي (المهبلي) يعطي صورة فائقة الوضوح، ويستخدم لفحص دقيق للرحم والمبايض وسماكة بطانة الرحم والكشف عن أكياس المبيض. أما السونار البطني فيستخدم لمتابعة نمو الجنين وحركته ووضع المشيمة في مراحل الحمل المتوسطة والمتقدمة. كلا الفحصين آمنان تماماً وبدون أي ألم.
+                  يعطي السونار صورة فائقة الوضوح، ويستخدم لفحص دقيق للرحم والمبايض وسماكة بطانة الرحم والكشف عن أكياس المبيض، كما يستخدم لمتابعة نمو الجنين وحركته ووضع المشيمة في مراحل الحمل المتوسطة والمتقدمة. وهو فحص آمن تماماً وبدون أي ألم.
                 </div>
               </div>
             </div>
@@ -2415,7 +2443,7 @@
             <div class="col-md-6">
               <label class="form-label fw-bold text-dark" for="serviceType" data-i18n="f-service">الخدمة المطلوبة:</label>
               <select class="form-select" id="serviceType" required>
-                <option value="متابعة حمل وسونار" data-i18n="svc-1">متابعة الحمل وفحص السونار البطني والداخلي</option>
+                <option value="متابعة حمل وسونار" data-i18n="svc-1">متابعة الحمل وفحص السونار</option>
                 <option value="استشارة وسائل منع الحمل" data-i18n="svc-3">تنظيم الأسرة واستشارات وسائل منع الحمل</option>
                 <option value="علاج أمراض نسائية وتأخر إنجاب" data-i18n="svc-4">علاج الأمراض النسائية والالتهابات وتأخر الحمل</option>
                 <option value="فحص وقائي ومسحة عنق الرحم" data-i18n="svc-5">الفحوصات الوقائية الشاملة ومسحة عنق الرحم</option>
@@ -2687,19 +2715,17 @@
           <p class="text-muted">• <strong>اللولب الهرموني:</strong> يتميز بكفاءة فائقة، ويعمل على تقليل كمية وآلام الدورة الشهرية، ويبقى فعالاً لعدة سنوات مع إمكانية إزالته بسهولة عند الرغبة بالحمل.</p>
           <p class="text-muted">• <strong>كبسولات منع الحمل تحت الجلد:</strong> وسيلة سهلة ومريحة توفر حماية ممتدة لمدة 3 سنوات دون الحاجة لتذكر تناول الحبوب اليومية.</p>
           <h5 class="fw-bold mt-4 text-danger">نصيحة دكتورة سوزان محمد عيسى:</h5>
-          <p class="text-muted">نوصي دائماً بإجراء فحص بالسونار البطني أو الداخلي قبل اختيار الوسيلة للتأكد من وضع الرحم وخلوه من أي ألياف أو التهابات، ومتابعة استقرار الوسيلة بعد التركيب للاطمئنان الكامل.</p>
+          <p class="text-muted">نوصي دائماً بإجراء فحص بالسونار قبل اختيار الوسيلة للتأكد من وضع الرحم وخلوه من أي ألياف أو التهابات، ومتابعة استقرار الوسيلة بعد التركيب للاطمئنان الكامل.</p>
         `
       },
       3: {
-        title: "أهمية الفحص بالسونار البطني والداخلي لمتابعة سلامة الحمل",
+        title: "أهمية الفحص بالسونار لمتابعة سلامة الحمل",
         category: "التشخيص وصحة الجنين",
         img: "css/pregnancy-ultrasound.jpg",
         content: `
           <p class="lead text-dark">يعد الفحص التلفزيوني (السونار) الركيزة الأولى في تقييم سلامة الجنين وصحة الرحم والمبايض في كل مرحلة.</p>
-          <h5 class="fw-bold mt-4 text-danger">السونار الداخلي (المهبلي):</h5>
-          <p class="text-muted">يستخدم للتأكد من وجود كيس الحمل داخل الرحم، وسماع نبض الجنين مبكراً، وتشخيص أكياس المبيض والنزيف غير المنتظم بأعلى دقة ممكنة.</p>
-          <h5 class="fw-bold mt-4 text-danger">السونار البطني:</h5>
-          <p class="text-muted">يستخدم في الثلثين الثاني والثالث لمتابعة قياسات نمو الجنين، والتأكد من وزن الجنين وموقع المشيمة وكمية السائل الأمنيوسي المحيط به.</p>
+          <h5 class="fw-bold mt-4 text-danger">السونار:</h5>
+          <p class="text-muted">يستخدم للتأكد من وجود كيس الحمل داخل الرحم، وسماع نبض الجنين مبكراً، وتشخيص أكياس المبيض والنزيف غير المنتظم بأعلى دقة ممكنة، وفي الثلثين الثاني والثالث لمتابعة قياسات نمو الجنين، والتأكد من وزن الجنين وموقع المشيمة وكمية السائل الأمنيوسي المحيط به.</p>
         `
       }
     };
@@ -2715,18 +2741,16 @@
           <p class="text-muted">• <strong>Hormonal IUD:</strong> Highly effective, reduces menstrual flow and cramps, stays effective for several years and can be removed easily when you wish to conceive.</p>
           <p class="text-muted">• <strong>Subdermal implant:</strong> An easy and comfortable method providing up to 3 years of protection without remembering a daily pill.</p>
           <h5 class="fw-bold mt-4 text-danger">Dr. Suzan Mohamed Issa's advice:</h5>
-          <p class="text-muted">We always recommend an abdominal or pelvic ultrasound before choosing a method to confirm the position of the uterus and rule out fibroids or infection, and a follow-up after insertion for complete reassurance.</p>
+          <p class="text-muted">We always recommend an ultrasound before choosing a method to confirm the position of the uterus and rule out fibroids or infection, and a follow-up after insertion for complete reassurance.</p>
         `
       },
       3: {
-        title: "Why Abdominal & Transvaginal Ultrasound Matter for Pregnancy Safety",
+        title: "Why Ultrasound Matters for Pregnancy Safety",
         category: "Diagnostics & Fetal Health",
         content: `
           <p class="lead text-dark">Ultrasound is the first pillar in assessing fetal wellbeing and the health of the uterus and ovaries at every stage.</p>
-          <h5 class="fw-bold mt-4 text-danger">Transvaginal (pelvic) ultrasound:</h5>
-          <p class="text-muted">Used to confirm the gestational sac is inside the uterus, hear the fetal heartbeat early, and diagnose ovarian cysts and irregular bleeding with the highest possible accuracy.</p>
-          <h5 class="fw-bold mt-4 text-danger">Abdominal ultrasound:</h5>
-          <p class="text-muted">Used in the second and third trimesters to track fetal growth measurements, estimate fetal weight, and check placental position and the amount of amniotic fluid.</p>
+          <h5 class="fw-bold mt-4 text-danger">Ultrasound:</h5>
+          <p class="text-muted">Used to confirm the gestational sac is inside the uterus, hear the fetal heartbeat early, and diagnose ovarian cysts and irregular bleeding with the highest possible accuracy, and in the second and third trimesters to track fetal growth measurements, estimate fetal weight, and check placental position and the amount of amniotic fluid.</p>
         `
       }
     };
@@ -2806,7 +2830,7 @@
         "about-f1-title": "Extensive Experience:",
         "about-f1-desc": "Over 17 years of clinical experience in gynecology, obstetrics, pregnancy care and infertility.",
         "about-f2-title": "Advanced Technologies:",
-        "about-f2-desc": "State-of-the-art abdominal & pelvic ultrasound devices with rigorous sterilization standards.",
+        "about-f2-desc": "State-of-the-art ultrasound devices with rigorous sterilization standards.",
         "about-f3-title": "Customized Care:",
         "about-f3-desc": "Tailored treatment plans crafted for each patient to achieve safe and lasting results.",
         "about-f4-title": "Comfort & Complete Privacy:",
@@ -2827,7 +2851,7 @@
         "dept-3-desc": "Infertility evaluations, ovulation tracking, and initial management for conception challenges.",
         "dept-4-title": "Family Planning & Contraception",
         "dept-4-desc": "Expert counseling on diverse contraceptive methods, IUD insertion & tracking, and hormonal implants.",
-        "dept-5-title": "Abdominal & Pelvic Ultrasound",
+        "dept-5-title": "Ultrasound",
         "dept-5-desc": "High-precision ultrasound scanning for fetal growth, uterine health, ovarian cyst detection, and pelvic wellness.",
         "dept-7-title": "Preventive Screening",
         "dept-7-desc": "Early detection screenings for breast and cervical health (Pap smear) and comprehensive routine checkups.",
@@ -2851,7 +2875,7 @@
         "s2-subtitle": "Continuous compassionate care for you and your baby throughout pregnancy",
         "s2-f1-title": "High-Risk & Routine Pregnancy Care",
         "s2-f1-desc": "Rigorous monitoring of fetal development, heartbeat, and maternal vital indicators.",
-        "s2-f2-title": "Abdominal & Transvaginal Ultrasound",
+        "s2-f2-title": "High-Precision Ultrasound",
         "s2-f2-desc": "Precise imaging for uterine health, ovarian wellness, and trimester growth assessments.",
         "s2-f3-title": "Laboratory & Diagnostic Tests",
         "s2-f3-desc": "Screening for gestational diabetes, blood pressure, and essential maternal health parameters.",
@@ -2915,10 +2939,10 @@
         "art-1-title": "Your Complete Guide to Choosing the Right Contraceptive for Your Body",
         "art-1-desc": "An accurate scientific comparison between hormonal and copper IUDs and implants, and how to choose what is best for your comfort and health.",
         "art-3-tag": "Diagnostics & Fetal Health",
-        "art-3-title": "Why Abdominal & Transvaginal Ultrasound Matter for Pregnancy Safety",
-        "art-3-desc": "When is transvaginal ultrasound used versus abdominal? And how each accurately shows fetal growth and uterine and ovarian health.",
-        "faq-q1": "What is the difference between abdominal and transvaginal ultrasound?",
-        "faq-a1": "Transvaginal ultrasound gives an extremely clear image and is used to examine the uterus, ovaries and endometrial thickness and to detect ovarian cysts. Abdominal ultrasound is used to monitor fetal growth, movement and placental position in the middle and later stages of pregnancy. Both scans are completely safe and painless.",
+        "art-3-title": "Why Ultrasound Matters for Pregnancy Safety",
+        "art-3-desc": "How does ultrasound accurately show fetal growth and uterine and ovarian health?",
+        "faq-q1": "Why is ultrasound important in pregnancy care?",
+        "faq-a1": "Ultrasound gives an extremely clear image and is used to examine the uterus, ovaries and endometrial thickness and to detect ovarian cysts. It is also used to monitor fetal growth, movement and placental position in the middle and later stages of pregnancy. The scan is completely safe and painless.",
         "faq-q3": "How do I choose the right contraceptive method?",
         "faq-a3": "The choice depends on a thorough medical assessment of your health, blood pressure, breastfeeding status and menstrual pattern. Dr. Suzan will examine you and discuss suitable options such as the copper IUD, hormonal IUD or implant to find the most comfortable and safest method for you.",
         "faq-q4": "Do you offer cosmetic gynecology services?",
@@ -2938,7 +2962,7 @@
         "cyc-30": "30 days",
         "cyc-32": "32 days",
         "cyc-35": "35 days",
-        "svc-1": "Pregnancy follow-up & abdominal / pelvic ultrasound",
+        "svc-1": "Pregnancy follow-up & ultrasound",
         "svc-3": "Family planning & contraception consultation",
         "svc-4": "Gynecological conditions, infections & infertility",
         "svc-5": "Comprehensive preventive screening & Pap smear",
